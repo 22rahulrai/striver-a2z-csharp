@@ -6,7 +6,7 @@ Sheet: https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z
 |------------------|--------|-------|
 | Basics           | 0      | 31    |
 | Sorting          | 0      | 7     |
-| Arrays           | 0      | 40    |
+| Arrays           | 2      | 40    |
 | Binary Search    | 0      | 32    |
 | Strings          | 0      | 24    |
 | Linked List      | 0      | 31    |
@@ -21,4 +21,4 @@ Sheet: https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z
 | Graphs           | 0      | 53    |
 | Dynamic Prog.    | 0      | 55    |
 | Tries            | 0      | 7     |
-| **Total**        | **0**  | **451** |
+| **Total**        | **2**  | **451** |
