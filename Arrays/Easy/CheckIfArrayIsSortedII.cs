@@ -7,8 +7,7 @@
  * Date      : 2026-04-24
  *
  * Approach:
- *   1. Brute force — check all n rotations if each is sorted, O(n^2). Skipped.
- *   2. Count violations — a sorted-rotated array can have at most one point
+ *    Count violations — a sorted-rotated array can have at most one point
  *      where nums[i] > nums[i+1]. Also check the wrap-around (last vs first).
  *
   * Complexity: APPROACH 1 Brute Force
