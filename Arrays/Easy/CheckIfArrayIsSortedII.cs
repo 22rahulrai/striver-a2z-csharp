@@ -11,7 +11,10 @@
  *   2. Count violations — a sorted-rotated array can have at most one point
  *      where nums[i] > nums[i+1]. Also check the wrap-around (last vs first).
  *
- * Complexity:
+  * Complexity: APPROACH 1 Brute Force
+ *   Time  : O(n2) due to sorting
+ *   Space : O(1)
+ * Complexity: APPROACH 2 Optimal
  *   Time  : O(n)
  *   Space : O(1)
  *
@@ -25,14 +28,13 @@ public class CheckIfArrayIsSortedII {
         int count = 0;
         int n = nums.Length;
 
-        // Check for violations in the sorted order
         for (int i = 0; i < n - 1; i++) {
             if (nums[i] > nums[i + 1]) {
                 count++;
             }
         }
 
-        // Check wrap-around violation between the last and the first element
+        // Important circular check
         if (nums[n - 1] > nums[0]) {
             count++;
         }
