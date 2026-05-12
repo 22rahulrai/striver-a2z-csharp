@@ -1,24 +1,20 @@
 /*
- * Problem   : Second Largest Element in an Array
- * Link      : https://www.geeksforgeeks.org/problems/second-largest3735/1
+ * Problem   : Linear Search in an Array
+ * Link      : https://takeuforward.org/plus/dsa/problems/linear-search?source=strivers-a2z-dsa-track
  * Platform  : GeeksforGeeks
  * Difficulty: Easy
  * Topic     : Arrays
- * Date      : 2026-04-29
+ * Date      : 2026-05-12
  *
- * Approach:
- *   1. Brute force — sort the array and second largest is the second last unique element.
- *   2. 
+  * Approach:
+ *   1. Brute force — iterate through the array and return index if target is found, else -1.
  *
   * Complexity: APPROACH 1 Brute Force
- *   Time  : O(n log n) due to sorting
- *   Space : O(1)
- * Complexity: APPROACH 2 Optimal
- *   Time  : O(n)
+ *   Time  : O(n) since we may have to check each element once
  *   Space : O(1)
  *
  * Notes / gotchas:
- *   - Initialize result to int.MinValue to handle all-negative arrays.
+*   - Return the index of the first occurrence of the target.
  */
 
 using System.ComponentModel;
