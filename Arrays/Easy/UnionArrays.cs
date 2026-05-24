@@ -18,16 +18,25 @@
        — Add unique elements to the result list while traversing
        — Handle duplicates by skipping over them in both arrays
  *
- * Complexity : Brute      | Better 
- *      Time  : O((n+m)2)  | O((n + m) log(n + m))
- *      Space : O(n+m)     | O(n+m)
+ * Complexity 
  *
- * Notes / gotchas:
- *   - Always do k = k % n (important when k > n)
+ * Brute Force
+ * Time  : O((n+m)^2)
+ * Space : O(n+m)
+ *
+ * HashSet
+ * Time  : O((n+m) log(n+m))
+ * Space : O(n+m)
+ *
+ * Two Pointer (Optimal)
+ * Time  : O(n+m)
+ * Space : O(n+m) 
+ *
+ *
  */
 
 public class UnionArrays {
-    public static List<int> approach_one(int[] a, int [] b){
+    public static List<int> Approach_one(int[] a, int [] b){
         // Brute force 
         // TC : O((n+m)2) // Space : O(n+m)
         List<int> res = new List<int>();
@@ -51,7 +60,7 @@ public class UnionArrays {
         return res;
     }
 
-    public static List<int> approach_two(int[] a, int [] b) 
+    public static List<int> Approach_two(int[] a, int [] b) 
     {
 
         HashSet<int> set = new HashSet<int>();
@@ -70,46 +79,45 @@ public class UnionArrays {
         return res;
     }
 
-    // public static List<int> approach_three(int[] a, int [] b)
-    // {
 
-    // }
+    public static bool AreEqual(List<int> a, int[] b)
+    {
+        if (a.Count != b.Length)
+            return false;
 
-    public static bool AreEqual(int[] a, int[] b) {
-        if (a.Length != b.Length) return false;
-
-        for(int i = 0; i < a.Length; i++){
-            if(a[i] != b[i]) return false;
+        for (int i = 0; i < a.Count; i++)
+        {
+            if (a[i] != b[i])
+                return false;
         }
         return true;
     }
 
-    // public static void Test()
-    // {
-    //     (int[] input1, int[] input2, int []expected)[] cases =
-    //     [
-    //         (new int[]{1,2,3,4,5,6,7}, 3, new int[]{5,6,7,1,2,3,4}),
-    //         (new int[]{-1,-100,3,99}, 2, new int[]{3,99,-1,-100}),
-    //         (new int[]{1}, 0, new int[]{1}),
-    //         (new int[]{1,2}, 3, new int[]{2,1}), // k > n case    
-    //     ];
+    public static void Test()
+    {
+        (int[] input1, int[] input2, int []expected)[] cases =
+        [
+            (new int[]{1, 2, 3, 4, 5}, new int[]{1, 2, 7}, new int[]{1, 2, 3, 4, 5, 7}),
+            (new int[]{3, 4, 6, 7, 9, 9}, new int[]{1, 5, 7, 8, 8}, new int[]{1, 3, 4, 5, 6, 7, 8, 9}),
+            (new int[]{2, 2, 3, 4, 5}, new int[]{1, 1, 2, 3, 4}, new int[]{1, 2, 3, 4, 5}),
+            (new int[]{1, 1, 1, 1, 1}, new int[]{2, 2, 2, 2, 2}, new int[]{1,2})
+        ];
 
-    //     int pass = 0, fail = 0;
-    //     foreach (var (input1, k, expected) in cases)
-    //     {
-    //         int[] arr = (int[])input.Clone(); 
+        int pass = 0, fail = 0;
+        foreach (var (input1, input2, expected) in cases)
+        {
 
-    //         approach_two(arr, k); // test optimal
+            List<int> result = Approach_two(input1, input2);
 
-    //         bool isEqual = AreEqual(arr, expected);
+            bool isEqual = AreEqual(result, expected);
 
-    //         string status = isEqual ? "PASS" : "FAIL";
+            string status = isEqual ? "PASS" : "FAIL";
 
-    //         Console.WriteLine($"[{status}] k={k} → [{string.Join(", ", arr)}] (expected [{string.Join(", ", expected)}])");
+            Console.WriteLine($"[{status}] Result = [{string.Join(", ", result)}] " + $"Expected = [{string.Join(", ", expected)}]");
 
-    //         if (isEqual) pass++; else fail++;
-    //     }
+            if (isEqual) pass++; else fail++;
+        }
 
-    //     Console.WriteLine($"\n{pass} passed, {fail} failed.");
-    // }
+        Console.WriteLine($"\n{pass} passed, {fail} failed.");
+    }
 }
