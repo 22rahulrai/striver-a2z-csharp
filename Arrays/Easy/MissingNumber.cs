@@ -29,7 +29,7 @@
 
 public class MissingNumber {
     //Brute force approach 
-    public static int approach_one(int[] nums) 
+    public static int Approach_one(int[] nums) 
     {
         int n = nums.Length+1;
 
@@ -45,10 +45,20 @@ public class MissingNumber {
         // return (int)(totalsum - nums.Sum(x => (long)x));
     }
 
-    // public static int approach_two(int[] nums)
-    // {
-    //     int n = nums.Length+1;
-    // }
+    public static int Approach_two(int[] nums)
+    {
+        int n = nums.Length + 1;
+        int xor = 0;
+        for(int i = 0; i <= n; i++){
+            xor = xor ^ i;
+        }
+
+        foreach(int i in nums){
+            xor = xor ^ i;
+        }
+
+        return xor;
+    }
 
     public static void Test()
     {
@@ -64,7 +74,7 @@ public class MissingNumber {
         int pass = 0, fail = 0;
         foreach (var (input,expected) in cases)
         {
-            int result = approach_one(input);
+            int result = Approach_two(input);
             string status = result == expected ? "PASS" : "FAIL";
             Console.WriteLine($"[{status}] Input: [{string.Join(", ", input)}] => {result} (expected {expected})");
             if (result == expected) pass++; else fail++;
