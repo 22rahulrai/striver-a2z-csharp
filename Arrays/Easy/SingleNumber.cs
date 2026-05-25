@@ -57,6 +57,13 @@ public class SingleNumber {
         return -1;
     }
 
+    public static int Approach_Three(int[] nums)
+    {
+        HashSet<int> set = new HashSet<int>();
+
+        
+    }
+
     public static void Test()
     {
         //tuple array
