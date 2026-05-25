@@ -24,7 +24,7 @@
  *   Space : O(1)
  *
  * Notes / Gotchas:
- *   - Use long while calculating total sum to avoid integer overflow.
+ *   
  *   - nums.Sum() on int[] can overflow for large inputs.
  */
 
