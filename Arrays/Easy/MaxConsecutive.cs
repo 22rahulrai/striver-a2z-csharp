@@ -11,8 +11,8 @@
  *   every element appears twice except for one. Find that single one.
  *   
  * Approaches:
- *   1. XOR Method
- *   2. HashMap / Dictionary
+ *   1. Brute Force
+ *   2. Optimal solution
  *   3. HashSet
  *   4. LINQ GroupBy
  *
@@ -58,21 +58,18 @@ public class MaxConsecutive {
 
     public static int Approach_Two(int[] nums)
     {
-        Dictionary<int, int> freq = new Dictionary<int, int>();
+        int max = 0;
+        int c = 0;
 
-        foreach(int n in nums) {
-            if(freq.ContainsKey(n))
-                freq[n]++;
+        foreach(int n in nums){
+            if(n == 1)
+                c++;
             else
-                freq[n] = 1;
-        }
+                c = 0;
 
-        foreach(var item in freq) {
-            if(item.Value == 1)
-                return item.Key;
+            max = Math.Max(max, c);
         }
-
-        return -1;
+        return max;
     }
 
     public static int Approach_Three(int[] nums)
