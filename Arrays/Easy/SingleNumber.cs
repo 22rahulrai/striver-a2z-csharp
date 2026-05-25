@@ -69,7 +69,11 @@ public class SingleNumber {
                 set.Add(n);
         }
 
-        
+        foreach(int n in nums) {
+            if(set.Contains(n))
+                return n;
+        }
+
     }
 
     public static void Test()
