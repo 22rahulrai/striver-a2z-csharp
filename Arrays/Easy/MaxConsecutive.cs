@@ -1,6 +1,6 @@
 /*
  * Problem   : Single Number
- * Link      : https://leetcode.com/problems/single-number/description/
+ * Link      : https://leetcode.com/problems/max-consecutive-ones
  * Platform  : GeeksforGeeks
  * Difficulty: Easy
  * Topic     : Arrays, Bit Manipulation
