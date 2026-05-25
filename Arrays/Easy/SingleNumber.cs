@@ -25,7 +25,7 @@
  *
  * Notes / Gotchas:
  *   
- *   - nums.Sum() on int[] can overflow for large inputs.
+ *   
  */
 
 public class SingleNumber {
