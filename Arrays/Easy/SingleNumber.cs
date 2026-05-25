@@ -61,6 +61,14 @@ public class SingleNumber {
     {
         HashSet<int> set = new HashSet<int>();
 
+        foreach(int n in nums)
+        {
+            if (set.Contains(n))
+                set.Remove(n);
+            else
+                set.Add(n);
+        }
+
         
     }
 
