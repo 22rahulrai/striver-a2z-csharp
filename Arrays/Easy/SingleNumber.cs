@@ -86,10 +86,6 @@ public class SingleNumber {
         return -1;
     }
 
-
-
-
-
     public static void Test()
     {
         //tuple array
