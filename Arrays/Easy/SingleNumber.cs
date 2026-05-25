@@ -20,9 +20,9 @@
  *   Time  : O(n)
  *   Space : O(1)
  *
- * Complexity: APPROACH 2 (XOR)
+ * Complexity: APPROACH 2 (HashMap / Dictionary)
  *   Time  : O(n)
- *   Space : O(1)
+ *   Space : O(n)
  *
  * Notes / Gotchas:
  *   
