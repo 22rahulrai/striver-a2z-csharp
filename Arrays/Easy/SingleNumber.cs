@@ -15,7 +15,7 @@
  *   1. XOR Method
  *   2. 
  *
- * Complexity: APPROACH 1 (Sum Formula)
+ * Complexity: APPROACH 1 (XOR)
  *   Time  : O(n)
  *   Space : O(1)
  *
