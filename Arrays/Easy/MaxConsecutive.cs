@@ -53,6 +53,7 @@ public class MaxConsecutive {
             }
             max = Math.Max(max, c);
         }
+        return max;
     }
 
     public static int Approach_Two(int[] nums)
