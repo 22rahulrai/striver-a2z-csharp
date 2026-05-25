@@ -83,16 +83,16 @@ public class MaxConsecutive {
         //tuple array
         (int[] input, int expected)[] cases =
         [
-            ([2,2,1], 1),   
-            ([4,1,2,1,2],4),
-            ([3], 3),
-            ([8, 8, 7, 7, 6, 6, 1], 1),
+            ([1,1,0,1,1,1], 3),   
+            ([1,0,1,1,0,1],2),
+            ([0,0,0], 0),
+            ([1,1,1], 3)
         ];
 
         int pass = 0, fail = 0;
         foreach (var (input,expected) in cases)
         {
-            int result = Approach_Four(input);
+            int result = Approach_Three(input);
             string status = result == expected ? "PASS" : "FAIL";
             Console.WriteLine($"[{status}] Input: [{string.Join(", ", input)}] => {result} (expected {expected})");
             if (result == expected) pass++; else fail++;
