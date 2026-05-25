@@ -12,7 +12,8 @@
  *   
  * Approaches:
  *   1. XOR Method
- *   2. 
+ *   2. HashMap / Dictionary
+
  *
  * Complexity: APPROACH 1 (XOR)
  *   Time  : O(n)
@@ -76,6 +77,10 @@ public class SingleNumber {
 
         return -1;
     }
+
+
+
+
 
     public static void Test()
     {
