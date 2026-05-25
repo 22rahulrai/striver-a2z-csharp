@@ -86,6 +86,14 @@ public class SingleNumber {
         return -1;
     }
 
+    public static int Approach_Four(int[] nums)
+    {
+        return nums
+        .GroupBy(x => x)
+        .First(g => g.Count() == 1)
+        .Key;
+    }
+
     public static void Test()
     {
         //tuple array
