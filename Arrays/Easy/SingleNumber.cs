@@ -38,9 +38,24 @@ public class SingleNumber {
         return res;
     }
 
-    // public static int Approach_two(int[] nums)
-    // {
-    // }
+    public static int Approach_two(int[] nums)
+    {
+        Dictionary<int, int> freq = new Dictionary<int, int>();
+
+        foreach(int n in nums) {
+            if(freq.ContainsKey(n))
+                freq[n]++;
+            else
+                freq[n] = 1;
+        }
+
+        foreach(var item in freq) {
+            if(item.Value == 1)
+                return item.Key;
+        }
+
+        return -1;
+    }
 
     public static void Test()
     {
