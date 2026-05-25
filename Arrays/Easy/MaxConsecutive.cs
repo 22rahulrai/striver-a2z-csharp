@@ -41,8 +41,18 @@ public class MaxConsecutive {
     {
         int n = nums.Length;
         int max = 0;
-
-        
+        for(int i = 0; i < n; i++)
+        {
+            int c = 0;
+            for(int j = i; j < n; j++)
+            {
+                if(nums[j] == 1)
+                    c++;
+                else
+                    break;
+            }
+            max = Math.Max(max, c);
+        }
     }
 
     public static int Approach_Two(int[] nums)
