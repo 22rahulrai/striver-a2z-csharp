@@ -1,5 +1,5 @@
 /*
- * Problem   : Single Number
+ * Problem   : Max Consecutive Ones
  * Link      : https://leetcode.com/problems/max-consecutive-ones
  * Platform  : GeeksforGeeks
  * Difficulty: Easy
