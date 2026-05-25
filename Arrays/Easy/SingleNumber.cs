@@ -13,6 +13,7 @@
  * Approaches:
  *   1. XOR Method
  *   2. HashMap / Dictionary
+ *   3. HashSet
 
  *
  * Complexity: APPROACH 1 (XOR)
