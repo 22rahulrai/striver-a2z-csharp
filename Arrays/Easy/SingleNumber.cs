@@ -7,7 +7,7 @@
  * Date      : 2026-05-25
  *
  * Problem Statement:
- *   Given an array of size n-1 containing distinct numbers
+ *   Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
  *   from 1 to n, find the missing number.
  *
  * Approaches:
