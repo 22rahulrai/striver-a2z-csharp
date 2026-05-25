@@ -1,7 +1,7 @@
 /*
  * Problem   : Max Consecutive Ones
  * Link      : https://leetcode.com/problems/max-consecutive-ones
- * Platform  : GeeksforGeeks
+ * Platform  : LeetCode
  * Difficulty: Easy
  * Topic     : Arrays, Bit Manipulation
  * Date      : 2026-05-25
