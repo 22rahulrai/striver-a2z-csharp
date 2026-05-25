@@ -78,14 +78,6 @@ public class MaxConsecutive {
             .Max(s => s.Length);
     }
 
-    public static int Approach_Four(int[] nums)
-    {
-        return nums
-        .GroupBy(x => x)
-        .First(g => g.Count() == 1)
-        .Key;
-    }
-
     public static void Test()
     {
         //tuple array
