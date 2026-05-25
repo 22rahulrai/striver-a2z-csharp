@@ -40,6 +40,8 @@ public class MaxConsecutive {
     public static int Approach_One(int[] nums) 
     {
         int n = nums.Length;
+        int max = 0;
+
         
     }
 
