@@ -16,7 +16,7 @@
  *   3. HashSet
  *   4. LINQ GroupBy
  *
- * Complexity: APPROACH 1 (XOR)
+ * Complexity: APPROACH 1 (XOR) -- optimal
  *   Time  : O(n)
  *   Space : O(1)
  *
