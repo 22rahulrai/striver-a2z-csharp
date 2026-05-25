@@ -8,7 +8,7 @@
  *
  * Problem Statement:
  *   Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
- *   from 1 to n, find the missing number.
+ *   
  *
  * Approaches:
  *   1. Sum Formula
