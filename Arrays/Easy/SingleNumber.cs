@@ -74,7 +74,7 @@ public class SingleNumber {
                 return n;
         }
 
-        return -1;
+        return 0;
     }
 
     public static void Test()
