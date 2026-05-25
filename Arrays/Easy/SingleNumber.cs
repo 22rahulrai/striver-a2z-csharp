@@ -38,7 +38,7 @@ public class SingleNumber {
         return res;
     }
 
-    public static int Approach_two(int[] nums)
+    public static int Approach_Two(int[] nums)
     {
         Dictionary<int, int> freq = new Dictionary<int, int>();
 
