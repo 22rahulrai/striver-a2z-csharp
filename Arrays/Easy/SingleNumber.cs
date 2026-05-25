@@ -4,7 +4,7 @@
  * Platform  : GeeksforGeeks
  * Difficulty: Easy
  * Topic     : Arrays, Bit Manipulation
- * Date      : 2026-05-29
+ * Date      : 2026-05-25
  *
  * Problem Statement:
  *   Given an array of size n-1 containing distinct numbers
