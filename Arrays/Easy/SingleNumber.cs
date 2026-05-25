@@ -12,8 +12,8 @@
  *   
  *
  * Approaches:
- *   1. Sum Formula
- *   2. XOR Method
+ *   1. XOR Method
+ *   2. 
  *
  * Complexity: APPROACH 1 (Sum Formula)
  *   Time  : O(n)
