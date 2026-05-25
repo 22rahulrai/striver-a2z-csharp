@@ -63,7 +63,7 @@ public class SingleNumber {
 
         foreach(int n in nums)
         {
-            if (set.Contains(n))
+            if (set.Contains(n)) // remove if already exists, else add to set
                 set.Remove(n);
             else
                 set.Add(n);
