@@ -13,8 +13,7 @@
  * Approaches:
  *   1. Brute Force
  *   2. Optimal solution
- *   3. HashSet
- *   4. LINQ GroupBy
+ *   3. LINQ GroupBy
  *
  * Complexity: APPROACH 1 (XOR) -- optimal
  *   Time  : O(n)
