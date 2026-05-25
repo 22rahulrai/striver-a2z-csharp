@@ -7,7 +7,8 @@
  * Date      : 2026-05-25
  *
  * Problem Statement:
- *   Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+ *   Given a non-empty array of integers nums, 
+ *   every element appears twice except for one. Find that single one.
  *   
  *
  * Approaches:
