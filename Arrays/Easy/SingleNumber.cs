@@ -3,7 +3,7 @@
  * Link      : https://leetcode.com/problems/single-number/description/
  * Platform  : GeeksforGeeks
  * Difficulty: Easy
- * Topic     : Arrays
+ * Topic     : Arrays, Bit Manipulation
  * Date      : 2026-04-29
  *
  * Problem Statement:
