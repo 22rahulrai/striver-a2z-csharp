@@ -73,22 +73,9 @@ public class MaxConsecutive {
 
     public static int Approach_Three(int[] nums)
     {
-        HashSet<int> set = new HashSet<int>();
-
-        foreach(int n in nums)
-        {
-            if (set.Contains(n)) // remove if already exists, else add to set
-                set.Remove(n);
-            else
-                set.Add(n);
-        }
-
-        foreach(int n in nums) {
-            if(set.Contains(n))
-                return n;
-        }
-
-        return -1;
+        return string.Join("",nums)
+            .Split('0')
+            .Max(s => s.Length);
     }
 
     public static int Approach_Four(int[] nums)
