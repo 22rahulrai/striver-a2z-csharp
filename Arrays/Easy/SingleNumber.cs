@@ -29,7 +29,6 @@
  */
 
 public class SingleNumber {
-    //Brute force approach 
     public static int Approach_One(int[] nums) 
     {
         int res = 0;
