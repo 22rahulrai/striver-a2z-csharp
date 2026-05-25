@@ -1,5 +1,5 @@
 /*
- * Problem   : Missing Number
+ * Problem   : Single Number
  * Link      : https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1
  * Platform  : GeeksforGeeks
  * Difficulty: Easy
