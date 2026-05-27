@@ -19,9 +19,10 @@
         Have we already seen this complement?
 
  *
- *   3. Swap Method (Optimal Two Pointers)
- *      - Maintain pointer for next non-zero position
- *      - Swap current non-zero element into correct place
+ *   3. Two Pointers
+ *      - This approach is useful conceptually but NOT ideal because:
+        - We need original indices
+        - After sorting, indices change.
  *
  * Complexity:
  *
