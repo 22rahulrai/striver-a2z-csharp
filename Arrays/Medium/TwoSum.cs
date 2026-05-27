@@ -4,7 +4,7 @@
  * Platform  : LeetCode
  * Difficulty: Easy
  * Topic     : Arrays, Two Pointers
- * Date      : 2026-05-07
+ * Date      : 2026-05-27
  *
  * Approaches:
  *
