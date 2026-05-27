@@ -9,7 +9,7 @@
  * Approaches:
  *
  *   1. Brute Force 
- *      - 
+ *      - use to nested loops to check all pairs
  *
  *   2. Overwrite Method (better)
  *      - Shift non-zero elements forward
