@@ -80,9 +80,32 @@ public class TwoSum {
         return new int[]{};
     }
 
-    public static void approach_three(int[] nums)
+    public static int[] approach_three(int[] nums,int target)
     {
-        
+        int n = nums.Length;
+
+        Array.Sort(nums);
+
+        int left = 0, right = n - 1;
+
+        while(left < right)
+        {
+            int sum = nums[left] + nums[right];
+
+            if(sum == target)
+            {
+                return new int[]{left,right};
+            }
+            else if(sum < target)
+            {
+                left++;
+            }
+            else
+            {
+                right--;
+            }
+        }
+        return new int[]{};
     }
 
 
