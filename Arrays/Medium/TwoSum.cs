@@ -22,7 +22,7 @@
  * Complexity:
  *
  *      Approach 1:
- *          Time  : O(n)
+ *          Time  : O(n^2)
  *          Space : O(n)
  *
  *      Approach 2:
