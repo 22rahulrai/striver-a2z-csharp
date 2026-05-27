@@ -38,14 +38,13 @@
  *          Time  : O(nlogn) due to sorting
  *          Space : O(1)
  *
- * Notes / Gotchas:
- *   - Problem requires in-place modification
- *   - Maintain relative order of non-zero elements
- *   - Overwrite method avoids unnecessary swaps
- *   - Tuple swapping used in C# for cleaner syntax
+    Notes / Gotchas:
+        - Exactly one valid answer exists
+        - Cannot use same element twice
+        - Dictionary approach is optimal
+        - Sorting changes original indices
  */
 
-using System.ComponentModel;
 
 public class TwoSum {
     //Brute force approach 
