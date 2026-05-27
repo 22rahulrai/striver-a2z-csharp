@@ -35,7 +35,7 @@
  *          Space : O(n)
  *
  *      Approach 3:
- *          Time  : O(n)
+ *          Time  : O(nlogn) due to sorting
  *          Space : O(1)
  *
  * Notes / Gotchas:
