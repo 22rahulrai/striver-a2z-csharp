@@ -66,8 +66,7 @@ public class TwoSum {
     }
 
     public static void approach_three(int[] nums) {
-        int n = nums.Length;
-        int s=0;
+
 
         for(int i=0;i<n;i++){
             if(nums[i]!=0){
