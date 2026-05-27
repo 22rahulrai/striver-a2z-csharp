@@ -1,5 +1,5 @@
 /*
- * Problem   : 283. Move Zeroes
+ * Problem   : 1. Two Sum
  * Link      : https://leetcode.com/problems/move-zeroes/
  * Platform  : LeetCode
  * Difficulty: Easy
@@ -48,7 +48,7 @@ public class TwoSum {
     public static int[] approach_one(int[] nums, int target) 
     {
         int n= nums.Length;
-        
+
         for(int i=0;i<n;i++){
             for(int j=i+1;j<n;j++){
                 if(nums[i]+nums[j]==target){
