@@ -61,13 +61,11 @@ public class TwoSum {
 
 
     public static void approach_two(int[] nums) {
-    
-        
+
     }
 
-    public static void approach_three(int[] nums) {
-
-
+    public static void approach_three(int[] nums)
+    {
         
     }
 
