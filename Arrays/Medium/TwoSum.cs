@@ -128,22 +128,21 @@ public class TwoSum {
             (new int[]{2,7,11,15}, 9, new int[]{0,1}),
             (new int[]{3,2,4}, 6, new int[]{1,2}),
             (new int[]{3,3}, 6, new int[]{0,1}),
-            (new int[]{1,5,3,7}, 8, new int[]{0,3}),
-            (new int[]{10,20,30,40}, 50, new int[]{0,3})
+            (new int[]{1,5,3,7}, 8, new int[]{1,2}),
+            (new int[]{10,20,35,40}, 75, new int[]{2,3})
         ];
 
         int pass = 0, fail = 0;
-        foreach (var (input, expected) in cases)
+        foreach (var (input, target,expected) in cases)
         {
-            int[] arr = (int[])input.Clone(); 
 
-            approach_two(arr); // test optimal
+            int []result = approach_two(input,target); // test optimal
 
-            bool isEqual = AreEqual(arr, expected);
+            bool isEqual = AreEqual(result, expected);
 
             string status = isEqual ? "PASS" : "FAIL";
 
-            Console.WriteLine($"[{status}] → [{string.Join(", ", arr)}] (expected [{string.Join(", ", expected)}])");
+            Console.WriteLine($"[{status}] → [{string.Join(", ", result)}] (expected [{string.Join(", ", expected)}])");
 
             if (isEqual) pass++; else fail++;
         }
