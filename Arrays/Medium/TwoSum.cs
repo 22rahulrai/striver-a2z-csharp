@@ -1,6 +1,6 @@
 /*
  * Problem   : 1. Two Sum
- * Link      : https://leetcode.com/problems/move-zeroes/
+ * Link      : https://leetcode.com/problems/two-sum/description/
  * Platform  : LeetCode
  * Difficulty: Easy
  * Topic     : Arrays, Two Pointers
