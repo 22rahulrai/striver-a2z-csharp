@@ -62,15 +62,7 @@ public class TwoSum {
 
     public static void approach_two(int[] nums) {
     
-        for(int i=0;i<n;i++){
-            if(nums[i]!=0){
-                nums[s++] = nums[i];
-            }
-        }
-
-        for(int i=s; i<n;i++){
-            nums[i]=0;
-        }
+        
     }
 
     public static void approach_three(int[] nums) {
