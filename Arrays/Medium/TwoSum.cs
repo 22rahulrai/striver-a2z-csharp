@@ -23,7 +23,7 @@
  *
  *      Approach 1:
  *          Time  : O(n^2)
- *          Space : O(n)
+ *          Space : O(1)
  *
  *      Approach 2:
  *          Time  : O(n)
