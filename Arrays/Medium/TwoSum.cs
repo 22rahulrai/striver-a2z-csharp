@@ -11,9 +11,13 @@
  *   1. Brute Force 
  *      - use to nested loops to check all pairs
  *
- *   2. Overwrite Method (better)
- *      - Shift non-zero elements forward
- *      - Fill remaining positions with zeroes
+ *   2. Dictionary 
+ *      We store numbers we have already seen in a dictionary.
+        For every number:
+        complement = target - current number
+        Then check:
+        Have we already seen this complement?
+
  *
  *   3. Swap Method (Optimal Two Pointers)
  *      - Maintain pointer for next non-zero position
