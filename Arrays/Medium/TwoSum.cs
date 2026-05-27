@@ -27,7 +27,7 @@
  *
  *      Approach 2:
  *          Time  : O(n)
- *          Space : O(1)
+ *          Space : O(n)
  *
  *      Approach 3:
  *          Time  : O(n)
