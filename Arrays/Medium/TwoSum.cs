@@ -60,8 +60,20 @@ public class TwoSum {
     }
 
 
-    public static void approach_two(int[] nums) {
+    public static int[] approach_two(int[] nums,int target) {
+        int n = nums.Length;
 
+        Dictionary<int,int> map = new Dictionary<int, int>();
+
+        for(int i = 0; i < n; i++){
+            int find = target - nums[i];
+            if(map.ContainsKey(find)){
+                return new int[]{map[find],i};
+            }
+            map[nums[i]] = i;
+        }
+
+        return new int[]{};
     }
 
     public static void approach_three(int[] nums)
