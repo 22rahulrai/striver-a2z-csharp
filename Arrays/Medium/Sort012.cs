@@ -12,12 +12,11 @@
  *      - Count the number of 0s, 1s, and 2s in the array.
         - Then overwrite the original array with the counted numbers in order.
  *
- *   2. Dictionary 
- *      We store numbers we have already seen in a dictionary.
-        For every number:
-        complement = target - current number
-        Then check:
-        Have we already seen this complement?
+ *   2. Dutch National Flag Algorithm
+ *      - Use 3 pointers:
+ *          low  -> next position of 0
+ *          mid  -> current element
+ *          high -> next position of 2
 
  *
  *   3. Two Pointers
@@ -35,20 +34,14 @@
  *          Time  : O(n)
  *          Space : O(n)
  *
- *      Approach 3:
- *          Time  : O(nlogn) due to sorting
- *          Space : O(1)
- *
     Notes / Gotchas:
-        - Exactly one valid answer exists
-        - Cannot use same element twice
-        - Dictionary approach is optimal
-        - Sorting changes original indices
+ *      - Array contains only 0,1,2
+ *      - Must sort in-place
+ *      - Dutch National Flag is optimal
  */
 
 
 public class Sort012 {
-    //Brute force approach 
     public static int[] approach_one(int[] nums) 
     {
         int n = nums.Length;
@@ -115,11 +108,8 @@ public class Sort012 {
                 mid++;
             }
         }
+        return nums;
     }
-
-
-
-
 
     public static bool AreEqual(int[] a, int[] b) {
         if (a.Length != b.Length) return false;
