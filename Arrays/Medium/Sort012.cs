@@ -91,8 +91,6 @@ public class Sort012 {
 
         Dictionary<int,int> map = new Dictionary<int, int>();
 
-        for(int i = 0; i < n; i++){
-            int find = target - nums[i];
 
 
 
