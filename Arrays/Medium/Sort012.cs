@@ -89,14 +89,34 @@ public class Sort012 {
     }
 
 
-    public static int[] approach_two(int[] nums,int target) {
+    public static int[] approach_two(int[] nums) {
+        int n = nums.Length;
 
+        int low=0,mid =0, high=n-1;
+
+        while(mid <= high){
+            if(nums[mid] == 0){
+                // int temp = nums[low];
+                // nums[low] = nums[mid];
+                // nums[mid] = temp;
+                (nums[low],nums[mid]) = (nums[mid],nums[low]);  
+                low++;
+                mid++;
+            }
+
+            else if(nums[mid] == 2){
+                // int temp = nums[high];
+                // nums[high] = nums[mid];
+                // nums[mid] = temp;
+                (nums[high],nums[mid]) = (nums[mid],nums[high]);
+                high--;
+            }
+            else{
+                mid++;
+            }
+        }
     }
 
-    public static int[] approach_three(int[] nums,int target)
-    {
-        
-    }
 
 
 
