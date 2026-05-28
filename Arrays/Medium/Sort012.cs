@@ -4,12 +4,13 @@
  * Platform  : LeetCode
  * Difficulty: Medium
  * Topic     : Arrays, Two Pointers
- * Date      : 2026-05-27
+ * Date      : 2026-05-28
  *
  * Approaches:
  *
  *   1. Brute Force 
- *      - use to nested loops to check all pairs
+ *      - Count the number of 0s, 1s, and 2s in the array.
+        - Then overwrite the original array with the counted numbers in order.
  *
  *   2. Dictionary 
  *      We store numbers we have already seen in a dictionary.
