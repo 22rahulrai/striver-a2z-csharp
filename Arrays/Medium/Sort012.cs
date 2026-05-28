@@ -94,7 +94,6 @@ public class Sort012 {
     {
         int n = nums.Length;
 
-        Array.Sort(nums);
 
         int left = 0, right = n - 1;
 
