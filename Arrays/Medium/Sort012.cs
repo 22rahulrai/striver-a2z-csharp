@@ -99,7 +99,7 @@ public class Sort012 {
             map[nums[i]] = i;
         }
 
-        return new int[]{};
+
     }
 
     public static int[] approach_three(int[] nums,int target)
