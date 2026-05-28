@@ -49,41 +49,43 @@
 
 public class Sort012 {
     //Brute force approach 
-    public static int[] approach_one(int[] nums, int target) 
+    public static int[] approach_one(int[] nums) 
     {
-        int n= nums.Length;
-        int x = 0, y = 0;
+        int n = nums.Length;
+        
+        int zero = 0;
+        int one = 0;
 
-        foreach(int j in nums)
+        foreach(int num in nums)
         {
-            if(nums[j] == 0)
-            {
-                x++;
-            }
-            else if(nums[j] == 1)
-            {
-                y++;
-            }
+            if(num == 0)
+                zero++;
+
+            else if(num == 1)
+                one++;
         }
 
         int i ;
 
-        for(i=0;i<x;i++)
+            // Fill 0s
+        for(i = 0; i < zero; i++)
         {
             nums[i] = 0;
         }
 
-        for(i=x;i<x+y;i++)
+        // Fill 1s
+        for(i = zero; i < zero + one; i++)
         {
             nums[i] = 1;
         }
 
-        for(i=x+y;i<n;i++)
+        // Fill 2s
+        for(i = zero + one; i < n; i++)
         {
             nums[i] = 2;
         }
 
-        return new int[]{};
+        return nums;
     }
 
 
