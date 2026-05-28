@@ -95,8 +95,6 @@ public class Sort012 {
         int n = nums.Length;
 
 
-        int left = 0, right = n - 1;
-
         while(left < right)
         {
             int sum = nums[left] + nums[right];
