@@ -96,8 +96,7 @@ public class Sort012 {
             if(map.ContainsKey(find)){
                 return new int[]{map[find],i};
             }
-            map[nums[i]] = i;
-        }
+
 
 
     }
