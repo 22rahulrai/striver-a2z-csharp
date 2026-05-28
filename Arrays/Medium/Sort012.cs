@@ -103,15 +103,7 @@ public class Sort012 {
             {
                 return new int[]{left,right};
             }
-            else if(sum < target)
-            {
-                left++;
-            }
-            else
-            {
-                right--;
-            }
-        }
+
 
     }
 
