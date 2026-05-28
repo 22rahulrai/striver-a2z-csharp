@@ -112,7 +112,7 @@ public class Sort012 {
                 right--;
             }
         }
-        return new int[]{};
+
     }
 
 
