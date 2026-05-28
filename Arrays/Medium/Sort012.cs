@@ -93,9 +93,7 @@ public class Sort012 {
 
         for(int i = 0; i < n; i++){
             int find = target - nums[i];
-            if(map.ContainsKey(find)){
-                return new int[]{map[find],i};
-            }
+
 
 
 
