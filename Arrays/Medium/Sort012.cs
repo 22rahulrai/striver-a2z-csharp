@@ -1,8 +1,8 @@
 /*
- * Problem   : 1. Two Sum
- * Link      : https://leetcode.com/problems/two-sum/description/
+ * Problem   : 75. Sort Colors
+ * Link      : https://leetcode.com/problems/sort-colors/description/
  * Platform  : LeetCode
- * Difficulty: Easy
+ * Difficulty: Medium
  * Topic     : Arrays, Two Pointers
  * Date      : 2026-05-27
  *
@@ -92,19 +92,7 @@ public class Sort012 {
 
     public static int[] approach_three(int[] nums,int target)
     {
-        int n = nums.Length;
-
-
-        while(left < right)
-        {
-            int sum = nums[left] + nums[right];
-
-            if(sum == target)
-            {
-                return new int[]{left,right};
-            }
-
-
+        
     }
 
 
@@ -121,9 +109,9 @@ public class Sort012 {
 
     public static void Test()
     {
-        (int[] input, int target,int []expected)[] cases =
+        (int[] input, int []expected)[] cases =
         [
-            (new int[]{2,7,11,15}, 9, new int[]{0,1}),
+            (new int[]{2,7,11,15}, new int[]{0,1}),
             (new int[]{3,2,4}, 6, new int[]{1,2}),
             (new int[]{3,3}, 6, new int[]{0,1}),
             (new int[]{1,5,3,7}, 8, new int[]{1,2}),
