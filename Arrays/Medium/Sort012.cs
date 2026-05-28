@@ -28,7 +28,7 @@
  * Complexity:
  *
  *      Approach 1:
- *          Time  : O(n^2)
+ *          Time  : O(n)
  *          Space : O(1)
  *
  *      Approach 2:
@@ -52,7 +52,7 @@ public class Sort012 {
     public static int[] approach_one(int[] nums) 
     {
         int n = nums.Length;
-        
+
         int zero = 0;
         int one = 0;
 
