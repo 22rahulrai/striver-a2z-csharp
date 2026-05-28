@@ -124,18 +124,33 @@ public class Sort012 {
     {
         (int[] input, int []expected)[] cases =
         [
-            (new int[]{2,7,11,15}, new int[]{0,1}),
-            (new int[]{3,2,4}, 6, new int[]{1,2}),
-            (new int[]{3,3}, 6, new int[]{0,1}),
-            (new int[]{1,5,3,7}, 8, new int[]{1,2}),
-            (new int[]{10,20,35,40}, 75, new int[]{2,3})
+            (
+                new int[]{2,0,2,1,1,0},
+                new int[]{0,0,1,1,2,2}
+            ),
+            (
+                new int[]{2,0,1},
+                new int[]{0,1,2}
+            ),
+            (
+                new int[]{0},
+                new int[]{0}
+            ),
+            (
+                new int[]{1},
+                new int[]{1}
+            ),
+            (
+                new int[]{2,2,1,1,0,0},
+                new int[]{0,0,1,1,2,2}
+            )
         ];
 
         int pass = 0, fail = 0;
-        foreach (var (input, target,expected) in cases)
+        foreach (var (input, expected) in cases)
         {
 
-            int []result = approach_two(input,target); // test optimal
+            int []result = approach_two(input); 
 
             bool isEqual = AreEqual(result, expected);
 
