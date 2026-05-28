@@ -87,13 +87,6 @@ public class Sort012 {
 
 
     public static int[] approach_two(int[] nums,int target) {
-        int n = nums.Length;
-
-        Dictionary<int,int> map = new Dictionary<int, int>();
-
-
-
-
 
     }
 
