@@ -1,5 +1,5 @@
 /*
- * Problem   : Largest Element in an Array
+ * Problem   : 169. Majority Element
  * Link      : https://takeuforward.org/plus/dsa/problems/largest-element
  * Platform  : TUF
  * Difficulty: Easy
