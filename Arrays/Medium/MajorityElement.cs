@@ -4,7 +4,7 @@
  * Platform  : TUF
  * Difficulty: Easy
  * Topic     : Arrays
- * Date      : 2026-04-28
+ * Date      : 2026-05-31
  *
  * Approach:
  *   1. Linear scan — track max as we iterate, return at end.
