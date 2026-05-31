@@ -1,6 +1,6 @@
 /*
  * Problem   : 169. Majority Element
- * Link      : https://takeuforward.org/plus/dsa/problems/largest-element
+ * Link      : https://leetcode.com/problems/majority-element/description/
  * Platform  : TUF
  * Difficulty: Easy
  * Topic     : Arrays
