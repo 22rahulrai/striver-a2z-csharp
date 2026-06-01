@@ -9,20 +9,13 @@
 * Approaches:
  *
  *   1. Brute Force 
- *      - For each element, count its occurrences in the array.
-        - If the count exceeds n/2, return that element.
+ *      - Use two nested loops to check every possible pair of buy and sell days.
+        - Calculate profit for each pair and keep track of the maximum profit.
  *
- *   2. Better Approach using Dictionary
- *      - Use a dictionary to count occurrences of each element.
-        - Iterate through the dictionary to find the element with count > n/2.
+ *   2. Better Approach 
+ *     - Track the minimum price seen so far and calculate potential profit at each step.
+        - Update maximum profit accordingly.
 
- *   3. Optimal Approach 
- *      - Use Boyer-Moore Voting Algorithm:
-        - Initialize a candidate and count.
-        - Iterate through the array:
-            - If count is 0, set candidate to current element.
-            - If current element is the candidate, increment count; otherwise, decrement count.
-        - The candidate at the end will be the majority element.
  *
  * Complexity:
  *
@@ -33,9 +26,7 @@
  *      Approach 2:
  *          Time  : O(n)
  *          Space : O(1)
- *      Approach 2:
- *          Time  : O(n)
- *          Space : O(1)
+
     Notes / Gotchas:
         - Buy must happen before sell.
         - Only one transaction is allowed.
