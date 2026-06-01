@@ -106,15 +106,7 @@ public class MajorityElement {
             }
         }
 
-        int target = nums.Length/2;
-
-        foreach(var n in map){
-            if(n.Value > target){
-                return n.Key;
-            }
-        }
-
-        return -1;
+        return candidate;
     }
 
 
