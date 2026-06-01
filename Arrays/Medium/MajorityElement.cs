@@ -19,15 +19,27 @@
  */
 
 public class MajorityElement {
-    public static int approach_one(int[] arr) {
-        int res = int.MinValue;
-        foreach ( int num in arr ) {
-            if ( num > res ) {
-                res = num;
+    public static int approach_one(int[] nums) {
+        Dictionary<int,int> map = new Dictionary<int,int>();
+
+        foreach(int n in nums){
+            if(map.ContainsKey(n)){
+                map[n]++;
+            }
+            else{
+                map[n] = 1;
             }
         }
 
-        return res;
+        int target = nums.Length/2;
+
+        foreach(var n in map){
+            if(n.Value > target){
+                return n.Key;
+            }
+        }
+
+        return -1;
     }
 
     public static int approach_two(int[] arr) {
