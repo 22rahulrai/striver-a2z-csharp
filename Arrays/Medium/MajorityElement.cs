@@ -16,10 +16,13 @@
  *      - Use a dictionary to count occurrences of each element.
         - Iterate through the dictionary to find the element with count > n/2.
 
- *   3. Two Pointers
- *      - This approach is useful conceptually but NOT ideal because:
-        - We need original indices
-        - After sorting, indices change.
+ *   3. Optimal Approach 
+ *      - Use Boyer-Moore Voting Algorithm:
+        - Initialize a candidate and count.
+        - Iterate through the array:
+            - If count is 0, set candidate to current element.
+            - If current element is the candidate, increment count; otherwise, decrement count.
+        - The candidate at the end will be the majority element.
  *
  * Complexity:
  *
