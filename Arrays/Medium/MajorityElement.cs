@@ -19,7 +19,7 @@
  */
 
 public class MajorityElement {
-    public static int approach_one(int[] nums) {
+    public static int Approach_one(int[] nums) {
         Dictionary<int,int> map = new Dictionary<int,int>();
 
         foreach(int n in nums){
