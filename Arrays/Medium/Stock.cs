@@ -32,17 +32,20 @@
  *
  *      Approach 2:
  *          Time  : O(n)
- *          Space : O(n)
+ *          Space : O(1)
  *      Approach 2:
  *          Time  : O(n)
  *          Space : O(1)
     Notes / Gotchas:
- *      - The majority element is the element that appears more than n/2 times in the array.
+        - Buy must happen before sell.
+        - Only one transaction is allowed.
+        - If no profit is possible, return 0.
+        - Track minimum price seen so far.
  */
 
 public class Stock {
 
-    public static int Approach_One(int[] arr) {//brute force
+    public static int ApproachOne(int[] arr) {//brute force
         int n = arr.Length;
         int maxProfit =0;
 
@@ -61,7 +64,7 @@ public class Stock {
         return maxProfit;
     }
 
-    public static int Approach_Two(int[] nums) { //better approach using dictionary
+    public static int ApproachTwo(int[] nums) { //better approach using dictionary
         int n = nums.Length;
         int min = nums[0], maxProfit = 0;
 
