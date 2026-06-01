@@ -49,12 +49,10 @@ public class Stock {
         for(int i = 0; i < n; i++)
         {
             int profit = 0;
-            for(int j = 0; j < n; j++)
+            for(int j = i+1; j < n; j++)
             {
                 if (arr[j] > arr[i])
-                {
                     profit = arr[j] - arr[i];
-                }
 
                 maxProfit = Math.Max(maxProfit, profit);
             }
@@ -125,7 +123,7 @@ public class Stock {
         int pass = 0, fail = 0;
         foreach (var (input, expected) in cases)
         {
-            int result = Approach_Three(input);
+            int result = Approach_One(input);
             string status = result == expected ? "PASS" : "FAIL";
             Console.WriteLine($"[{status}] Input: [{string.Join(", ", input)}] => {result} (expected {expected})");
             if (result == expected) pass++; else fail++;
