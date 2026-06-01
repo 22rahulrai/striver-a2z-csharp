@@ -43,7 +43,7 @@ public class MajorityElement {
     }
 
     public static int approach_two(int[] arr) {
-        return arr.Max();
+        int n = nums.Length;
     }
 
 
