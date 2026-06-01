@@ -87,13 +87,22 @@ public class MajorityElement {
 
     public static int Approach_Three(int[] nums) { //better approach using dictionary
         int n = nums.Length;
+        int candidate = -1;
+        int count = 0;
 
         foreach(int n in nums){
-            if(map.ContainsKey(n)){
-                map[n]++;
+            if(coutn == 0)
+            {
+                candidate = n;
             }
-            else{
-                map[n] = 1;
+
+            if(n == candidate)
+            {
+                count++;
+            }
+            else
+            {
+                count--;
             }
         }
 
