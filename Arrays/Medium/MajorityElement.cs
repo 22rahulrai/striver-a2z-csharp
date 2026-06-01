@@ -20,7 +20,7 @@
 
 public class MajorityElement {
 
-    public static int Approach_One(int[] arr) {
+    public static int Approach_One(int[] arr) {//brute force
         int n = arr.Length;
 
         for(int i = 0; i < n; i++)
@@ -42,8 +42,8 @@ public class MajorityElement {
 
         return -1;
     }
-    
-    public static int Approach_Two(int[] nums) {
+
+    public static int Approach_Two(int[] nums) { 
         Dictionary<int,int> map = new Dictionary<int,int>();
 
         foreach(int n in nums){
