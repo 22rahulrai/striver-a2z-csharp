@@ -90,13 +90,13 @@ public class MajorityElement {
         int candidate = -1;
         int count = 0;
 
-        foreach(int n in nums){
-            if(coutn == 0)
+        foreach(int num in nums){
+            if(count == 0)
             {
-                candidate = n;
+                candidate = num;
             }
 
-            if(n == candidate)
+            if(num == candidate)
             {
                 count++;
             }
