@@ -43,7 +43,7 @@ public class MajorityElement {
         return -1;
     }
 
-    public static int Approach_Two(int[] nums) { 
+    public static int Approach_Two(int[] nums) { //better approach using dictionary
         Dictionary<int,int> map = new Dictionary<int,int>();
 
         foreach(int n in nums){
