@@ -62,26 +62,29 @@ public class Stock {
     }
 
     public static int Approach_Two(int[] nums) { //better approach using dictionary
-        Dictionary<int,int> map = new Dictionary<int,int>();
+        int n = nums.Length;
+        int min = nums[0], maxProfit = 0;
 
-        foreach(int n in nums){
-            if(map.ContainsKey(n)){
-                map[n]++;
-            }
-            else{
-                map[n] = 1;
-            }
+        // for(int i = 1; i < n; i++)
+        // {
+        //     if (nums[i] < min)
+        //     {
+        //         min = nums[i];
+        //     }
+        //     else
+        //     {
+        //         int profit = nums[i] - min;
+        //         maxProfit = Math.Max(maxProfit, profit);
+        //     }
+        // } 
+
+        // simplified version of above code
+        for(int i = 1; i < n; i++)
+        {
+            min = Math.Min(min, nums[i]);
+            maxProfit = Math.Max(maxProfit, nums[i] - min);
         }
-
-        int target = nums.Length/2;
-
-        foreach(var n in map){
-            if(n.Value > target){
-                return n.Key;
-            }
-        }
-
-        return -1;
+        return maxProfit;
     }
 
     public static int Approach_Three(int[] nums) { //better approach using dictionary
@@ -123,7 +126,7 @@ public class Stock {
         int pass = 0, fail = 0;
         foreach (var (input, expected) in cases)
         {
-            int result = Approach_One(input);
+            int result = Approach_Two(input);
             string status = result == expected ? "PASS" : "FAIL";
             Console.WriteLine($"[{status}] Input: [{string.Join(", ", input)}] => {result} (expected {expected})");
             if (result == expected) pass++; else fail++;
