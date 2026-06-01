@@ -9,12 +9,15 @@
 * Approaches:
  *
  *   1. Brute Force 
- *      - For each element, count its occurrences in the array.
-        - If the count exceeds n/2, return that element.
+ *      - Try buying on every day.
+ *      - Check all future days as selling days.
+ *      - Track maximum profit.
  *
  *   2. Better Approach using Dictionary
- *      - Use a dictionary to count occurrences of each element.
-        - Iterate through the dictionary to find the element with count > n/2.
+ *      - Maintain minimum stock price seen so far.
+ *      - For each day calculate:
+ *           profit = currentPrice - minimumPriceSeen
+ *      - Update maximum profit.
 
  *   3. Optimal Approach 
  *      - Use Boyer-Moore Voting Algorithm:
@@ -32,8 +35,8 @@
  *
  *      Approach 2:
  *          Time  : O(n)
- *          Space : O(n)
- *      Approach 2:
+ *          Space : O(1)
+ *      Approach 3:
  *          Time  : O(n)
  *          Space : O(1)
     Notes / Gotchas:
@@ -42,7 +45,7 @@
 
 public class MajorityElement {
 
-    public static int Approach_One(int[] arr) {//brute force
+    public static int ApproachOne(int[] arr) {//brute force
         int n = arr.Length;
 
         for(int i = 0; i < n; i++)
@@ -65,7 +68,7 @@ public class MajorityElement {
         return -1;
     }
 
-    public static int Approach_Two(int[] nums) { //better approach using dictionary
+    public static int ApproachTwo(int[] nums) { //better approach using dictionary
         Dictionary<int,int> map = new Dictionary<int,int>();
 
         foreach(int n in nums){
@@ -88,7 +91,7 @@ public class MajorityElement {
         return -1;
     }
 
-    public static int Approach_Three(int[] nums) { //better approach using dictionary
+    public static int ApproachThree(int[] nums) { //better approach using dictionary
         int n = nums.Length;
         int candidate = -1;
         int count = 0;
@@ -112,11 +115,6 @@ public class MajorityElement {
         return candidate;
     }
 
-
-
-    
-
-
     public static void Test()
     {
         (int[] input, int expected)[] cases =
@@ -131,7 +129,7 @@ public class MajorityElement {
         int pass = 0, fail = 0;
         foreach (var (input, expected) in cases)
         {
-            int result = Approach_Three(input);
+            int result = ApproachThree(input);
             string status = result == expected ? "PASS" : "FAIL";
             Console.WriteLine($"[{status}] Input: [{string.Join(", ", input)}] => {result} (expected {expected})");
             if (result == expected) pass++; else fail++;
