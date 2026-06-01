@@ -106,7 +106,7 @@ public class MajorityElement {
         int pass = 0, fail = 0;
         foreach (var (input, expected) in cases)
         {
-            int result = approach_two(input);
+            int result = Approach_One(input);
             string status = result == expected ? "PASS" : "FAIL";
             Console.WriteLine($"[{status}] Input: [{string.Join(", ", input)}] => {result} (expected {expected})");
             if (result == expected) pass++; else fail++;
