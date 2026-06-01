@@ -37,9 +37,7 @@
  *          Time  : O(n)
  *          Space : O(1)
     Notes / Gotchas:
- *      - Array contains only 0,1,2
- *      - Must sort in-place
- *      - Dutch National Flag is optimal
+ *      - The majority element is the element that appears more than n/2 times in the array.
  */
 
 public class MajorityElement {
