@@ -24,7 +24,7 @@
  * Complexity:
  *
  *      Approach 1:
- *          Time  : O(n)
+ *          Time  : O(n^2)
  *          Space : O(1)
  *
  *      Approach 2:
@@ -85,6 +85,31 @@ public class MajorityElement {
         return -1;
     }
 
+    public static int Approach_Three(int[] nums) { //better approach using dictionary
+        int n = nums.Length;
+
+        foreach(int n in nums){
+            if(map.ContainsKey(n)){
+                map[n]++;
+            }
+            else{
+                map[n] = 1;
+            }
+        }
+
+        int target = nums.Length/2;
+
+        foreach(var n in map){
+            if(n.Value > target){
+                return n.Key;
+            }
+        }
+
+        return -1;
+    }
+
+
+
     
 
 
@@ -92,11 +117,10 @@ public class MajorityElement {
     {
         (int[] input, int expected)[] cases =
         [
-            ([3, 3, 6, 1],        6),   
-            ([3, 3, 0, 99, -40], 99),
-            ([-4, -3, 0, 1, -8],  1),   
-            ([-5, -2, -8],       -2),   
-            ([7],                 7),   
+            ([7, 0, 0, 1, 7, 7, 2, 7, 7],        7),   
+            ([1, 1, 1, 2, 1, 2], 1),
+            ([2,2,1,1,1,2,2],  2),   
+            ([3,2,3],       3),   
             ([1, 1, 1],           1),   
         ];
 
