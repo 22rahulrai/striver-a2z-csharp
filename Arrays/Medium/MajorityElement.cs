@@ -42,7 +42,7 @@ public class MajorityElement {
         return -1;
     }
 
-    public static int approach_two(int[] arr) {
+    public static int Approach_two(int[] arr) {
         int n = arr.Length;
 
         for(int i = 0; i < n; i++)
