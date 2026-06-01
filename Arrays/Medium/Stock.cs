@@ -119,17 +119,17 @@ public class Stock {
     {
         (int[] input, int expected)[] cases =
         [
-            ([7,1,5,3,6,4], 5),   
-            ([7,6,4,3,1],          0),
-            ([2,2,1,1,1,2,2],             2),   
-            ([3,2,3],                     3),   
-            ([1, 1, 1],                   1),   
+            ([7,1,5,3,6,4],5),   
+            ([7,6,4,3,1],  0),
+            ([1,2,3,4,5],  4),   
+            ([5],          0),   
+            ([9,2,7,1,8],  7),   
         ];
 
         int pass = 0, fail = 0;
         foreach (var (input, expected) in cases)
         {
-            int result = Approach_Two(input);
+            int result = ApproachTwo(input);
             string status = result == expected ? "PASS" : "FAIL";
             Console.WriteLine($"[{status}] Input: [{string.Join(", ", input)}] => {result} (expected {expected})");
             if (result == expected) pass++; else fail++;
