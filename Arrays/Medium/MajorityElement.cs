@@ -6,16 +6,38 @@
  * Topic     : Arrays
  * Date      : 2026-05-31
  *
- * Approach:
- *   1. Linear scan — track max as we iterate, return at end.
- *   2. Built-in — use LINQ's Max() for one-liner.
+* Approaches:
+ *
+ *   1. Brute Force 
+ *      - Count the number of 0s, 1s, and 2s in the array.
+        - Then overwrite the original array with the counted numbers in order.
+ *
+ *   2. Dutch National Flag Algorithm
+ *      - Use 3 pointers:
+ *          low  -> next position of 0
+ *          mid  -> current element
+ *          high -> next position of 2
+
+ *
+ *   3. Two Pointers
+ *      - This approach is useful conceptually but NOT ideal because:
+        - We need original indices
+        - After sorting, indices change.
  *
  * Complexity:
- *   Time  : O(n)
- *   Space : O(1)
  *
- * Notes / gotchas:
- *   - Initialize result to int.MinValue to handle all-negative arrays.
+ *      Approach 1:
+ *          Time  : O(n)
+ *          Space : O(1)
+ *
+ *      Approach 2:
+ *          Time  : O(n)
+ *          Space : O(n)
+ *
+    Notes / Gotchas:
+ *      - Array contains only 0,1,2
+ *      - Must sort in-place
+ *      - Dutch National Flag is optimal
  */
 
 public class MajorityElement {
