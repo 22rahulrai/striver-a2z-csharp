@@ -54,9 +54,7 @@ public class Stock {
             int profit = 0;
             for(int j = i+1; j < n; j++)
             {
-                if (arr[j] > arr[i])
-                    profit = arr[j] - arr[i];
-
+                profit = arr[j] - arr[i];
                 maxProfit = Math.Max(maxProfit, profit);
             }
         }
@@ -64,7 +62,7 @@ public class Stock {
         return maxProfit;
     }
 
-    public static int ApproachTwo(int[] nums) { //better approach using dictionary
+    public static int ApproachTwo(int[] nums) {
         int n = nums.Length;
         int min = nums[0], maxProfit = 0;
 
@@ -90,7 +88,7 @@ public class Stock {
         return maxProfit;
     }
 
-    public static int Approach_Three(int[] nums) { //better approach using dictionary
+    public static int Approach_Three(int[] nums) {
         int n = nums.Length;
         int candidate = -1;
         int count = 0;
