@@ -9,16 +9,13 @@
 * Approaches:
  *
  *   1. Brute Force 
- *      - Count the number of 0s, 1s, and 2s in the array.
-        - Then overwrite the original array with the counted numbers in order.
+ *      - For each element, count its occurrences in the array.
+        - If the count exceeds n/2, return that element.
  *
- *   2. Dutch National Flag Algorithm
- *      - Use 3 pointers:
- *          low  -> next position of 0
- *          mid  -> current element
- *          high -> next position of 2
+ *   2. Better Approach using Dictionary
+ *      - Use a dictionary to count occurrences of each element.
+        - Iterate through the dictionary to find the element with count > n/2.
 
- *
  *   3. Two Pointers
  *      - This approach is useful conceptually but NOT ideal because:
         - We need original indices
