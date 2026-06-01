@@ -30,7 +30,9 @@
  *      Approach 2:
  *          Time  : O(n)
  *          Space : O(n)
- *
+ *      Approach 2:
+ *          Time  : O(n)
+ *          Space : O(1)
     Notes / Gotchas:
  *      - Array contains only 0,1,2
  *      - Must sort in-place
