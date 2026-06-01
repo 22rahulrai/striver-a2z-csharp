@@ -19,6 +19,30 @@
  */
 
 public class MajorityElement {
+
+    public static int Approach_One(int[] arr) {
+        int n = arr.Length;
+
+        for(int i = 0; i < n; i++)
+        {
+            int count =0;
+            for(int j = 0; j < n; j++)
+            {
+                if (arr[i] == arr[j])
+                {
+                    count++;
+                }
+            }
+
+            if(count > (n/2))
+            {
+                return arr[i];
+            }
+        }
+
+        return -1;
+    }
+    
     public static int Approach_Two(int[] nums) {
         Dictionary<int,int> map = new Dictionary<int,int>();
 
