@@ -1,5 +1,5 @@
 /*
- * Problem   : 169. Majority Element
+ * Problem   : 53. Maximum Subarray
  * Link      : https://leetcode.com/problems/majority-element/description/
  * Platform  : TUF
  * Difficulty: Easy
