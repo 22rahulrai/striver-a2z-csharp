@@ -1,10 +1,10 @@
 /*
  * Problem   : 53. Maximum Subarray
- * Link      : https://leetcode.com/problems/majority-element/description/
- * Platform  : TUF
- * Difficulty: Easy
- * Topic     : Arrays
- * Date      : 2026-05-31
+ * Link      : https://leetcode.com/problems/maximum-subarray/description/
+ * Platform  : LeetCode
+ * Difficulty: Medium
+ * Topic     : Arrays, Kadane's Algorithm
+ * Date      : 2026-06-2
  *
 * Approaches:
  *
