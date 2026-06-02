@@ -62,26 +62,17 @@ public class KadaneAlgo {
     }
 
     public static int ApproachTwo(int[] nums) { //better approach using dictionary
-        Dictionary<int,int> map = new Dictionary<int,int>();
+        int n = nums.Length;
+        int max = int.MinValue;
 
-        foreach(int n in nums){
-            if(map.ContainsKey(n)){
-                map[n]++;
-            }
-            else{
-                map[n] = 1;
-            }
-        }
-
-        int target = nums.Length/2;
-
-        foreach(var n in map){
-            if(n.Value > target){
-                return n.Key;
+        for(int i = 0;i < n; i++){
+            int sum = 0;
+            for(int j = i;j < n; j++){
+                sum += nums[j];   
+                max = Math.Max(max,sum);
             }
         }
-
-        return -1;
+        return max;
     }
 
     public static int ApproachThree(int[] nums) { //better approach using dictionary
