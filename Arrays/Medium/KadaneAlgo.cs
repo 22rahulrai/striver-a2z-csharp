@@ -30,7 +30,7 @@
  * Complexity:
  *
  *      Approach 1:
- *          Time  : O(n^2)
+ *          Time  : O(n^3)
  *          Space : O(1)
  *
  *      Approach 2:
@@ -45,27 +45,20 @@
 
 public class KadaneAlgo {
 
-    public static int ApproachOne(int[] arr) {//brute force
-        int n = arr.Length;
+    public static int ApproachOne(int[] nums) {//brute force
+        int n = nums.Length;
+        int max = int.MinValue;
 
-        for(int i = 0; i < n; i++)
-        {
-            int count =0;
-            for(int j = 0; j < n; j++)
-            {
-                if (arr[i] == arr[j])
-                {
-                    count++;
+        for(int i = 0;i < n; i++){
+            for(int j = i;j < n; j++){
+                int sum = 0;
+                for(int k = i;k <= j;k++){
+                    sum += nums[k];
                 }
-            }
-
-            if(count > (n/2))
-            {
-                return arr[i];
+                max = Math.Max(max,sum);   
             }
         }
-
-        return -1;
+        return max;
     }
 
     public static int ApproachTwo(int[] nums) { //better approach using dictionary
