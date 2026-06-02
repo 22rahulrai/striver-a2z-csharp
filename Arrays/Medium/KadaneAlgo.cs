@@ -106,14 +106,14 @@ public class KadaneAlgo {
             ([-2,1,-3,4,-1,2,1,-5,4], 6),   
             ([1,],                    1),
             ([5,4,-1,7,8],           23),   
-            ([4,-1,2,1],              0),   
-            ([1, 1, 1],               1),   
+            ([4,-1,2,1],              6),   
+            ([2,3,5,-2,7,-4],        15),   
         ];
 
         int pass = 0, fail = 0;
         foreach (var (input, expected) in cases)
         {
-            int result = ApproachThree(input);
+            int result = ApproachOne(input);
             string status = result == expected ? "PASS" : "FAIL";
             Console.WriteLine($"[{status}] Input: [{string.Join(", ", input)}] => {result} (expected {expected})");
             if (result == expected) pass++; else fail++;
