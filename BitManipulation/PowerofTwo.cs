@@ -8,23 +8,23 @@
  *
 * Approaches:
  *
- *   1. Bit Manuplation 
- *      - A number that is a power of two has exactly one bit set in its binary representation.
+ *   
  *
- *   2. Better Approach using Dictionary
- *      - Maintain minimum stock price seen so far.
- *      - For each day calculate:
- *           profit = currentPrice - minimumPriceSeen
- *      - Update maximum profit.
+ *   1. Brute Force 
+ *      - Start with 1 (2^0) and keep multiplying by 2 until you reach or exceed n.
+ *      - If you reach n, it's a power of two; if you exceed n, it's not.
+
+ *   2. Bit Manuplation 
+ *      - A number that is a power of two has exactly one bit set in its binary representation.
 
  * Complexity:
  *
  *      Approach 1:
- *          Time  : O(n^3)
+ *          Time  : O(logn)
  *          Space : O(1)
  *
  *      Approach 2:
- *          Time  : O(n)
+ *          Time  : O(1)
  *          Space : O(1)
 
     Notes / Gotchas:
