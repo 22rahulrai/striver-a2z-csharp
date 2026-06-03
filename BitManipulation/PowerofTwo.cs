@@ -36,20 +36,27 @@ public class PowerofTwo {
     public static bool ApproachOne(int n) {
         if(n <= 0)
             return false;
+
+        long power = 1;
+
+        while(power < n)
+        {
+            power *= 2;
+        }
+
+        return power == n;
+    }
+
+    public static bool ApproachTwo(int n)
+    {
+        if(n <= 0)
+            return false;
         
         if( (n& n-1) == 0)
             return true;
 
         return false;
     }
-
-    // public static bool ApproachTwo(int n)
-    // {
-    //     if(n <= 0)
-    //         return false;
-
-    //     if(n )
-    // }
 
     public static void Test()
     {
