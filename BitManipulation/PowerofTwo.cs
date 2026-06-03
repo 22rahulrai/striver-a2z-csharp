@@ -1,5 +1,5 @@
 /*
- * Problem   : 53. Maximum Subarray
+ * Problem   : 231. Power of Two
  * Link      : https://leetcode.com/problems/maximum-subarray/description/
  * Platform  : LeetCode
  * Difficulty: Medium
