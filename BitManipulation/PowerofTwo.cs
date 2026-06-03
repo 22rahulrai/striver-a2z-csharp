@@ -43,6 +43,14 @@ public class PowerofTwo {
         return false;
     }
 
+    // public static bool ApproachTwo(int n)
+    // {
+    //     if(n <= 0)
+    //         return false;
+
+    //     if(n )
+    // }
+
     public static void Test()
     {
         (int input, bool expected)[] cases =
