@@ -1,17 +1,15 @@
 /*
  * Problem   : 231. Power of Two
- * Link      : https://leetcode.com/problems/maximum-subarray/description/
+ * Link      : https://leetcode.com/problems/power-of-two/description/
  * Platform  : LeetCode
  * Difficulty: Medium
- * Topic     : Arrays, Kadane's Algorithm
- * Date      : 2026-06-2
+ * Topic     : Bit Manipulation, Recursion
+ * Date      : 2026-06-3
  *
 * Approaches:
  *
- *   1. Brute Force 
- *      - Try buying on every day.
- *      - Check all future days as selling days.
- *      - Track maximum profit.
+ *   1. Bit Manuplation 
+ *      - A number that is a power of two has exactly one bit set in its binary representation.
  *
  *   2. Better Approach using Dictionary
  *      - Maintain minimum stock price seen so far.
