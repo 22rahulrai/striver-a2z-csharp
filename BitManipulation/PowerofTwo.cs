@@ -17,8 +17,6 @@
  *           profit = currentPrice - minimumPriceSeen
  *      - Update maximum profit.
 
- *   
- *
  * Complexity:
  *
  *      Approach 1:
