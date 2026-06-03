@@ -43,30 +43,6 @@ public class PowerofTwo {
         return false;
     }
 
-    public static int ApproachThree(int[] nums) { //better approach using dictionary
-        int n = nums.Length;
-        int candidate = -1;
-        int count = 0;
-
-        foreach(int num in nums){
-            if(count == 0)
-            {
-                candidate = num;
-            }
-
-            if(num == candidate)
-            {
-                count++;
-            }
-            else
-            {
-                count--;
-            }
-        }
-
-        return candidate;
-    }
-
     public static void Test()
     {
         (int input, bool expected)[] cases =
