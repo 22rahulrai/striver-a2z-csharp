@@ -17,13 +17,7 @@
  *           profit = currentPrice - minimumPriceSeen
  *      - Update maximum profit.
 
- *   3. Optimal Approach 
- *      - Use Boyer-Moore Voting Algorithm:
-        - Initialize a candidate and count.
-        - Iterate through the array:
-            - If count is 0, set candidate to current element.
-            - If current element is the candidate, increment count; otherwise, decrement count.
-        - The candidate at the end will be the majority element.
+ *   
  *
  * Complexity:
  *
