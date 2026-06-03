@@ -26,10 +26,15 @@
  *      Approach 2:
  *          Time  : O(1)
  *          Space : O(1)
+ *      Approach 3:
+ *          Time  : O(1)
+ *          Space : O(1)
 
     Notes / Gotchas:
  *      - A number that is a power of two has exactly one bit set in its binary representation.
  */
+
+using System.Numerics;
 
 public class PowerofTwo {
 
@@ -56,6 +61,11 @@ public class PowerofTwo {
             return true;
 
         return false;
+    }
+
+    public static bool ApproachThree(int n)
+    {
+        return n >0 && BitOperations.PopCount((uint)n) == 1;
     }
 
     public static void Test()
