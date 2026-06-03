@@ -47,13 +47,13 @@ public class PowerofTwo {
     {
         (int input, bool expected)[] cases =
         [
-            (1, true),
-            (16, true),   
-            (3, false),   
-            (4, true),   
-            (5, false),
-            (0, false),   
-            (-2, false),   
+            (1,    true),
+            (16,   true),   
+            (3,    false),   
+            (4,    true),   
+            (5,    false),
+            (0,    false),   
+            (-2,   false),   
             (1024, true),   
             (1023, false),
         ];
