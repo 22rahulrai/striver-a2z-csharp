@@ -8,8 +8,6 @@
  *
 * Approaches:
  *
- *   
- *
  *   1. Brute Force 
  *      - Start with 1 (2^0) and keep multiplying by 2 until you reach or exceed n.
  *      - If you reach n, it's a power of two; if you exceed n, it's not.
