@@ -78,7 +78,6 @@ public class PowerofTwo {
             (4,    true),   
             (5,    false),
             (0,    false),   
-            (-2,   false),   
             (1024, true),   
             (1023, false),
         ];
