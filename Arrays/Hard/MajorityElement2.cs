@@ -57,7 +57,7 @@ public class MajorityElement2 {
                 }
             }
 
-            if(count > (n/2))
+            if(count > (n/3))
             {
                 return arr[i];
             }
@@ -67,25 +67,27 @@ public class MajorityElement2 {
     }
 
     public static int ApproachTwo(int[] nums) { //better approach using dictionary
-        Dictionary<int,int> map = new Dictionary<int,int>();
+        Dictionary<int, int> map = new Dictionary<int, int>();
 
-        foreach(int n in nums){
-            if(map.ContainsKey(n)){
-                map[n]++;
+        for(int i = 0; i < nums.Length; i++)
+        {
+            if (map.ContainsKey(nums[i]))
+            {
+                map[nums[i]]++;
             }
-            else{
-                map[n] = 1;
+            else
+            {
+                map[nums[i]] = 1;
             }
         }
 
-        int target = nums.Length/2;
+        int target = nums.Length / 3;
 
-        foreach(var n in map){
-            if(n.Value > target){
+        foreach(var n in map)
+        {
+            if(n.Value > target)
                 return n.Key;
-            }
         }
-
         return -1;
     }
 
