@@ -43,8 +43,9 @@
 
 public class MajorityElement2 {
 
-    public static int ApproachOne(int[] arr) {//brute force
+    public static IList<int> ApproachOne(int[] arr) {//brute force
         int n = arr.Length;
+        List<int> result = new List<int>();
 
         for(int i = 0; i < n; i++)
         {
@@ -57,17 +58,19 @@ public class MajorityElement2 {
                 }
             }
 
-            if(count > (n/3))
+            if(count > (n/3) && !result.Contains(arr[i]))
             {
-                return arr[i];
+                result.Add(arr[i]);
             }
         }
 
-        return -1;
+        return result;
     }
 
-    public static int ApproachTwo(int[] nums) { //better approach using dictionary
+    public static IList<int> ApproachTwo(int[] nums) { //better approach using dictionary
         Dictionary<int, int> map = new Dictionary<int, int>();
+
+
 
         for(int i = 0; i < nums.Length; i++)
         {
