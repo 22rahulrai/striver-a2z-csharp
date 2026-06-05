@@ -2,7 +2,7 @@
  * Problem   : 229. Majority Element
  * Link      : https://leetcode.com/problems/majority-element-ii/
  * Platform  : LeetCode
- * Difficulty: Easy
+ * Difficulty: Medium
  * Topic     : Arrays
  * Date      : 2026-06-06
  *
