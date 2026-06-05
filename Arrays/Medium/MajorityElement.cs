@@ -9,9 +9,7 @@
 * Approaches:
  *
  *   1. Brute Force 
- *      - Try buying on every day.
- *      - Check all future days as selling days.
- *      - Track maximum profit.
+ *      - For each element, count its occurrences in the array.
  *
  *   2. Better Approach using Dictionary
  *      - Maintain minimum stock price seen so far.
