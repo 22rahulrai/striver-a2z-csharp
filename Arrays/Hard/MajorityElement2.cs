@@ -69,8 +69,7 @@ public class MajorityElement2 {
 
     public static IList<int> ApproachTwo(int[] nums) { //better approach using dictionary
         Dictionary<int, int> map = new Dictionary<int, int>();
-
-
+        List<int> result = new List<int>();
 
         for(int i = 0; i < nums.Length; i++)
         {
@@ -89,9 +88,9 @@ public class MajorityElement2 {
         foreach(var n in map)
         {
             if(n.Value > target)
-                return n.Key;
+                result.Add(n.Key);
         }
-        return -1;
+        return result;
     }
 
     public static int ApproachThree(int[] nums) { //better approach using dictionary
