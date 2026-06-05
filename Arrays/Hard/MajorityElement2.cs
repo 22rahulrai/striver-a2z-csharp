@@ -1,7 +1,7 @@
 /*
- * Problem   : 169. Majority Element
- * Link      : https://leetcode.com/problems/majority-element/description/
- * Platform  : TUF
+ * Problem   : 229. Majority Element
+ * Link      : https://leetcode.com/problems/majority-element-ii/
+ * Platform  : LeetCode
  * Difficulty: Easy
  * Topic     : Arrays
  * Date      : 2026-05-31
