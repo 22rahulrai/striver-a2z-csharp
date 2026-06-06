@@ -93,22 +93,7 @@ public class RearrangeArrayElementsBySign {
     }
 
     public static void Approach_Three(int[] nums) {
-        int n = nums.Length;
-        int s=0;
-
-        for(int i=0;i<n;i++){
-            if(nums[i]!=0){
-                if(i != s) {
-                    // int temp = nums[i];
-                    // nums[i] = nums[s];
-                    // nums[s] = temp;
-
-                    // using tuple 
-                    (nums[i],nums[s]) = (nums[s],nums[i]) ;
-                }
-                s++;
-            }
-        }
+        
     }
 
 
