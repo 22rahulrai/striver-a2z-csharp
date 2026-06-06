@@ -36,10 +36,9 @@
  *          Space : O(n)
  *
  * Notes / Gotchas:
- *   - Problem requires in-place modification
- *   - Maintain relative order of non-zero elements
- *   - Overwrite method avoids unnecessary swaps
- *   - Tuple swapping used in C# for cleaner syntax
+ *   - Relative order must be preserved.
+ *      - Result must start with a positive number.
+ *      - Number of positive and negative elements is equal.
  */
 
 using System.ComponentModel;
