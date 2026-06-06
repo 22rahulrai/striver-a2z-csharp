@@ -43,7 +43,7 @@
 
 using System.ComponentModel;
 
-public class MoveZeroes {
+public class RearrangeArrayElementsBySign {
     //Brute force approach 
     public static void approach_one(int[] nums) 
     {
