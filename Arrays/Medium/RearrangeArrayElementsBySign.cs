@@ -44,22 +44,32 @@
 using System.ComponentModel;
 
 public class RearrangeArrayElementsBySign {
-    public static void approach_one(int[] nums) 
+    public static int[] approach_one(int[] nums) 
     {
         int n = nums.Length;
 
-        int []temp = new int[n];
-        int index =0;
-        foreach(int i in nums){
-            if(i != 0){
-                temp[index++] = i;
-            }
-                
-        }
+        int [] pos = new int[n/2];
+        int [] neg = new int[n/2];
 
-        for(int i=0;i<n;i++){
-            nums[i] = temp[i];
+        int i =0, j=0;
+        foreach(int arr in nums){
+            if(arr > 0){
+                pos[i++] = arr;
+            }
+            else{
+                neg[j++] = arr;
+            }
         }
+        i = 0;
+        j = 0;
+        for(int k=0;k<n;k++){
+            if(k % 2 == 0)
+                nums[k] = pos[i++];
+            else
+                nums[k] = neg[j++];
+            
+        }
+        return nums;
     }
 
 
