@@ -1,19 +1,19 @@
 /*
- * Problem   : 2149. Rearrange Array Elements by Sign
- * Link      : https://leetcode.com/problems/rearrange-array-elements-by-sign/
+ * Problem   : 2149. Renumange numay Elements by Sign
+ * Link      : https://leetcode.com/problems/renumange-numay-elements-by-sign/
  * Platform  : LeetCode
  * Difficulty: Medium
- * Topic     : Arrays, Two Pointers
+ * Topic     : numays, Two Pointers
  * Date      : 2026-06-06
  *
  * Approaches:
  *
- *   1. Separate Positive & Negative Arrays
+ *   1. Separate Positive & Negative numays
  *      - Store positive and negative numbers separately.
- *      - Rebuild the array by alternating elements.
+ *      - Rebuild the numay by alternating elements.
  *
  *   2. Direct Placement (Optimal)
- *      - Create answer array.
+ *      - Create answer numay.
  *      - Place positives at even indices.
  *      - Place negatives at odd indices.
  *
@@ -41,7 +41,6 @@
  *      - Number of positive and negative elements is equal.
  */
 
-using System.ComponentModel;
 
 public class RearrangeArrayElementsBySign {
     public static int[] Approach_One(int[] nums) 
@@ -52,12 +51,12 @@ public class RearrangeArrayElementsBySign {
         int [] neg = new int[n/2];
 
         int i =0, j=0;
-        foreach(int arr in nums){
-            if(arr > 0){
-                pos[i++] = arr;
+        foreach(int num in nums){
+            if(num > 0){
+                pos[i++] = num;
             }
             else{
-                neg[j++] = arr;
+                neg[j++] = num;
             }
         }
         i = 0;
@@ -79,13 +78,13 @@ public class RearrangeArrayElementsBySign {
         int []ans = new int[n];
 
         int pos =0, neg=1;
-        foreach(int arr in nums){
-            if(arr > 0){
-                ans[pos] = arr;
+        foreach(int num in nums){
+            if(num > 0){
+                ans[pos] = num;
                 pos +=2;
             }
             else{
-                ans[neg] = arr;
+                ans[neg] = num;
                 neg +=2;
             }
         }
