@@ -73,19 +73,23 @@ public class RearrangeArrayElementsBySign {
     }
 
 
-    public static void approach_two(int[] nums) {
+    public static int[] approach_two(int[] nums) {
         int n = nums.Length;
-        int s=0;
 
-        for(int i=0;i<n;i++){
-            if(nums[i]!=0){
-                nums[s++] = nums[i];
+        int []ans = new int[n];
+
+        int pos =0, neg=1;
+        foreach(int arr in nums){
+            if(arr > 0){
+                ans[pos] = arr;
+                pos +=2;
+            }
+            else{
+                ans[neg] = arr;
+                neg +=2;
             }
         }
-
-        for(int i=s; i<n;i++){
-            nums[i]=0;
-        }
+        return ans;
     }
 
     public static void approach_three(int[] nums) {
