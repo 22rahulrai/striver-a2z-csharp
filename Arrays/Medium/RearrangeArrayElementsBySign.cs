@@ -44,7 +44,7 @@
 using System.ComponentModel;
 
 public class RearrangeArrayElementsBySign {
-    public static int[] approach_one(int[] nums) 
+    public static int[] Approach_One(int[] nums) 
     {
         int n = nums.Length;
 
@@ -123,26 +123,23 @@ public class RearrangeArrayElementsBySign {
     {
         (int[] input, int []expected)[] cases =
         [
-            (new int[]{0,1,0,3,12},  new int[]{1,3,12,0,0}),
-            (new int[]{1,0,1},  new int[]{1,1,0}),
-            (new int[]{1 ,0 ,2 ,3 ,0 ,4 ,0 ,1}, new int[]{1 ,2 ,3 ,4 ,1 ,0 ,0 ,0}),
-            (new int[]{1,2,0,1,0,4,0}, new int[]{1,2,1,4,0,0,0}),
-            (new int[]{0},  new int[]{0}),
-            (new int[]{2,1},  new int[]{2,1}),
+            ([3,1,-2,-5,2,-4], [3,-2,1,-5,2,-4]),
+            ([-1,1], [1,-1]),
+            ([1,2,-3,-4], [1,-3,2,-4]),
+            ([-5,-2,5,2], [5,-5,2,-2]),
+            ([1,-1,1,-1], [1,-1,1,-1])
         ];
 
         int pass = 0, fail = 0;
         foreach (var (input, expected) in cases)
         {
-            int[] arr = (int[])input.Clone(); 
+            int [] result = Approach_One(input); 
 
-            approach_two(arr); // test optimal
-
-            bool isEqual = AreEqual(arr, expected);
+            bool isEqual = AreEqual(result, expected);
 
             string status = isEqual ? "PASS" : "FAIL";
 
-            Console.WriteLine($"[{status}] → [{string.Join(", ", arr)}] (expected [{string.Join(", ", expected)}])");
+            Console.WriteLine($"[{status}] → [{string.Join(", ", result)}] (expected [{string.Join(", ", expected)}])");
 
             if (isEqual) pass++; else fail++;
         }
