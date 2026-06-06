@@ -12,13 +12,14 @@
  *      - Store positive and negative numbers separately.
  *      - Rebuild the array by alternating elements.
  *
- *   2. Overwrite Method (better)
- *      - Shift non-zero elements forward
- *      - Fill remaining positions with zeroes
+ *   2. Direct Placement (Optimal)
+ *      - Create answer array.
+ *      - Place positives at even indices.
+ *      - Place negatives at odd indices.
  *
- *   3. Swap Method (Optimal Two Pointers)
- *      - Maintain pointer for next non-zero position
- *      - Swap current non-zero element into correct place
+ *   3. LINQ Approach
+ *      - Extract positive and negative numbers using Where().
+ *      - Merge them alternately.
  *
  * Complexity:
  *
