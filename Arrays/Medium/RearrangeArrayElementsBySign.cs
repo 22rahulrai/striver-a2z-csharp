@@ -1,6 +1,6 @@
 /*
  * Problem   : 2149. Rearrange Array Elements by Sign
- * Link      : https://leetcode.com/problems/move-zeroes/
+ * Link      : https://leetcode.com/problems/rearrange-array-elements-by-sign/description/
  * Platform  : LeetCode
  * Difficulty: Easy
  * Topic     : Arrays, Two Pointers
