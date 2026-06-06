@@ -2,9 +2,9 @@
  * Problem   : 2149. Rearrange Array Elements by Sign
  * Link      : https://leetcode.com/problems/rearrange-array-elements-by-sign/description/
  * Platform  : LeetCode
- * Difficulty: Easy
+ * Difficulty: Medium
  * Topic     : Arrays, Two Pointers
- * Date      : 2026-05-07
+ * Date      : 2026-06-06
  *
  * Approaches:
  *
