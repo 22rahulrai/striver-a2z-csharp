@@ -73,7 +73,7 @@ public class RearrangeArrayElementsBySign {
     }
 
 
-    public static int[] approach_two(int[] nums) {
+    public static int[] Approach_Two(int[] nums) {
         int n = nums.Length;
 
         int []ans = new int[n];
