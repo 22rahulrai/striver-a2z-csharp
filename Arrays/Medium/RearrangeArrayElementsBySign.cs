@@ -92,8 +92,19 @@ public class RearrangeArrayElementsBySign {
         return ans;
     }
 
-    public static void Approach_Three(int[] nums) {
-        
+    public static int[] Approach_Three(int[] nums) {
+        int[] pos = nums.Where(x => x > 0).ToArray();
+        int[] neg = nums.Where(x => x < 0).ToArray();
+
+        int p = 0, n = 0;
+        for(int i = 0; i < nums.Length; i++)
+        {
+            if(i % 2 == 0)
+                nums[i] = pos[p++];
+            else
+                nums[i] = neg[n++];
+        }
+        return nums; 
     }
 
 
@@ -120,7 +131,7 @@ public class RearrangeArrayElementsBySign {
         int pass = 0, fail = 0;
         foreach (var (input, expected) in cases)
         {
-            int [] result = Approach_One(input); 
+            int [] result = Approach_Three(input); 
 
             bool isEqual = AreEqual(result, expected);
 
