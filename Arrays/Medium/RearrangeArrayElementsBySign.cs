@@ -108,8 +108,6 @@ public class RearrangeArrayElementsBySign {
     }
 
 
-
-
     public static bool AreEqual(int[] a, int[] b) {
         if (a.Length != b.Length) return false;
 
