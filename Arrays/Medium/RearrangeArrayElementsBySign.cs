@@ -29,11 +29,11 @@
  *
  *      Approach 2:
  *          Time  : O(n)
- *          Space : O(1)
+ *          Space : O(n)
  *
  *      Approach 3:
  *          Time  : O(n)
- *          Space : O(1)
+ *          Space : O(n)
  *
  * Notes / Gotchas:
  *   - Problem requires in-place modification
