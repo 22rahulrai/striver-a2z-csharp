@@ -92,7 +92,7 @@ public class RearrangeArrayElementsBySign {
         return ans;
     }
 
-    public static void approach_three(int[] nums) {
+    public static void Approach_Three(int[] nums) {
         int n = nums.Length;
         int s=0;
 
