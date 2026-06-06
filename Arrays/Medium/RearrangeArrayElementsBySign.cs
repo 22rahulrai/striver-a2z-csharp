@@ -8,9 +8,9 @@
  *
  * Approaches:
  *
- *   1. Brute Force (Extra Array)
- *      - Store all non-zero elements in temp array
- *      - Copy temp back to original array
+ *   1. Separate Positive & Negative Arrays
+ *      - Store positive and negative numbers separately.
+ *      - Rebuild the array by alternating elements.
  *
  *   2. Overwrite Method (better)
  *      - Shift non-zero elements forward
