@@ -115,3 +115,4 @@ public class ArrayLeaders {
             Console.WriteLine($"[{status}] Result = [{string.Join(", ", result)}] " + $"Expected = [{string.Join(", ", expected)}]");
 
             if (isEqual) pass++; else fail++;
+        }
