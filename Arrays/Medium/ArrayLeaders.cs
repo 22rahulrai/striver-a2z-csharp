@@ -62,17 +62,17 @@ public class ArrayLeaders {
         int n = arr.Length;
         
         List<int> res= new List<int>();
-        foreach(int num in a)
-        {
-            set.Add(num);
-        }
-        foreach(int num in b)
-        {
-            set.Add(num);
-        }
+        res.Add(arr[n-1]);
+        int max = arr[n-1];
 
-        List<int> res = set.ToList();
-        res.Sort();
+        for(int i = n-2; i >= 0; i--)
+        {
+            if (arr[i] > max)
+            {
+                res.Add(arr[i]);
+                max = arr[i];
+            }
+        }
 
         return res;
     }
@@ -166,7 +166,7 @@ public class ArrayLeaders {
         foreach (var (input1,  expected) in cases)
         {
 
-            List<int> result = Approach_One(input1);
+            List<int> result = Approach_two(input1);
 
             bool isEqual = AreEqual(result, expected);
 
