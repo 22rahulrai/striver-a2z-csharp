@@ -59,6 +59,7 @@ public class RearrangeArrayElementsBySign {
                 neg[j++] = num;
             }
         }
+        
         i = 0;
         j = 0;
         for(int k=0;k<n;k++){
