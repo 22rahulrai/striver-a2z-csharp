@@ -42,3 +42,4 @@ public class ArrayLeaders {
             for(int j = i+1; j < n; j++){
                 if(arr[i] < arr[j]){
                     isLeader = false;
+                    break;
