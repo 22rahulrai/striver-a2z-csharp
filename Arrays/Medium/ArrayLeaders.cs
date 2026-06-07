@@ -94,3 +94,4 @@ public class ArrayLeaders {
     public static void Test()
     {
         (int[] input1, int []expected)[] cases =
+        [
