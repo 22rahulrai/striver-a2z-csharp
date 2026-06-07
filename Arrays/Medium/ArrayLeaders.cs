@@ -55,3 +55,4 @@ public class ArrayLeaders {
     public static List<int> Approach_two(int[] arr) 
     {
 
+        int n = arr.Length;
