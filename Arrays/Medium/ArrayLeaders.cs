@@ -104,3 +104,4 @@ public class ArrayLeaders {
 
         int pass = 0, fail = 0;
         foreach (var (input1,  expected) in cases)
+        {
