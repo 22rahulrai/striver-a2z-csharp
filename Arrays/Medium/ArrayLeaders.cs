@@ -36,27 +36,26 @@
  */
 
 public class ArrayLeaders {
-    public static List<int> Approach_one(int[] a, int [] b){
-        // Brute force 
-        // TC : O((n+m)2) // Space : O(n+m)
-        List<int> res = new List<int>();
+    public static List<int> Approach_One(int[] arr){
+        int n = arr.Length;
         
-        int n = a.Length;
-        int m = b.Length;
+        List<int> res= new List<int>();
         
-        for(int i=0;i<n;i++){
-            if(!res.Contains(a[i])){
-                res.Add(a[i]);
+        for(int i = 0;i < n; i++){
+            bool isLeader = true;
+            for(int j = i+1;j < n; j++){
+                if(arr[i] < arr[j]){
+                    isLeader = false;
+                    break;
+                }
+
+
+                
             }
+            if(isLeader)
+                res.Add(arr[i]);
         }
         
-        for(int i=0;i<m;i++){
-            if(!res.Contains(b[i])){
-                res.Add(b[i]);
-            }
-        }
-        
-        res.Sort();
         return res;
     }
 
