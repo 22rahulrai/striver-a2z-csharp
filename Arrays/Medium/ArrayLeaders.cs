@@ -39,3 +39,4 @@ public class ArrayLeaders {
         
         for(int i = 0; i < n; i++){
             bool isLeader = true;
+            for(int j = i+1; j < n; j++){
