@@ -7,3 +7,4 @@
  * Date      : 2026-06-07
  *
  * Approach:
+ *  1. Brute force
