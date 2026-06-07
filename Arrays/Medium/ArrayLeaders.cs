@@ -22,10 +22,6 @@
  * Time  : O(n^2)
  * Space : O(1)
  *
- * HashSet
- * Time  : O((n+m) log(n+m))
- * Space : O(n+m)
- *
  * Two Pointer (Optimal)
  * Time  : O(n+m)
  * Space : O(n+m) 
