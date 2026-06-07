@@ -150,9 +150,9 @@ public class ArrayLeaders {
 
     public static void Test()
     {
-        (int[] input1, int[] input2, int []expected)[] cases =
+        (int[] input1, int []expected)[] cases =
         [
-            (new int[]{1, 2, 3, 4, 5}, new int[]{1, 2, 7}, new int[]{1, 2, 3, 4, 5, 7}),
+            ([16, 17, 4, 3, 5, 2], [17, 5, 2]),
             (new int[]{3, 4, 6, 7, 9, 9}, new int[]{1, 5, 7, 8, 8}, new int[]{1, 3, 4, 5, 6, 7, 8, 9}),
             (new int[]{2, 2, 3, 4, 5}, new int[]{1, 1, 2, 3, 4}, new int[]{1, 2, 3, 4, 5}),
             (new int[]{1, 1, 1, 1, 1}, new int[]{2, 2, 2, 2, 2}, new int[]{1,2})
