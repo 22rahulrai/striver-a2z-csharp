@@ -57,3 +57,4 @@ public class ArrayLeaders {
 
         int n = arr.Length;
 
+        if (arr == null || n == 0)
