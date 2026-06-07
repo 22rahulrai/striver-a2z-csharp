@@ -106,3 +106,4 @@ public class ArrayLeaders {
         foreach (var (input1,  expected) in cases)
         {
 
+            List<int> result = Approach_two(input1);
