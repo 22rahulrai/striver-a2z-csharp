@@ -77,67 +77,6 @@ public class ArrayLeaders {
 
         return res;
     }
-
-    public static List<int> Approach_three(int[] a, int [] b)
-    {
-        List<int> res = new List<int>();
-
-        int n = a.Length;
-        int m = b.Length;
-
-        int i = 0, j = 0;
-
-        while(i < n && j < m)
-        {
-            // Skip duplicates in a
-            if(i > 0 && a[i] == a[i - 1])
-            {
-                i++;
-                continue;
-            }
-            // skip duplicates in b
-            if(j > 0 && b[j] == b[j - 1])
-            {
-                j++;
-                continue;
-            }
-
-            if (a[i] < b[j])
-            {
-                res.Add(a[i++]);
-            }
-            else if(a[i] > b[j])
-            {
-                res.Add(b[j++]);
-            }
-            else
-            {
-                res.Add(a[i]);
-                i++;
-                j++;
-            }
-        }
-        // Add remaining elements from a
-        while(i < n)
-        {
-            if(i == 0 || a[i] != a[i-1])
-            {
-                res.Add(a[i]);
-            }
-            i++;
-        }
-        // Add remaining elements from a
-        while(j < m)
-        {
-            if(j == 0 || b[j] != b[j-1])
-            {
-                res.Add(b[j]);
-            }
-            j++;
-        }
-
-        return res;
-    }
     
     public static bool AreEqual(List<int> a, int[] b)
     {
