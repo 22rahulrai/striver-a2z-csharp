@@ -70,3 +70,4 @@ public class ArrayLeaders {
             {
                 res.Add(arr[i]);
                 max = arr[i];
+            }
