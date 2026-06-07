@@ -46,3 +46,4 @@ public class ArrayLeaders {
                 }
             }
             if(isLeader)
+                res.Add(arr[i]);
