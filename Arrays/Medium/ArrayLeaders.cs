@@ -8,8 +8,8 @@
  *
  * Approach:
  *  1. Brute force
-       — Use a list to store unique elements from both arrays
-       — Check for duplicates before adding to the list
+       — Iterate through the array and for each element, check if it is greater than all the elements to its right.
+       — If it is, add it to the list of leaders.
  *  2. HashSet
        — Use a HashSet to store unique elements from both arrays
        — Convert the HashSet to a list and sort it before returning
@@ -36,7 +36,7 @@
  */
 
 public class ArrayLeaders {
-    public static List<int> Approach_One(int[] arr){
+    public static List<int> Approach_One(int[] arr){ //brute force
         int n = arr.Length;
         
         List<int> res= new List<int>();
