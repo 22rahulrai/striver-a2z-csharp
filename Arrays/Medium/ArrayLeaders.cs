@@ -110,3 +110,4 @@ public class ArrayLeaders {
 
             bool isEqual = AreEqual(result, expected);
 
+            string status = isEqual ? "PASS" : "FAIL";
