@@ -15,3 +15,4 @@
        — If the current element is greater than the maximum, it is a leader. Add it to the list and update the maximum.
        — Reverse the list of leaders before returning to maintain the original order.
 
+ *
