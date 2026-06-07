@@ -56,10 +56,12 @@ public class ArrayLeaders {
         return res;
     }
 
-    public static List<int> Approach_two(int[] a, int [] b) 
+    public static List<int> Approach_two(int[] arr) 
     {
 
-        HashSet<int> set = new HashSet<int>();
+        int n = arr.Length;
+        
+        List<int> res= new List<int>();
         foreach(int num in a)
         {
             set.Add(num);
