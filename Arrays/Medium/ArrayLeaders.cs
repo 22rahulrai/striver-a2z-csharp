@@ -69,3 +69,4 @@ public class ArrayLeaders {
             if (arr[i] > max)
             {
                 res.Add(arr[i]);
+                max = arr[i];
