@@ -61,3 +61,4 @@ public class ArrayLeaders {
             return new List<int>();
         
         List<int> res= new List<int>();
+        res.Add(arr[n-1]);
