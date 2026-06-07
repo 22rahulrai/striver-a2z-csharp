@@ -41,13 +41,12 @@ public class ArrayLeaders {
         
         List<int> res= new List<int>();
         
-        for(int i = 0;i < n; i++){
+        for(int i = 0; i < n; i++){
             bool isLeader = true;
-            for(int j = i+1;j < n; j++){
-                if(arr[i] < arr[j]){
+            for(int j = i+1; j < n; j++){
+                if(arr[i] < arr[j])
                     isLeader = false;
                     break;
-                }
             }
             if(isLeader)
                 res.Add(arr[i]);
