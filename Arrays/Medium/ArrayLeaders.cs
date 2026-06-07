@@ -56,6 +56,9 @@ public class ArrayLeaders {
     {
 
         int n = arr.Length;
+
+        if (arr == null || n == 0)
+            return new List<int>();
         
         List<int> res= new List<int>();
         res.Add(arr[n-1]);
