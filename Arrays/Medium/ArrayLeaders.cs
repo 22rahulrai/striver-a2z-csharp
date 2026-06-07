@@ -23,8 +23,8 @@
  * Space : O(1)
  *
  * Optimal
- * Time  : O(n+m)
- * Space : O(n+m) 
+ * Time  : O(n)
+ * Space : O(1) 
  *
  *
  */
