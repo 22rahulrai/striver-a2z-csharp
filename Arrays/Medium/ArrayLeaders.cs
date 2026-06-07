@@ -33,3 +33,4 @@
 
 public class ArrayLeaders {
     public static List<int> Approach_One(int[] arr){ //brute force
+        int n = arr.Length;
