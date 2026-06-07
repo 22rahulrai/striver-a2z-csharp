@@ -43,3 +43,4 @@ public class ArrayLeaders {
                 if(arr[i] < arr[j]){
                     isLeader = false;
                     break;
+                }
