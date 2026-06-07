@@ -117,3 +117,4 @@ public class ArrayLeaders {
             if (isEqual) pass++; else fail++;
         }
 
+        Console.WriteLine($"\n{pass} passed, {fail} failed.");
