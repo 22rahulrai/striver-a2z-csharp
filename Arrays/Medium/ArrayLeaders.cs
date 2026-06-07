@@ -73,3 +73,4 @@ public class ArrayLeaders {
             }
         }
 
+        res.Reverse();
