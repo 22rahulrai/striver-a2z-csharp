@@ -44,9 +44,10 @@ public class ArrayLeaders {
         for(int i = 0; i < n; i++){
             bool isLeader = true;
             for(int j = i+1; j < n; j++){
-                if(arr[i] < arr[j])
+                if(arr[i] < arr[j]){
                     isLeader = false;
                     break;
+                }
             }
             if(isLeader)
                 res.Add(arr[i]);
@@ -160,10 +161,10 @@ public class ArrayLeaders {
         ];
 
         int pass = 0, fail = 0;
-        foreach (var (input1, input2, expected) in cases)
+        foreach (var (input1,  expected) in cases)
         {
 
-            List<int> result = Approach_two(input1, input2);
+            List<int> result = Approach_One(input1);
 
             bool isEqual = AreEqual(result, expected);
 
