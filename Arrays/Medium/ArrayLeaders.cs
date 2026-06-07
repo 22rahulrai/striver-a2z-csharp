@@ -85,3 +85,4 @@ public class ArrayLeaders {
 
         for (int i = 0; i < a.Count; i++)
         {
+            if (a[i] != b[i])
