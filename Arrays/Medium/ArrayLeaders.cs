@@ -48,9 +48,6 @@ public class ArrayLeaders {
                     isLeader = false;
                     break;
                 }
-
-
-                
             }
             if(isLeader)
                 res.Add(arr[i]);
