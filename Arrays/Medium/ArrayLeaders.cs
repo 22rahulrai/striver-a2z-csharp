@@ -95,3 +95,4 @@ public class ArrayLeaders {
     {
         (int[] input1, int []expected)[] cases =
         [
+            ([16, 17, 4, 3, 5, 2], [17, 5, 2]),
