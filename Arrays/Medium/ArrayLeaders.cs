@@ -83,3 +83,4 @@ public class ArrayLeaders {
         if (a.Count != b.Length)
             return false;
 
+        for (int i = 0; i < a.Count; i++)
