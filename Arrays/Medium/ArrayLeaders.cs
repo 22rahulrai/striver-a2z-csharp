@@ -102,3 +102,4 @@ public class ArrayLeaders {
             ([1], [1])
         ];
 
+        int pass = 0, fail = 0;
