@@ -13,10 +13,7 @@
  *  2. HashSet
        — Use a HashSet to store unique elements from both arrays
        — Convert the HashSet to a list and sort it before returning
-    3. Two pointers (Optimal)
-       — Use two pointers to traverse both sorted arrays simultaneously
-       — Add unique elements to the result list while traversing
-       — Handle duplicates by skipping over them in both arrays
+
  *
  * Complexity 
  *
