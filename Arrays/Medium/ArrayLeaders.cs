@@ -27,3 +27,4 @@
  * Space : O(1) 
  *
  * Notes / Gotchas:
+ *   - The rightmost element is always a leader.
