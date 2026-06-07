@@ -38,3 +38,4 @@ public class ArrayLeaders {
         List<int> res= new List<int>();
         
         for(int i = 0; i < n; i++){
+            bool isLeader = true;
