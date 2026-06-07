@@ -52,3 +52,4 @@ public class ArrayLeaders {
         return res;
     }
 
+    public static List<int> Approach_two(int[] arr) 
