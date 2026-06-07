@@ -3,7 +3,7 @@
  * Link      : https://leetcode.com/problems/renumange-numay-elements-by-sign/
  * Platform  : LeetCode
  * Difficulty: Medium
- * Topic     : numays, Two Pointers
+ * Topic     : Arrays, Two Pointers
  * Date      : 2026-06-06
  *
  * Approaches:
@@ -59,7 +59,7 @@ public class RearrangeArrayElementsBySign {
                 neg[j++] = num;
             }
         }
-        
+
         i = 0;
         j = 0;
         for(int k=0;k<n;k++){
