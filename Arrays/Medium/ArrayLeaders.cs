@@ -12,3 +12,4 @@
        — If it is, add it to the list of leaders.
  *  2. Optimal Approach
        — Traverse the array from right to left, keeping track of the maximum element seen so far.
+       — If the current element is greater than the maximum, it is a leader. Add it to the list and update the maximum.
