@@ -6,3 +6,4 @@
  * Topic     : Arrays
  * Date      : 2026-06-07
  *
+ * Approach:
