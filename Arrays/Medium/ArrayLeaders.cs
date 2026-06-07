@@ -36,3 +36,4 @@ public class ArrayLeaders {
         int n = arr.Length;
         
         List<int> res= new List<int>();
+        
