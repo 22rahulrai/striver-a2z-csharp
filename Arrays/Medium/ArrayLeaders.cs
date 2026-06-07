@@ -23,3 +23,4 @@
  * Space : O(1)
  *
  * Optimal
+ * Time  : O(n)
