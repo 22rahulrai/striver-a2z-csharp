@@ -1,10 +1,10 @@
 /*
- * Problem   : Union of two sorted arrays
- * Link      : https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays
+ * Problem   : Array Leaders
+ * Link      : https://www.geeksforgeeks.org/problems/leaders-in-an-array-1587115620
  * Platform  : geeksforgeeks
  * Difficulty: Medium
  * Topic     : Arrays
- * Date      : 2026-05-24
+ * Date      : 2026-06-07
  *
  * Approach:
  *  1. Brute force
