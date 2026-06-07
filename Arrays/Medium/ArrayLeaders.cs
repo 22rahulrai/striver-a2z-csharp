@@ -78,3 +78,4 @@ public class ArrayLeaders {
         return res;
     }
     
+    public static bool AreEqual(List<int> a, int[] b)
