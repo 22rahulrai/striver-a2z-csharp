@@ -19,8 +19,8 @@
  * Complexity 
  *
  * Brute Force
- * Time  : O((n+m)^2)
- * Space : O(n+m)
+ * Time  : O(n^2)
+ * Space : O(1)
  *
  * HashSet
  * Time  : O((n+m) log(n+m))
