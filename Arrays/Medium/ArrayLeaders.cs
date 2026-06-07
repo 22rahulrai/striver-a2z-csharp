@@ -58,3 +58,4 @@ public class ArrayLeaders {
         int n = arr.Length;
 
         if (arr == null || n == 0)
+            return new List<int>();
