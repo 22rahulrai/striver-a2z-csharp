@@ -80,3 +80,4 @@ public class ArrayLeaders {
     
     public static bool AreEqual(List<int> a, int[] b)
     {
+        if (a.Count != b.Length)
