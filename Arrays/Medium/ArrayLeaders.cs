@@ -26,7 +26,9 @@
  * Time  : O(n)
  * Space : O(1) 
  *
- *
+ * Notes / Gotchas:
+ *   - The rightmost element is always a leader.
+ *   - Leaders are not necessarily unique; there can be multiple leaders in the array.
  */
 
 public class ArrayLeaders {
