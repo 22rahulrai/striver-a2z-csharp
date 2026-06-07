@@ -8,3 +8,4 @@
  *
  * Approach:
  *  1. Brute force
+       — Iterate through the array and for each element, check if it is greater than all the elements to its right.
