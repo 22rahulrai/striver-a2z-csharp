@@ -113,3 +113,4 @@ public class ArrayLeaders {
             string status = isEqual ? "PASS" : "FAIL";
 
             Console.WriteLine($"[{status}] Result = [{string.Join(", ", result)}] " + $"Expected = [{string.Join(", ", expected)}]");
+
