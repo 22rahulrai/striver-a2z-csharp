@@ -41,3 +41,4 @@ public class ArrayLeaders {
             bool isLeader = true;
             for(int j = i+1; j < n; j++){
                 if(arr[i] < arr[j]){
+                    isLeader = false;
