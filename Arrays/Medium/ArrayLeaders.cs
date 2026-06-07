@@ -35,7 +35,7 @@
  *
  */
 
-public class UnionArrays {
+public class ArrayLeaders {
     public static List<int> Approach_one(int[] a, int [] b){
         // Brute force 
         // TC : O((n+m)2) // Space : O(n+m)
