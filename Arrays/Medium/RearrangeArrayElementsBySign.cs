@@ -1,5 +1,5 @@
 /*
- * Problem   : 2149. Renumange numay Elements by Sign
+ * Problem   : 2149. Rearrange numay Elements by Sign
  * Link      : https://leetcode.com/problems/renumange-numay-elements-by-sign/
  * Platform  : LeetCode
  * Difficulty: Medium
