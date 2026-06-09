@@ -1,10 +1,10 @@
 /*
- * Problem   : Array Leaders
- * Link      : https://www.geeksforgeeks.org/problems/leaders-in-an-array-1587115620
- * Platform  : geeksforgeeks
- * Difficulty: Medium
+ * Problem   : 3Sum
+ * Link      : https://leetcode.com/problems/3sum/
+ * Platform  : LeetCode
+ * Difficulty: Hard
  * Topic     : Arrays
- * Date      : 2026-06-07
+ * Date      : 2026-06-09
  *
  * Approach:
  *  1. Brute force
@@ -32,21 +32,25 @@
  */
 
 public class ThreeSum {
-    public static List<int> Approach_One(int[] arr){ //brute force
+    public static IList<IList<int>> Approach_One(int[] arr){ //brute force
         int n = arr.Length;
         
-        List<int> res= new List<int>();
+        var res = new List<IList<int>>();
         
         for(int i = 0; i < n; i++){
-            bool isLeader = true;
             for(int j = i+1; j < n; j++){
-                if(arr[i] < arr[j]){
-                    isLeader = false;
-                    break;
+                for(int k =j+1; j < n; j++)
+                {
+                    if(arr[i] + arr[j] + arr[k] == 0)
+                    {
+                        List<int> temp = new List<int>(){arr[i], arr[j], arr[k]};
+                        temp.Sort();
+
+                        if(!res.Any(x => x.SequenceEqual(temp)))
+                            res.Add(temp);
+                    }
                 }
             }
-            if(isLeader)
-                res.Add(arr[i]);
         }
         
         return res;
@@ -93,20 +97,19 @@ public class ThreeSum {
 
     public static void Test()
     {
-        (int[] input1, int []expected)[] cases =
+        (int[] input1, List<IList<int>> input2)[] cases =
         [
-            ([16, 17, 4, 3, 5, 2], [17, 5, 2]),
-            ([1, 2, 3, 4, 0], [4, 0]),
-            ([7, 10, 4, 10, 6, 5, 2], [10, 6, 5, 2]),
-            ([1, 2, 3], [3]),
-            ([1], [1])
+            ([-1,0,1,2,-1,-4], [[-1,-1,2],[-1,0,1]]),
+            ([0,1,1], []),
+            ([0,0,0], [[0,0,0]]),
+            ([-1,0,1,0], [[-1,0,1],[-1,1,0]]),
         ];
 
         int pass = 0, fail = 0;
         foreach (var (input1,  expected) in cases)
         {
 
-            List<int> result = Approach_two(input1);
+            IList<IList<int>> result = Approach_One(input1);
 
             bool isEqual = AreEqual(result, expected);
 
