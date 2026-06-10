@@ -7,14 +7,20 @@
  * Date      : 2026-06-09
  *
  * Approach:
- *  1. Brute force
-       — Iterate through the array and for each element, check if it is greater than all the elements to its right.
-       — If it is, add it to the list of leaders.
- *  2. Optimal Approach
-       — Traverse the array from right to left, keeping track of the maximum element seen so far.
-       — If the current element is greater than the maximum, it is a leader. Add it to the list and update the maximum.
-       — Reverse the list of leaders before returning to maintain the original order.
-
+ * 1. Brute Force
+ *    - Generate all possible triplets using three nested loops.
+ *    - Check if their sum equals zero.
+ *    - Sort each triplet and avoid duplicates.
+ * 2. HashSet Based
+ *    - Fix one element.
+ *    - Use HashSet to solve the remaining 2-Sum problem.
+ *    - Store sorted triplets in a set to remove duplicates.
+ *
+ * 3. Optimal Two Pointer
+ *    - Sort the array.
+ *    - Fix one element and use two pointers.
+ *    - Skip duplicates while traversing.
+ *
  *
  * Complexity 
  *
@@ -22,14 +28,20 @@
  * Time  : O(n^3)
  * Space : O(1)
  *
- * Optimal
- * Time  : O(n)
- * Space : O(1) 
+ * HashSet
+ * Time  : O(n²)
+ * Space : O(n)
+ *
+ * Optimal Two Pointer
+ * Time  : O(n²)
+ * Space : O(1)
  *
  * Notes / Gotchas:
- *   - The rightmost element is always a leader.
- *   - Leaders are not necessarily unique; there can be multiple leaders in the array.
- */
+ *   - Sorting enables duplicate removal efficiently.
+ *   - Two Pointer approach is the standard interview solution.
+ *   - LeetCode expects the O(n²) solution.
+
+*/
 
 public class ThreeSum {
     public static IList<IList<int>> Approach_One(int[] arr){ //brute force
