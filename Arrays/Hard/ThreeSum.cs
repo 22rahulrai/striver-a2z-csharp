@@ -78,3 +78,4 @@ public class ThreeSum {
         
         for(int i = 0; i < n; i++){
             HashSet<int> seen = new HashSet<int>();
+            for(int j = i+1; j < n; j++)
