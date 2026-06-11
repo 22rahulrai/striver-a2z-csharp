@@ -117,3 +117,4 @@ public class ThreeSum {
                 int sum = arr[i] + arr[lo] + arr[hi];
                 if (sum == 0)
                 {
+                    res.Add(new List<int> { arr[i], arr[lo], arr[hi] });
