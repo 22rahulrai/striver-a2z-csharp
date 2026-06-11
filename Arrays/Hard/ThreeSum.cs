@@ -123,3 +123,4 @@ public class ThreeSum {
                     lo++; hi--;
                 }
                 else if (sum < 0) lo++;
+                else hi--;
