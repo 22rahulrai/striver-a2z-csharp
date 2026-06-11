@@ -122,3 +122,4 @@ public class ThreeSum {
                     while (lo < hi && arr[hi] == arr[hi - 1]) hi--;
                     lo++; hi--;
                 }
+                else if (sum < 0) lo++;
