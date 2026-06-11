@@ -112,3 +112,4 @@ public class ThreeSum {
             if (arr[i] > 0) break;
 
             int lo = i + 1, hi = n - 1;
+            while (lo < hi)
