@@ -172,3 +172,4 @@ public class ThreeSum {
             }
             Console.WriteLine($"{pass} passed, {fail} failed.");
         }
+    }
