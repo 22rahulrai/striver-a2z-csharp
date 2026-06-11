@@ -70,3 +70,4 @@ public class ThreeSum {
 
     public static IList<IList<int>> Approach_Two(int[] arr) 
     {
+        int n = arr.Length;
