@@ -58,3 +58,5 @@ public class ThreeSum {
                         List<int> temp = new List<int>(){arr[i], arr[j], arr[k]};
                         temp.Sort();
 
+                        if(!res.Any(x => x.SequenceEqual(temp)))
+                            res.Add(temp);
