@@ -115,3 +115,4 @@ public class ThreeSum {
             while (lo < hi)
             {
                 int sum = arr[i] + arr[lo] + arr[hi];
+                if (sum == 0)
