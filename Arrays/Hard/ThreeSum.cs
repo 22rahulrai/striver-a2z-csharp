@@ -118,3 +118,4 @@ public class ThreeSum {
                 if (sum == 0)
                 {
                     res.Add(new List<int> { arr[i], arr[lo], arr[hi] });
+                    while (lo < hi && arr[lo] == arr[lo + 1]) lo++;
