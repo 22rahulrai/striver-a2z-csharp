@@ -103,3 +103,4 @@ public class ThreeSum {
     public static IList<IList<int>> Approach_Three(int[] arr) // optimal two pointer
     {
         int n = arr.Length;
+        Array.Sort(arr);
