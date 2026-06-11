@@ -26,3 +26,4 @@
  *
  * Brute Force
  * Time  : O(n^3)
+ * Space : O(1)
