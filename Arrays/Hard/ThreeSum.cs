@@ -30,3 +30,4 @@
  *
  * HashSet
  * Time  : O(nÂ²)
+ * Space : O(n)
