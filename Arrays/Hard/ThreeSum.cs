@@ -129,3 +129,4 @@ public class ThreeSum {
         return res;
     }
 
+    public static bool AreEqual(IList<IList<int>> a, IList<IList<int>> b)
