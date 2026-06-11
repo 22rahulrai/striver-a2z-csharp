@@ -162,3 +162,4 @@ public class ThreeSum {
         {
             int pass = 0, fail = 0;
             Console.WriteLine($"\n--- {name} ---");
+            foreach (var (input, expected) in cases)
