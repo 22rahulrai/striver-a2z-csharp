@@ -165,3 +165,4 @@ public class ThreeSum {
             foreach (var (input, expected) in cases)
             {
                 IList<IList<int>> result = fn((int[])input.Clone());
+                bool isEqual = AreEqual(result, expected);
