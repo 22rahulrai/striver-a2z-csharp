@@ -68,35 +68,32 @@ public class ThreeSum {
         return res;
     }
 
-    public static List<int> Approach_two(int[] arr) 
+    public static IList<IList<int>> Approach_Two(int[] arr) 
     {
-
         int n = arr.Length;
-
-        if (arr == null || n == 0)
-            return new List<int>();
+        // HashSet<string> unique = new(); // support only .Net 9 or later
+        HashSet<string> unique = new HashSet<string>();
         
-        List<int> res= new List<int>();
-        res.Add(arr[n-1]);
-        int max = arr[n-1];
-
-        for(int i = n-2; i >= 0; i--)
-        {
-            if (arr[i] > max)
+        for(int i = 0; i < n; i++){
+            HashSet<int> seen = new HashSet<int>();
+            for(int j = i+1; j < n; j++)
             {
-                res.Add(arr[i]);
-                max = arr[i];
+                int third = -(arr[i] + arr[j]);
+                if (seen.Contains(third))
+                {
+                    
+                }
+                seen.Add(arr[j]);
             }
         }
-
-        res.Reverse();
-
+        
         return res;
+
     }
     
-    public static bool AreEqual(List<int> a, int[] b)
+    public static bool AreEqual(IList<IList<int>> a, IList<IList<int>> b)
     {
-        if (a.Count != b.Length)
+        if (a.Count != b.Count)
             return false;
 
         for (int i = 0; i < a.Count; i++)
@@ -109,7 +106,7 @@ public class ThreeSum {
 
     public static void Test()
     {
-        (int[] input1, List<IList<int>> input2)[] cases =
+        (int[] input1, List<IList<int>> expected)[] cases =
         [
             ([-1,0,1,2,-1,-4], [[-1,-1,2],[-1,0,1]]),
             ([0,1,1], []),
