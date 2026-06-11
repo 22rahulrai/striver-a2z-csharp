@@ -77,3 +77,4 @@ public class ThreeSum {
         HashSet<string> unique = new HashSet<string>();
         
         for(int i = 0; i < n; i++){
+            HashSet<int> seen = new HashSet<int>();
