@@ -17,3 +17,4 @@
  *    - Store sorted triplets in a set to remove duplicates.
  *
  * 3. Optimal Two Pointer
+ *    - Sort the array.
