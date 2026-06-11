@@ -8,3 +8,5 @@
  *
  * Approach:
  * 1. Brute Force
+ *    - Generate all possible triplets using three nested loops.
+ *    - Check if their sum equals zero.
