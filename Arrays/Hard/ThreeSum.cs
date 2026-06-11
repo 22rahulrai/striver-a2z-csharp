@@ -154,3 +154,4 @@ public class ThreeSum {
         var approaches = new (string name, Func<int[], IList<IList<int>>> fn)[]
         {
             ("Approach_One  ", Approach_One),
+            ("Approach_Two  ", Approach_Two),
