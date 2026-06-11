@@ -12,3 +12,4 @@
  *    - Check if their sum equals zero.
  *    - Sort each triplet and avoid duplicates.
  * 2. HashSet Based
+ *    - Fix one element.
