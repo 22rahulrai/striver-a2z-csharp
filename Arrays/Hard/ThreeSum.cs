@@ -141,3 +141,4 @@ public class ThreeSum {
         return sa.SequenceEqual(sb);
     }
 
+    public static void Test()
