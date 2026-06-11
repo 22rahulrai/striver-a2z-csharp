@@ -166,3 +166,4 @@ public class ThreeSum {
             {
                 IList<IList<int>> result = fn((int[])input.Clone());
                 bool isEqual = AreEqual(result, expected);
+                string status = isEqual ? "PASS" : "FAIL";
