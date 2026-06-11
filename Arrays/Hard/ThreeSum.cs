@@ -97,3 +97,4 @@ public class ThreeSum {
                 seen.Add(arr[j]);
             }
         }
+        return res;
