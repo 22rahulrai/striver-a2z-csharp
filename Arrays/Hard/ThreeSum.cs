@@ -134,3 +134,4 @@ public class ThreeSum {
         if (a.Count != b.Count)
             return false;
 
+        static string Key(IList<int> t) => string.Join(",", t.OrderBy(x => x));
