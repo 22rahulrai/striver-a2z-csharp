@@ -38,3 +38,4 @@
  *
  * Notes / Gotchas:
  *   - Sorting enables duplicate removal efficiently.
+ *   - Two Pointer approach is the standard interview solution.
