@@ -158,3 +158,4 @@ public class ThreeSum {
             ("Approach_Three", Approach_Three),
         };
 
+        foreach (var (name, fn) in approaches)
