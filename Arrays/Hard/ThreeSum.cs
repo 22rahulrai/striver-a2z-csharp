@@ -72,3 +72,4 @@ public class ThreeSum {
     {
         int n = arr.Length;
 
+        var res = new List<IList<int>>();
