@@ -164,3 +164,4 @@ public class ThreeSum {
             Console.WriteLine($"\n--- {name} ---");
             foreach (var (input, expected) in cases)
             {
+                IList<IList<int>> result = fn((int[])input.Clone());
