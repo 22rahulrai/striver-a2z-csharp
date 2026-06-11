@@ -138,3 +138,4 @@ public class ThreeSum {
         var sa = a.Select(Key).OrderBy(x => x).ToList();
         var sb = b.Select(Key).OrderBy(x => x).ToList();
 
+        return sa.SequenceEqual(sb);
