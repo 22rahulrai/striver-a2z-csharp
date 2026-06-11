@@ -44,3 +44,4 @@
 */
 
 public class ThreeSum {
+    public static IList<IList<int>> Approach_One(int[] arr){ //brute force
