@@ -155,3 +155,4 @@ public class ThreeSum {
         {
             ("Approach_One  ", Approach_One),
             ("Approach_Two  ", Approach_Two),
+            ("Approach_Three", Approach_Three),
