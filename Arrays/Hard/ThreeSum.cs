@@ -85,3 +85,4 @@ public class ThreeSum {
                 {
                     int[] triplet = new int[] { arr[i], arr[j], third};
 
+                    Array.Sort(triplet);
