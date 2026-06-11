@@ -56,3 +56,4 @@ public class ThreeSum {
                     if(arr[i] + arr[j] + arr[k] == 0)
                     {
                         List<int> temp = new List<int>(){arr[i], arr[j], arr[k]};
+                        temp.Sort();
