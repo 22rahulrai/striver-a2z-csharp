@@ -143,3 +143,4 @@ public class ThreeSum {
 
     public static void Test()
     {
+        (int[] input, List<IList<int>> expected)[] cases =
