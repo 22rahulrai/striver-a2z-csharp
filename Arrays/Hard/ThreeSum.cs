@@ -6,3 +6,4 @@
  * Topic     : Arrays, Two Pointers, Sorting
  * Date      : 2026-06-09
  *
+ * Approach:
