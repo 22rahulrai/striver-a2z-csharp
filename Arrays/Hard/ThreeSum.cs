@@ -37,3 +37,4 @@
  * Space : O(1)
  *
  * Notes / Gotchas:
+ *   - Sorting enables duplicate removal efficiently.
