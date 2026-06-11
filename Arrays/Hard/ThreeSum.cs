@@ -160,3 +160,4 @@ public class ThreeSum {
 
         foreach (var (name, fn) in approaches)
         {
+            int pass = 0, fail = 0;
