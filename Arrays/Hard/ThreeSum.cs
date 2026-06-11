@@ -83,3 +83,4 @@ public class ThreeSum {
                 int third = -(arr[i] + arr[j]);
                 if (seen.Contains(third))
                 {
+                    int[] triplet = new int[] { arr[i], arr[j], third};
