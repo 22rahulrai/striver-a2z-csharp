@@ -81,3 +81,4 @@ public class ThreeSum {
             for(int j = i+1; j < n; j++)
             {
                 int third = -(arr[i] + arr[j]);
+                if (seen.Contains(third))
