@@ -80,3 +80,4 @@ public class ThreeSum {
             HashSet<int> seen = new HashSet<int>();
             for(int j = i+1; j < n; j++)
             {
+                int third = -(arr[i] + arr[j]);
