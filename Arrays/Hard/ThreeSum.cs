@@ -74,3 +74,4 @@ public class ThreeSum {
 
         var res = new List<IList<int>>();
         // HashSet<string> unique = new(); // support only .Net 9 or later
+        HashSet<string> unique = new HashSet<string>();
