@@ -71,3 +71,4 @@ public class KadaneAlgo {
     }
 
     public static int ApproachThree(int[] nums) { //better approach using dictionary
+        int n = nums.Length;
