@@ -96,3 +96,4 @@ public class KadaneAlgo {
 
     public static void Test()
     {
+        (int[] input, int expected)[] cases =
