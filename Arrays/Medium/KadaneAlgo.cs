@@ -112,3 +112,4 @@ public class KadaneAlgo {
             string status = result == expected ? "PASS" : "FAIL";
             Console.WriteLine($"[{status}] Input: [{string.Join(", ", input)}] => {result} (expected {expected})");
             if (result == expected) pass++; else fail++;
+        }
