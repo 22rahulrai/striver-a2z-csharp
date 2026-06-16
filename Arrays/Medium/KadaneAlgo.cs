@@ -75,3 +75,4 @@ public class KadaneAlgo {
         int candidate = -1;
         int count = 0;
 
+        foreach(int num in nums){
