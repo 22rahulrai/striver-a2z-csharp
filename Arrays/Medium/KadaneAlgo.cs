@@ -85,3 +85,4 @@ public class KadaneAlgo {
             {
                 count++;
             }
+            else
