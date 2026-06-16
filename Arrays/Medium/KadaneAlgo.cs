@@ -4,3 +4,4 @@
  * Platform  : LeetCode
  * Difficulty: Medium
  * Topic     : Arrays, Kadane's Algorithm
+ * Date      : 2026-06-2
