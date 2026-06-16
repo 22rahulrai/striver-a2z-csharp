@@ -15,3 +15,4 @@
  *      - 
 
  *   3. Optimal Approach 
+ *      - Use Boyer-Moore Voting Algorithm:
