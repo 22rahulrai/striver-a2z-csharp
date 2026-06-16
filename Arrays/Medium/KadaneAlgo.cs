@@ -48,3 +48,4 @@ public class KadaneAlgo {
             for(int j = i;j < n; j++){
                 int sum = 0;
                 for(int k = i;k <= j;k++){
+                    sum += nums[k];
