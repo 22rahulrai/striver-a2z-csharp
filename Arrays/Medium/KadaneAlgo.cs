@@ -30,3 +30,4 @@
  *
  *      Approach 2:
  *          Time  : O(n)
+ *          Space : O(1)
