@@ -70,3 +70,4 @@ public class KadaneAlgo {
         return max;
     }
 
+    public static int ApproachThree(int[] nums) { //better approach using dictionary
