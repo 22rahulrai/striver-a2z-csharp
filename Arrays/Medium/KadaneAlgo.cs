@@ -22,3 +22,4 @@
             - If current element is the candidate, increment count; otherwise, decrement count.
         - The candidate at the end will be the majority element.
  *
+ * Complexity:
