@@ -50,3 +50,4 @@ public class KadaneAlgo {
                 for(int k = i;k <= j;k++){
                     sum += nums[k];
                 }
+                max = Math.Max(max,sum);   
