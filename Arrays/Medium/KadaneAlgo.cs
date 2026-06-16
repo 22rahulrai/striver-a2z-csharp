@@ -76,3 +76,4 @@ public class KadaneAlgo {
         int count = 0;
 
         foreach(int num in nums){
+            if(count == 0)
