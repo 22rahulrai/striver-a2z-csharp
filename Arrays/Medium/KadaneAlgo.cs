@@ -94,3 +94,4 @@ public class KadaneAlgo {
         return candidate;
     }
 
+    public static void Test()
