@@ -79,3 +79,4 @@ public class KadaneAlgo {
             if(count == 0)
             {
                 candidate = num;
+            }
