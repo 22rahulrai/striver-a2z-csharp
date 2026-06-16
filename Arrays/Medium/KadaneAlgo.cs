@@ -81,3 +81,4 @@ public class KadaneAlgo {
                 candidate = num;
             }
 
+            if(num == candidate)
