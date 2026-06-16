@@ -42,3 +42,4 @@ public class KadaneAlgo {
 
     public static int ApproachOne(int[] nums) {//brute force
         int n = nums.Length;
+        int max = int.MinValue;
