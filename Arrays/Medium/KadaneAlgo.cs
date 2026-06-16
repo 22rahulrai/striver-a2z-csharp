@@ -29,3 +29,4 @@
  *          Space : O(1)
  *
  *      Approach 2:
+ *          Time  : O(n)
