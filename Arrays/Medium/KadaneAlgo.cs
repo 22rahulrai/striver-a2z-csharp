@@ -115,3 +115,4 @@ public class KadaneAlgo {
         }
 
         Console.WriteLine($"\n{pass} passed, {fail} failed.");
+    }
