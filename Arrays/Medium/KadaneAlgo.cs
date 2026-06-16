@@ -98,3 +98,4 @@ public class KadaneAlgo {
     {
         (int[] input, int expected)[] cases =
         [
+            ([-2,1,-3,4,-1,2,1,-5,4], 6),   
