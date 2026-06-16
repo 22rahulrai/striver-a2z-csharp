@@ -51,3 +51,4 @@ public class KadaneAlgo {
                     sum += nums[k];
                 }
                 max = Math.Max(max,sum);   
+            }
