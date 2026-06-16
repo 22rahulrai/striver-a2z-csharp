@@ -8,3 +8,4 @@
  *
 * Approaches:
  *
+ *   1. Brute Force 
