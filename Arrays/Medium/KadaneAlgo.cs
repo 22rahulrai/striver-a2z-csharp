@@ -107,3 +107,4 @@ public class KadaneAlgo {
 
         int pass = 0, fail = 0;
         foreach (var (input, expected) in cases)
+        {
