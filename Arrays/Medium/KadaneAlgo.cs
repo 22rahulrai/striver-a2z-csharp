@@ -56,3 +56,4 @@ public class KadaneAlgo {
         return max;
     }
 
+    public static int ApproachTwo(int[] nums) {
