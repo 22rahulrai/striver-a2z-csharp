@@ -92,3 +92,4 @@ public class KadaneAlgo {
         }
 
         return candidate;
+    }
