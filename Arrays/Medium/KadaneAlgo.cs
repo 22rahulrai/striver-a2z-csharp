@@ -20,3 +20,4 @@
         - Iterate through the array:
             - If count is 0, set candidate to current element.
             - If current element is the candidate, increment count; otherwise, decrement count.
+        - The candidate at the end will be the majority element.
