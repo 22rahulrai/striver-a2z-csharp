@@ -109,3 +109,4 @@ public class KadaneAlgo {
         foreach (var (input, expected) in cases)
         {
             int result = ApproachTwo(input);
+            string status = result == expected ? "PASS" : "FAIL";
