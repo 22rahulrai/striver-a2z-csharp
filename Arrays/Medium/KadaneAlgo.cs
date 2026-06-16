@@ -16,3 +16,4 @@
 
  *   3. Optimal Approach 
  *      - Use Boyer-Moore Voting Algorithm:
+        - Initialize a candidate and count.
