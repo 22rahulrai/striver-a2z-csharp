@@ -18,3 +18,4 @@
  *      - Use Boyer-Moore Voting Algorithm:
         - Initialize a candidate and count.
         - Iterate through the array:
+            - If count is 0, set candidate to current element.
