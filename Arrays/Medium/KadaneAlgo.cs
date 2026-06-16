@@ -10,3 +10,4 @@
  *
  *   1. Brute Force 
  *      - Iterate through all possible subarrays and calculate their sums.
+ *
