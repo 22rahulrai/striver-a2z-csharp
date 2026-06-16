@@ -114,3 +114,4 @@ public class KadaneAlgo {
             if (result == expected) pass++; else fail++;
         }
 
+        Console.WriteLine($"\n{pass} passed, {fail} failed.");
