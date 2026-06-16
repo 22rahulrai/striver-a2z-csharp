@@ -105,3 +105,4 @@ public class KadaneAlgo {
             ([2,3,5,-2,7,-4],        15),   
         ];
 
+        int pass = 0, fail = 0;
