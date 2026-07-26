@@ -66,3 +66,4 @@ public class Search_X_Array {
                 fail++;
         }
 
+        Console.WriteLine($"\n{pass} passed, {fail} failed.");
