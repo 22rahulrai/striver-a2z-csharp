@@ -13,3 +13,4 @@
  *
  * Complexity:
  *   Approach 1:
+ *      Time  : O(log n)
