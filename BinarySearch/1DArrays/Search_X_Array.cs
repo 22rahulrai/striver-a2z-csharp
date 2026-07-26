@@ -58,3 +58,4 @@ public class Search_X_Array {
         foreach (var (input, target,expected) in cases)
         {
             int result = Approach_One(input,target);
+            string status = result == expected ? "PASS" : "FAIL";
