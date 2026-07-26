@@ -12,3 +12,4 @@
  *      - Repeatedly divide the search space in half.
  *
  * Complexity:
+ *   Approach 1:
