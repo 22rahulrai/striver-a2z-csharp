@@ -54,3 +54,4 @@ public class Search_X_Array {
             ([1,2,3,4,5], 6, -1)
         ];
 
+        int pass = 0, fail = 0;
