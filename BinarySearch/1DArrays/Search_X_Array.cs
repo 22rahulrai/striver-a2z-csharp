@@ -5,3 +5,4 @@
  * Difficulty: Easy
  * Topic     : Array, Binary Search
  * Date      : 2026-07-26
+ *
