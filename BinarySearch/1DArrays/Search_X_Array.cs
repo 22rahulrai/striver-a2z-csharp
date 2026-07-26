@@ -17,3 +17,4 @@
  *      Space : O(1)
  *
  * Notes / Gotchas:
+ *   - Binary Search requires the array to be sorted.
