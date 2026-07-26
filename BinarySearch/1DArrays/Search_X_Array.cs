@@ -24,3 +24,4 @@
 public class Search_X_Array {
 
     public static int Approach_One(int[] nums, int target) {
+
