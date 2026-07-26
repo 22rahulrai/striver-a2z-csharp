@@ -48,3 +48,4 @@ public class Search_X_Array {
         (int[] input, int target,int expected)[] cases =
         [
             ([-1,0,3,5,9,12], 9, 4),
+            ([-1,0,3,5,9,12], 2, -1),
