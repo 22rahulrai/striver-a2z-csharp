@@ -31,3 +31,4 @@ public class Search_X_Array {
         while(l <= h){
             int mid = l + (h-l)/2;
 
+            if(nums[mid] == target)
