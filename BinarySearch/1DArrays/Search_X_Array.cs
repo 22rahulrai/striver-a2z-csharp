@@ -46,3 +46,4 @@ public class Search_X_Array {
     {
         //tuple array
         (int[] input, int target,int expected)[] cases =
+        [
