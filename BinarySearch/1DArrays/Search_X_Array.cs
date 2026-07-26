@@ -56,3 +56,4 @@ public class Search_X_Array {
 
         int pass = 0, fail = 0;
         foreach (var (input, target,expected) in cases)
+        {
