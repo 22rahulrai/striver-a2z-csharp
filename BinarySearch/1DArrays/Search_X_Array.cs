@@ -34,3 +34,4 @@ public class Search_X_Array {
             if(nums[mid] == target)
                 return mid;
             else if(nums[mid] > target)
+                h = mid - 1;
