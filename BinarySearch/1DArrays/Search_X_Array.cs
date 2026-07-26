@@ -8,3 +8,4 @@
  *
  * Approaches:
  *   1. Binary Search (Optimal)
+ *      - Applicable only for sorted arrays.
