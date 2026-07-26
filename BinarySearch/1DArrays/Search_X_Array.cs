@@ -30,3 +30,4 @@ public class Search_X_Array {
 
         while(l <= h){
             int mid = l + (h-l)/2;
+
