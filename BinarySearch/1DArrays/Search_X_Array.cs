@@ -29,3 +29,4 @@ public class Search_X_Array {
         int h = nums.Length - 1;
 
         while(l <= h){
+            int mid = l + (h-l)/2;
