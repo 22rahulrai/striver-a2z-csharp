@@ -37,3 +37,4 @@ public class Search_X_Array {
                 h = mid - 1;
             else
                 l = mid + 1;
+        }
