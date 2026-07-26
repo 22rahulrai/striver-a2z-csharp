@@ -18,3 +18,4 @@
  *
  * Notes / Gotchas:
  *   - Binary Search requires the array to be sorted.
+ *   - Use mid = low + (high - low) / 2 to avoid integer overflow.
