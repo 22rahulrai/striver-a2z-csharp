@@ -63,3 +63,4 @@ public class Search_X_Array {
             if (result == expected) 
                 pass++;
             else 
+                fail++;
