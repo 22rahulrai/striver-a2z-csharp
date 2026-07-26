@@ -62,3 +62,4 @@ public class Search_X_Array {
             Console.WriteLine($"[{status}] Input: [{string.Join(", ", input)}] => {result} (expected {expected})");
             if (result == expected) 
                 pass++;
+            else 
