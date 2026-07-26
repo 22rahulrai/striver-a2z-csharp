@@ -10,3 +10,4 @@
  *   1. Binary Search (Optimal)
  *      - Applicable only for sorted arrays.
  *      - Repeatedly divide the search space in half.
+ *
