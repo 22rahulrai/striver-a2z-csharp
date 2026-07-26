@@ -42,3 +42,4 @@ public class Search_X_Array {
         return -1;
     }
 
+    public static void Test()
