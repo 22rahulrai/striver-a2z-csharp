@@ -39,3 +39,4 @@ public class Search_X_Array {
                 l = mid + 1;
         }
 
+        return -1;
