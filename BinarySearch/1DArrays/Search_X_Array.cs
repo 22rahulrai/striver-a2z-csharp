@@ -7,3 +7,4 @@
  * Date      : 2026-07-26
  *
  * Approaches:
+ *   1. Binary Search (Optimal)
