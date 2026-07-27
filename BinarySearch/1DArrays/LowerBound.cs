@@ -26,3 +26,4 @@
 
 public class LowerBound {
 
+    public static int Approach_One(int[] arr, int x) {
