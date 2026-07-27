@@ -33,3 +33,4 @@ public class LowerBound {
         int ans = -1;
         
         while(first <= last){
+            int mid = first + (last-first)/2;
