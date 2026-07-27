@@ -39,3 +39,4 @@ public class LowerBound {
                 ans = mid;
                 first = mid + 1;
             }
+            else{
