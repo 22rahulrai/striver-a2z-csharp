@@ -9,3 +9,4 @@
  *   Returns the index of the floor element.
  *   If no floor exists, returns -1.
  *
+ * Approach:
