@@ -14,3 +14,4 @@
  *      - If arr[mid] <= x, it can be the answer.
  *      - Store it and search on the right for a larger valid element.
  *      - Otherwise, search on the left.
+ *
