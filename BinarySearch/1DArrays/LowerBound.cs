@@ -10,3 +10,4 @@
  *   If no floor exists, returns -1.
  *
  * Approach:
+ *   1. Binary Search
