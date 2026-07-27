@@ -36,3 +36,4 @@ public class LowerBound {
             int mid = first + (last-first)/2;
             
             if(arr[mid] <= x){
+                ans = mid;
