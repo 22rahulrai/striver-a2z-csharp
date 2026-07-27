@@ -21,3 +21,4 @@
  *
  * Notes:
  *   - Array must be sorted.
+ *   - Use mid = low + (high - low) / 2 to avoid integer overflow.
