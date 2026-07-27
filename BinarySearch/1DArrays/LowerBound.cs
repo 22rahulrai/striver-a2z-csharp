@@ -70,3 +70,4 @@ public class LowerBound {
                 fail++;
         }
 
+        Console.WriteLine($"\n{pass} passed, {fail} failed.");
