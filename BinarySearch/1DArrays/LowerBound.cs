@@ -67,3 +67,4 @@ public class LowerBound {
             if (result == expected) 
                 pass++;
             else 
+                fail++;
