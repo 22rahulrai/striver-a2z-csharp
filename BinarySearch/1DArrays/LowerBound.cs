@@ -50,3 +50,4 @@ public class LowerBound {
     {
         //tuple array
         (int[] input, int target,int expected)[] cases =
+        [
