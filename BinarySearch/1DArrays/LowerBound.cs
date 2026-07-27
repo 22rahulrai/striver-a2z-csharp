@@ -58,3 +58,4 @@ public class LowerBound {
             ([1,2,3,4,5], 1, 0)
         ];
 
+        int pass = 0, fail = 0;
