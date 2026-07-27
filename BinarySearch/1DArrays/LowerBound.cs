@@ -43,3 +43,4 @@ public class LowerBound {
                 last = mid - 1;
             }
         }
+        return ans;
