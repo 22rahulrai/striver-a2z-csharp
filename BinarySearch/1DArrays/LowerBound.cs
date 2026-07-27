@@ -71,3 +71,4 @@ public class LowerBound {
         }
 
         Console.WriteLine($"\n{pass} passed, {fail} failed.");
+    }
