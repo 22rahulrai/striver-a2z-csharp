@@ -46,3 +46,4 @@ public class LowerBound {
         return ans;
     }
 
+    public static void Test()
