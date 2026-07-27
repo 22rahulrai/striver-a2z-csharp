@@ -38,3 +38,4 @@ public class LowerBound {
             if(arr[mid] <= x){
                 ans = mid;
                 first = mid + 1;
+            }
