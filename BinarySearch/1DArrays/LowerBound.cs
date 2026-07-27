@@ -32,3 +32,4 @@ public class LowerBound {
         int last = arr.Length - 1;
         int ans = -1;
         
+        while(first <= last){
