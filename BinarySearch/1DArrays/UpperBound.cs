@@ -42,3 +42,4 @@ public class UpperBound {
                 first = mid + 1;
             }
         }
+        return ans;
