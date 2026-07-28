@@ -11,3 +11,4 @@
  *
  * Approach:
  *   1. Binary Search
+ *      - If arr[mid] > x, it can be the answer.
