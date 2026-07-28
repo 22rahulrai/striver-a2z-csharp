@@ -68,3 +68,4 @@ public class UpperBound {
             if (result == expected) 
                 pass++;
             else 
+                fail++;
