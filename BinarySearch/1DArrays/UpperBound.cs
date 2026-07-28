@@ -29,3 +29,4 @@ public class UpperBound {
 
         int first = 0;
         int last = arr.Length - 1;
+        int ans = -1;
