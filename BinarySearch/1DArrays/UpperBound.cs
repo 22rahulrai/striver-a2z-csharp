@@ -10,3 +10,4 @@
  *   If no such element exists, returns arr.Length.
  *
  * Approach:
+ *   1. Binary Search
