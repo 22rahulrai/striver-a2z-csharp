@@ -22,3 +22,4 @@
  * Notes:
  *   - Array must be sorted.
  *   - Use mid = first + (last - first) / 2 to avoid overflow.
+ */
