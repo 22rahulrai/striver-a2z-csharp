@@ -28,3 +28,4 @@ public class UpperBound {
     public static int Approach_One(int[] arr, int x) {
 
         int first = 0;
+        int last = arr.Length - 1;
