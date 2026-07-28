@@ -24,3 +24,4 @@
  *   - Use mid = first + (last - first) / 2 to avoid overflow.
  */
 public class UpperBound {
+
