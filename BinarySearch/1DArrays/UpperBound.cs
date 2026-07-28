@@ -71,3 +71,4 @@ public class UpperBound {
                 fail++;
         }
 
+        Console.WriteLine($"\n{pass} passed, {fail} failed.");
