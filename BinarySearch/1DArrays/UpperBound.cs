@@ -9,3 +9,4 @@
  *   that is strictly greater than x.
  *   If no such element exists, returns arr.Length.
  *
+ * Approach:
