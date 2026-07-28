@@ -49,3 +49,4 @@ public class UpperBound {
     {
         //tuple array
         (int[] input, int target,int expected)[] cases =
+        [
