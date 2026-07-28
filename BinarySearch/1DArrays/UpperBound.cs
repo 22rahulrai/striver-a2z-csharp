@@ -48,3 +48,4 @@ public class UpperBound {
     public static void Test()
     {
         //tuple array
+        (int[] input, int target,int expected)[] cases =
