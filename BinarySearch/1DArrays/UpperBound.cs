@@ -16,3 +16,4 @@
  *      - Otherwise, search on the right.
  *
  * Complexity:
+ *   Time  : O(log n)
