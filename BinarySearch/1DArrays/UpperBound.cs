@@ -50,3 +50,4 @@ public class UpperBound {
         //tuple array
         (int[] input, int target,int expected)[] cases =
         [
+            ([1, 2, 8, 10, 10, 12, 19], 5, 2),
