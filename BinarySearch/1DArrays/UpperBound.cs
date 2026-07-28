@@ -40,3 +40,4 @@ public class UpperBound {
             }
             else{
                 first = mid + 1;
+            }
