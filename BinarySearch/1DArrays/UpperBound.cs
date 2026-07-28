@@ -60,3 +60,4 @@ public class UpperBound {
         ];
 
         int pass = 0, fail = 0;
+        foreach (var (input, target,expected) in cases)
