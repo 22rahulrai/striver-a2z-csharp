@@ -45,3 +45,4 @@ public class UpperBound {
         return ans;
     }
 
+    public static void Test()
