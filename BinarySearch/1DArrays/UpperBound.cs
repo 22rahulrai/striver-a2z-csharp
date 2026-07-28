@@ -35,3 +35,4 @@ public class UpperBound {
             int mid = first + (last-first)/2;
             
             if(arr[mid] > x){
+                ans = mid;
