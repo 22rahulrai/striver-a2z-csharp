@@ -20,3 +20,4 @@
  *   Space : O(1)
  *
  * Notes:
+ *   - Array must be sorted.
