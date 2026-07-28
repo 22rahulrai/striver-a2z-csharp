@@ -36,3 +36,4 @@ public class UpperBound {
             
             if(arr[mid] > x){
                 ans = mid;
+                last = mid - 1;
