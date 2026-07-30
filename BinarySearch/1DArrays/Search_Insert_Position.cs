@@ -75,3 +75,4 @@ public class Search_Insert_Position
             Console.WriteLine(
                 $"[{status}] Input: [{string.Join(", ", input)}], Target: {target} => {result} (Expected: {expected})");
 
+            if (result == expected)
