@@ -29,3 +29,4 @@ public class Search_Insert_Position
         int e = nums.Length - 1;
 
         while (s <= e)
+        {
