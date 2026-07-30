@@ -28,3 +28,4 @@ public class Search_Insert_Position
         int s = 0;
         int e = nums.Length - 1;
 
+        while (s <= e)
