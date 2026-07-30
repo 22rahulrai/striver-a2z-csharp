@@ -22,3 +22,6 @@ Sheet: https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z
 | Dynamic Prog.    | 0      | 55    |
 | Tries            | 0      | 7     |
 | **Total**        | **2**  | **451** |
+
+
+use commit-forge
