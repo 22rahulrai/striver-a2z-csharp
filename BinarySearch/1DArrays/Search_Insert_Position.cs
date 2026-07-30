@@ -17,3 +17,4 @@
  *   Space : O(1)
  *
  * Notes:
+ *   - Array is sorted in ascending order.
