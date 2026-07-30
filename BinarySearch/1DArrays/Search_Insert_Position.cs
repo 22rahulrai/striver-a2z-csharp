@@ -83,3 +83,4 @@ public class Search_Insert_Position
 
         Console.WriteLine($"\n{pass} passed, {fail} failed.");
     }
+}
