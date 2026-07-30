@@ -13,3 +13,4 @@
  *        to keep the array sorted.
  *
  * Complexity:
+ *   Time  : O(log n)
