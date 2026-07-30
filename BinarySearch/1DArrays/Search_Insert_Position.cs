@@ -77,3 +77,4 @@ public class Search_Insert_Position
 
             if (result == expected)
                 pass++;
+            else
