@@ -45,3 +45,4 @@ public class Search_Insert_Position
                 s = mid + 1;
             }
         }
+
