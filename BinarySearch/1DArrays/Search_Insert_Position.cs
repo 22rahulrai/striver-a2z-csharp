@@ -50,3 +50,4 @@ public class Search_Insert_Position
         return s;
     }
 
+    public static void Test()
