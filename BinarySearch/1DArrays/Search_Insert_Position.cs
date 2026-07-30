@@ -71,3 +71,4 @@ public class Search_Insert_Position
         {
             int result = Approach_One(input, target);
             string status = result == expected ? "PASS" : "FAIL";
+
