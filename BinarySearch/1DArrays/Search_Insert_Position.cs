@@ -42,3 +42,4 @@ public class Search_Insert_Position
             }
             else
             {
+                s = mid + 1;
