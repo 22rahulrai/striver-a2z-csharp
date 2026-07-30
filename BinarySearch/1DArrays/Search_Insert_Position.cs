@@ -79,3 +79,4 @@ public class Search_Insert_Position
                 pass++;
             else
                 fail++;
+        }
