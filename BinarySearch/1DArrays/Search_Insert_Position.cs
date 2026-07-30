@@ -76,3 +76,4 @@ public class Search_Insert_Position
                 $"[{status}] Input: [{string.Join(", ", input)}], Target: {target} => {result} (Expected: {expected})");
 
             if (result == expected)
+                pass++;
