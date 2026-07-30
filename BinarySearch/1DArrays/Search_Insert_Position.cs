@@ -24,3 +24,4 @@
 public class Search_Insert_Position
 {
     public static int Approach_One(int[] nums, int target)
+    {
