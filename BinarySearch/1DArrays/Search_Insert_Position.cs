@@ -65,3 +65,4 @@ public class Search_Insert_Position
             ([1,2,3,4,5], 6, 5)
         ];
 
+        int pass = 0, fail = 0;
