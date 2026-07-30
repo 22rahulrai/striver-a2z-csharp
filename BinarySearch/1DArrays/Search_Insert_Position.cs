@@ -32,3 +32,4 @@ public class Search_Insert_Position
         {
             int mid = s + (e - s) / 2;
 
+            if (nums[mid] == target)
