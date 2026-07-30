@@ -35,3 +35,4 @@ public class Search_Insert_Position
             if (nums[mid] == target)
             {
                 return mid;
+            }
