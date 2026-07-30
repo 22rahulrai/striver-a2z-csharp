@@ -38,3 +38,4 @@ public class Search_Insert_Position
             }
             else if (nums[mid] > target)
             {
+                e = mid - 1;
