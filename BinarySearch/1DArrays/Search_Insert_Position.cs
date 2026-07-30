@@ -59,3 +59,4 @@ public class Search_Insert_Position
             ([1,3,5,6], 7, 4),
             ([1,3,5,6], 0, 0),
             ([1], 0, 0),
+            ([1], 1, 0),
