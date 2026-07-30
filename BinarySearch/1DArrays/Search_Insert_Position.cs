@@ -53,3 +53,4 @@ public class Search_Insert_Position
     public static void Test()
     {
         (int[] input, int target, int expected)[] cases =
+        [
