@@ -30,3 +30,4 @@ public class Search_Insert_Position
 
         while (s <= e)
         {
+            int mid = s + (e - s) / 2;
