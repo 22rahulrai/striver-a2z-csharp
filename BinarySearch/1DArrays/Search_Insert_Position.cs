@@ -26,3 +26,4 @@ public class Search_Insert_Position
     public static int Approach_One(int[] nums, int target)
     {
         int s = 0;
+        int e = nums.Length - 1;
