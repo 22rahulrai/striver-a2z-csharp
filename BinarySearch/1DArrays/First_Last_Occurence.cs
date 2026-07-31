@@ -100,3 +100,4 @@ public class First_Last_Occurence
             string status = result == expected ? "PASS" : "FAIL";
 
             Console.WriteLine(
+                $"[{status}] Input: [{string.Join(", ", input)}], Target: {target} => {result} (Expected: {expected})");
