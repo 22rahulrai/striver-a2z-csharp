@@ -30,3 +30,4 @@ public class First_Last_Occurence
 
         return new int[]{first,last};
     }
+    public static int FindFirst(int[] nums,int target){
