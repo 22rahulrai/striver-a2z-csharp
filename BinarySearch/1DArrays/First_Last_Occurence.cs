@@ -96,3 +96,4 @@ public class First_Last_Occurence
 
         foreach (var (input, target, expected) in cases)
         {
+            int result = Approach_One(input, target);
