@@ -109,3 +109,4 @@ public class First_Last_Occurence
         }
 
         Console.WriteLine($"\n{pass} passed, {fail} failed.");
+    }
