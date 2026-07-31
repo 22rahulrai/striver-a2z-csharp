@@ -25,3 +25,4 @@ public class First_Last_Occurence
 {
     public static int Approach_One(int[] nums, int target)
     {
+        int first = FindFirst(nums,target);
