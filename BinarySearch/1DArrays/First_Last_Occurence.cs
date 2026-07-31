@@ -27,3 +27,4 @@ public class First_Last_Occurence
     {
         int first = FindFirst(nums,target);
         int last = FindLast(nums,target);
+
