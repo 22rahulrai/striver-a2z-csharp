@@ -35,3 +35,4 @@ public class First_Last_Occurence
         int l = nums.Length-1;
 
         int first = -1;
+        while(s<=l){
