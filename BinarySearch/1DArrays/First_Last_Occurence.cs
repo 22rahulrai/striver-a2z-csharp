@@ -95,3 +95,4 @@ public class First_Last_Occurence
         int pass = 0, fail = 0;
 
         foreach (var (input, target, expected) in cases)
+        {
