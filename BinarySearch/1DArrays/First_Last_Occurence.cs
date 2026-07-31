@@ -66,3 +66,4 @@ public class First_Last_Occurence
                 last = mid;
                 s = mid + 1;
             }
+            else if(nums[mid] > target){
