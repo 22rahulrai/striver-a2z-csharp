@@ -54,3 +54,4 @@ public class First_Last_Occurence
     }
 
     public static int FindLast(int[] nums,int target){
+        int s = 0;
