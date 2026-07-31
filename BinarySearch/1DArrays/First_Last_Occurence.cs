@@ -103,3 +103,4 @@ public class First_Last_Occurence
                 $"[{status}] Input: [{string.Join(", ", input)}], Target: {target} => {result} (Expected: {expected})");
 
             if (result == expected)
+                pass++;
