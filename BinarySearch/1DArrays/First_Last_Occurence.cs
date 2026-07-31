@@ -38,3 +38,4 @@ public class First_Last_Occurence
         while(s<=l){
             int mid = s + (l -s)/2;
 
+            if(nums[mid]==target){
