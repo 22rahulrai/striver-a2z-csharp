@@ -77,3 +77,4 @@ public class First_Last_Occurence
         return last;
     }
 
+    public static void Test()
