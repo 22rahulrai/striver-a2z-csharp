@@ -21,3 +21,4 @@
  *   - Use mid = low + (high - low) / 2 to avoid integer overflow.
  */
 
+public class First_Last_Occurence
