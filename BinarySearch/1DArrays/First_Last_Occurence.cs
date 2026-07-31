@@ -29,3 +29,4 @@ public class First_Last_Occurence
         int last = FindLast(nums,target);
 
         return new int[]{first,last};
+    }
