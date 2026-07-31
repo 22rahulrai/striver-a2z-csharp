@@ -3,3 +3,4 @@
  * Link      : https://leetcode.com/problems/search-insert-position/
  * Platform  : LeetCode
  * Difficulty: Easy
+ * Topic     : Array, Binary Search
