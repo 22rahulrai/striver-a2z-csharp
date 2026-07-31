@@ -99,3 +99,4 @@ public class First_Last_Occurence
             int result = Approach_One(input, target);
             string status = result == expected ? "PASS" : "FAIL";
 
+            Console.WriteLine(
