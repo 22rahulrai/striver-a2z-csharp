@@ -82,3 +82,4 @@ public class First_Last_Occurence
         (int[] input, int target, int expected)[] cases =
         [
             ([1,3,5,6], 5, 2),
+            ([1,3,5,6], 2, 1),
