@@ -87,3 +87,4 @@ public class First_Last_Occurence
             ([1,3,5,6], 0, 0),
             ([1], 0, 0),
             ([1], 1, 0),
+            ([1], 2, 1),
