@@ -105,3 +105,4 @@ public class First_Last_Occurence
             if (result == expected)
                 pass++;
             else
+                fail++;
