@@ -57,3 +57,4 @@ public class First_Last_Occurence
         int s = 0;
         int l = nums.Length-1;
 
+        int last  = -1;
