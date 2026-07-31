@@ -59,3 +59,4 @@ public class First_Last_Occurence
 
         int last  = -1;
     
+        while(s <= l){
