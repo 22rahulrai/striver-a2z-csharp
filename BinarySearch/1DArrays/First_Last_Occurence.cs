@@ -70,3 +70,4 @@ public class First_Last_Occurence
                 l = mid - 1;
             }
             else{
+                s = mid + 1;
