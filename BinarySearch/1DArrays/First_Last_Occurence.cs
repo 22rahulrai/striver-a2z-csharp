@@ -79,3 +79,4 @@ public class First_Last_Occurence
 
     public static void Test()
     {
+        (int[] input, int target, int expected)[] cases =
