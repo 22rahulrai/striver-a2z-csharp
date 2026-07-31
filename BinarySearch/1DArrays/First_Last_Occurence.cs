@@ -36,3 +36,4 @@ public class First_Last_Occurence
 
         int first = -1;
         while(s<=l){
+            int mid = s + (l -s)/2;
