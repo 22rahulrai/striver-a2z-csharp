@@ -83,3 +83,4 @@ public class First_Last_Occurence
         [
             ([1,3,5,6], 5, 2),
             ([1,3,5,6], 2, 1),
+            ([1,3,5,6], 7, 4),
