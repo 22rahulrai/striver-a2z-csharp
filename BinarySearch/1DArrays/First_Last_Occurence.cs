@@ -72,3 +72,4 @@ public class First_Last_Occurence
             else{
                 s = mid + 1;
             }
+        }
