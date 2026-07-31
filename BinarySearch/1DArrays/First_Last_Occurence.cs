@@ -65,3 +65,4 @@ public class First_Last_Occurence
             if(nums[mid]==target){
                 last = mid;
                 s = mid + 1;
+            }
