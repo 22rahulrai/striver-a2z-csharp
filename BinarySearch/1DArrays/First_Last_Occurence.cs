@@ -102,3 +102,4 @@ public class First_Last_Occurence
             Console.WriteLine(
                 $"[{status}] Input: [{string.Join(", ", input)}], Target: {target} => {result} (Expected: {expected})");
 
+            if (result == expected)
