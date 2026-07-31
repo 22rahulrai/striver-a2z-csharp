@@ -32,3 +32,4 @@ public class First_Last_Occurence
     }
     public static int FindFirst(int[] nums,int target){
         int s = 0;
+        int l = nums.Length-1;
