@@ -32,3 +32,4 @@ public class No_Occurences
         int last = FindLast(nums,target);
 
         return last - first +1;
+    }
