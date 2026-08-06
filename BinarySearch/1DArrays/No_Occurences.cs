@@ -56,3 +56,4 @@ public class No_Occurences
         int l = nums.Length-1;
 
         int first = -1;
+        while(s<=l){
