@@ -87,3 +87,4 @@ public class No_Occurences
                 last = mid;
                 s = mid + 1;
             }
+            else if(nums[mid] > target){
