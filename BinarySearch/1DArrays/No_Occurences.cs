@@ -67,3 +67,4 @@ public class No_Occurences
                 l = mid -1;
             }
             else{
+                s =mid+1;
