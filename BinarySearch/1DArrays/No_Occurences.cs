@@ -109,3 +109,4 @@ public class No_Occurences
             (new int[] {8, 9, 10, 12, 12, 12}, 12, 3)
         ];
 
+        int pass = 0, fail = 0;
