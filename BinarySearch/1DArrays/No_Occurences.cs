@@ -29,3 +29,4 @@ public class No_Occurences
         if(first == -1) 
             return 0;
 
+        int last = FindLast(nums,target);
