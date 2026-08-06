@@ -65,3 +65,4 @@ public class No_Occurences
             }
             else if(nums[mid]>target){
                 l = mid -1;
+            }
