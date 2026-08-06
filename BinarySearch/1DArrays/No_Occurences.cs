@@ -64,3 +64,4 @@ public class No_Occurences
                 l=mid -1;
             }
             else if(nums[mid]>target){
+                l = mid -1;
