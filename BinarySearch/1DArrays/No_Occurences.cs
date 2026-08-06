@@ -34,3 +34,4 @@ public class No_Occurences
         return last - first +1;
     }
 
+    public static int Approach_Two(int[] arr, int target) //binary search
