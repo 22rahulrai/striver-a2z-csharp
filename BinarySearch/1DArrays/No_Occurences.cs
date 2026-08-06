@@ -28,3 +28,4 @@ public class No_Occurences
         int first = FindFirst(nums,target);
         if(first == -1) 
             return 0;
+
