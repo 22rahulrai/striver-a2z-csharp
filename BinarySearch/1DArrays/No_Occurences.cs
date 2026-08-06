@@ -36,3 +36,4 @@ public class No_Occurences
 
     public static int Approach_Two(int[] arr, int target) //binary search
     {
+        int c = 0;
