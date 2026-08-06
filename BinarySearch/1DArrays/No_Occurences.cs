@@ -43,3 +43,4 @@ public class No_Occurences
                 continue;
             }
             if(n == target){
+                c++;
