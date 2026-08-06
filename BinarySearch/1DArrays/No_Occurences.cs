@@ -103,3 +103,4 @@ public class No_Occurences
         (int[] input, int target, int expected)[] cases =
         [
             (new int[] {1, 1, 2, 2, 2, 2, 3}, 2, 4),
+            (new int[] {1, 1, 1, 1, 1, 2, 3}, 1, 5),
