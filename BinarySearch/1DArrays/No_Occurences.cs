@@ -118,3 +118,4 @@ public class No_Occurences
             string status = result == expected  ? "PASS" : "FAIL";
 
             Console.WriteLine(
+                $"[{status}] Input: [{string.Join(", ", input)}], Target: {target} => [{string.Join(", ", result)}] (Expected: [{string.Join(", ", expected)}])");
