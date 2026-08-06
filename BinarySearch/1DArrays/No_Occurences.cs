@@ -51,3 +51,4 @@ public class No_Occurences
         }
         return c;
     }
+    public static int FindFirst(int[] nums,int target){
