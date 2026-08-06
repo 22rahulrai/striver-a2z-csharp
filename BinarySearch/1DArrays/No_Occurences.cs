@@ -82,3 +82,4 @@ public class No_Occurences
     
         while(s <= l){
             int mid = s + (l -s)/2;
+
