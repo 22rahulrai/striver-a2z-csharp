@@ -92,3 +92,4 @@ public class No_Occurences
             }
             else{
                 s = mid + 1;
+            }
