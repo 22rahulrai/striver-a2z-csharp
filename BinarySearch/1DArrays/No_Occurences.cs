@@ -46,3 +46,4 @@ public class No_Occurences
                 c++;
             }
             else{
+                break;
