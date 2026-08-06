@@ -49,3 +49,4 @@ public class No_Occurences
                 break;
             }
         }
+        return c;
