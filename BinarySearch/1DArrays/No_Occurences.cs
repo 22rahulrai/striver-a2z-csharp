@@ -74,3 +74,4 @@ public class No_Occurences
         return first;
     }
 
+    public static int FindLast(int[] nums,int target){
