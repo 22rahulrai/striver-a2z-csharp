@@ -77,3 +77,4 @@ public class No_Occurences
     public static int FindLast(int[] nums,int target){
         int s = 0;
         int l = nums.Length-1;
+
