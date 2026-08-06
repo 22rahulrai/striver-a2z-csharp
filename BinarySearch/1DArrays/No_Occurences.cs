@@ -38,3 +38,4 @@ public class No_Occurences
     {
         int c = 0;
         
+        foreach(int n in arr){
