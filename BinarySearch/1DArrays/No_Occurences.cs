@@ -84,3 +84,4 @@ public class No_Occurences
             int mid = s + (l -s)/2;
 
             if(nums[mid]==target){
+                last = mid;
