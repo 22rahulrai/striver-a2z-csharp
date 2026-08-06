@@ -121,3 +121,4 @@ public class No_Occurences
                 $"[{status}] Input: [{string.Join(", ", input)}], Target: {target} => [{string.Join(", ", result)}] (Expected: [{string.Join(", ", expected)}])");
 
             if (result == expected)
+                pass++;
