@@ -98,3 +98,4 @@ public class No_Occurences
         return last;
     }
 
+    public static void Test()
