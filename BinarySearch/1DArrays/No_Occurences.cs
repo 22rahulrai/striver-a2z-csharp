@@ -70,3 +70,4 @@ public class No_Occurences
                 s =mid+1;
             }
         }
+
