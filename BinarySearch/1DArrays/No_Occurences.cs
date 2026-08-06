@@ -104,3 +104,4 @@ public class No_Occurences
         [
             (new int[] {1, 1, 2, 2, 2, 2, 3}, 2, 4),
             (new int[] {1, 1, 1, 1, 1, 2, 3}, 1, 5),
+            (new int[] {1, 2, 2, 2, 3, 4}, 2, 3),
