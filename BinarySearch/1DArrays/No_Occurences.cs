@@ -33,3 +33,4 @@ public class No_Occurences
 
         return last - first +1;
     }
+
