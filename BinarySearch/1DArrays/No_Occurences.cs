@@ -42,3 +42,4 @@ public class No_Occurences
             if(n < target){
                 continue;
             }
+            if(n == target){
