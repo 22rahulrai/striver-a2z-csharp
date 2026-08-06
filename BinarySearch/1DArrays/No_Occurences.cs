@@ -41,3 +41,4 @@ public class No_Occurences
         foreach(int n in arr){
             if(n < target){
                 continue;
+            }
