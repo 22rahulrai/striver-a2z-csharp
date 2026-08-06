@@ -44,3 +44,4 @@ public class No_Occurences
             }
             if(n == target){
                 c++;
+            }
