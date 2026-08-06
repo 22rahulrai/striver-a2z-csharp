@@ -128,3 +128,4 @@ public class No_Occurences
 
         Console.WriteLine($"\n{pass} passed, {fail} failed.");
     }
+}
