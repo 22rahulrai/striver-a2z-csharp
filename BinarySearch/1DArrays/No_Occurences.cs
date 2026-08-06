@@ -71,3 +71,4 @@ public class No_Occurences
             }
         }
 
+        return first;
