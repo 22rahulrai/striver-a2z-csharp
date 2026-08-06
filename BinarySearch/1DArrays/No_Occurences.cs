@@ -55,3 +55,4 @@ public class No_Occurences
         int s = 0;
         int l = nums.Length-1;
 
+        int first = -1;
