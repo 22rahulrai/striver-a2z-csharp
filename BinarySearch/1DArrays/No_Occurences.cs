@@ -123,3 +123,4 @@ public class No_Occurences
             if (result == expected)
                 pass++;
             else
+                fail++;
