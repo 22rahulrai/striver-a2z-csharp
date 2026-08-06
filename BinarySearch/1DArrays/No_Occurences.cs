@@ -61,3 +61,4 @@ public class No_Occurences
 
             if(nums[mid]==target){
                 first = mid;
+                l=mid -1;
