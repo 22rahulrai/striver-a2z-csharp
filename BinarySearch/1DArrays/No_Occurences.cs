@@ -26,3 +26,4 @@ public class No_Occurences
     public static int Approach_One(int[] nums, int target) //binary search
     {
         int first = FindFirst(nums,target);
+        if(first == -1) 
