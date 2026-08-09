@@ -98,3 +98,4 @@ public class Search_Rotated_arr
         int e = nums.Length - 1;
 
         while (s <= e)
+        {
