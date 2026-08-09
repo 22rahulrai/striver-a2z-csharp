@@ -52,3 +52,4 @@ public class Search_Rotated_arr
                 return Array.IndexOf(nums, n);
         }
         return -1;
+    }
