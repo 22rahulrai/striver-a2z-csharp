@@ -92,3 +92,4 @@ public class Search_Rotated_arr
         return -1;
     }
 
+    public static int FindPivot(int[] nums)
