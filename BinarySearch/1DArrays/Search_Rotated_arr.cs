@@ -16,3 +16,4 @@
                  â†“
              Find mid
                  â†“
+       Is left half sorted?
