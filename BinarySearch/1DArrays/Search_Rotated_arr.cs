@@ -67,3 +67,4 @@ public class Search_Rotated_arr
         if(target >=nums[pivot] && target <= nums[nums.Length-1]) //right half
         {
             return BinarySearch(nums, pivot, nums.Length-1, target);
+        }
