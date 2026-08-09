@@ -42,3 +42,4 @@ public class Search_Rotated_arr
 // ============================================================
 // Approach One: Linear Search
 // Time: O(n)
+// Space: O(1)
