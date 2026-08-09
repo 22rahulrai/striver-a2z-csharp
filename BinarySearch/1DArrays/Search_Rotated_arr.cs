@@ -44,3 +44,4 @@ public class Search_Rotated_arr
 // Time: O(n)
 // Space: O(1)
 // ============================================================
+    public static int Approach_One(int[] nums, int target) // Linear Search
