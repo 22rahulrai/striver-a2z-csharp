@@ -60,3 +60,4 @@ public class Search_Rotated_arr
 //  Time: O(log n) 
 //  Space: O(1) 
 // ============================================================
+    public static int Approach_Two(int[] nums, int target) // Using Pivot and Binary Search
