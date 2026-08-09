@@ -104,3 +104,4 @@ public class Search_Rotated_arr
             if (nums[mid] < nums[e])
             {
                 s=mid+1;
+            }
