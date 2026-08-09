@@ -14,3 +14,4 @@
     3. 
             Rotated Sorted Array
                  â†“
+             Find mid
