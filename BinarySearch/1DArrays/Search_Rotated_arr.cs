@@ -65,3 +65,4 @@ public class Search_Rotated_arr
         int pivot = FindPivot(nums);
 
         if(target >=nums[pivot] && target <= nums[nums.Length-1]) //right half
+        {
