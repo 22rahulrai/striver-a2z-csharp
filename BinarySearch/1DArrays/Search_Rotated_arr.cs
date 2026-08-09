@@ -126,3 +126,4 @@ public class Search_Rotated_arr
                 return mid;
             else if (nums[s] <= nums[mid])
             {
+                if(target >= nums[s] && target < nums[mid])
