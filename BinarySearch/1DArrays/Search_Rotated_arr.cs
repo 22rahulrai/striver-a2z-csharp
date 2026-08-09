@@ -47,3 +47,4 @@ public class Search_Rotated_arr
     public static int Approach_One(int[] nums, int target) // Linear Search
     {
         foreach(int n in nums)
+        {
