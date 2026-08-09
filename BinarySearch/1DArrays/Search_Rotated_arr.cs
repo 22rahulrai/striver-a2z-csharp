@@ -177,3 +177,4 @@ public class Search_Rotated_arr
                 $"[{status}] Input: [{string.Join(", ", input)}], Target: {target} => {result} (Expected: {expected})");
 
             if (result == expected)
+                pass++;
