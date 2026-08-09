@@ -82,3 +82,4 @@ public class Search_Rotated_arr
         {
             int mid = s + (e-s)/2;
 
+            if(nums[mid] == target)
