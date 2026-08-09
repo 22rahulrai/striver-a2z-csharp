@@ -24,3 +24,4 @@
          â†“               â†“
  Is target in left?  Is target in right?
     /      \           /       \
+  Yes      No        Yes       No
