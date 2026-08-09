@@ -76,3 +76,4 @@ public class Search_Rotated_arr
         return -1;
     }
 
+    public static int BinarySearch(int[] nums, int s, int e, int target)
