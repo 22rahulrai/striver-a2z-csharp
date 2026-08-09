@@ -166,3 +166,4 @@ public class Search_Rotated_arr
             ([1,2,3,4,5], 6, 5)
         ];
 
+        int pass = 0, fail = 0;
