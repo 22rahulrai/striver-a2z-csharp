@@ -99,3 +99,4 @@ public class Search_Rotated_arr
 
         while (s <= e)
         {
+            int mid = (s+e)/2;
