@@ -40,3 +40,4 @@
 public class Search_Rotated_arr
 {
 // ============================================================
+// Approach One: Linear Search
