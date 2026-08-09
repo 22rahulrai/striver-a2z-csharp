@@ -71,3 +71,4 @@ public class Search_Rotated_arr
         else //left half
         {
             return BinarySearch(nums, 0, pivot-1, target);
+        }
