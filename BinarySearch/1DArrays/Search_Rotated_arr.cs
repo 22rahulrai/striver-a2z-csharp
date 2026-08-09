@@ -137,3 +137,4 @@ public class Search_Rotated_arr
             }
             else
             {
+                if(target <= nums[e] && target > nums[mid])
