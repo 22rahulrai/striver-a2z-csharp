@@ -9,3 +9,4 @@
  * Approach:
  *   1. Binary Search
  *      - If target exists, return its index.
+ *      - Otherwise, return the index where it should be inserted
