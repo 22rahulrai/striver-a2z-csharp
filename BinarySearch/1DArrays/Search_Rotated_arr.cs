@@ -6,3 +6,4 @@
  * Topic     : Array, Binary Search
  * Date      : 2026-07-30
  *
+ * Approach:
