@@ -11,3 +11,4 @@
  *      - If target exists, return its index.
  *      - Otherwise, return the index where it should be inserted
  *        to keep the array sorted.
+    3. 
