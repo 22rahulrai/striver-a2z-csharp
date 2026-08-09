@@ -23,3 +23,4 @@
    Left is sorted    Right is sorted
          â†“               â†“
  Is target in left?  Is target in right?
+    /      \           /       \
