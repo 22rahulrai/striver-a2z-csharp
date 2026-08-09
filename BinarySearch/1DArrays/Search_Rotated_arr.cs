@@ -68,3 +68,4 @@ public class Search_Rotated_arr
         {
             return BinarySearch(nums, pivot, nums.Length-1, target);
         }
+        else //left half
