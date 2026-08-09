@@ -8,3 +8,4 @@
  *
  * Approach:
  *   1. Binary Search
+ *      - If target exists, return its index.
