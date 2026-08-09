@@ -86,3 +86,4 @@ public class Search_Rotated_arr
                 return mid;
             else if(nums[mid] < target)
                 s = mid + 1;
+            else
