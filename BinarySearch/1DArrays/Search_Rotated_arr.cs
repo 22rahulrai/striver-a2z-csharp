@@ -182,3 +182,4 @@ public class Search_Rotated_arr
                 fail++;
         }
 
+        Console.WriteLine($"\n{pass} passed, {fail} failed.");
