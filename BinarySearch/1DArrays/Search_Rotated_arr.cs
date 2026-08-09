@@ -20,3 +20,4 @@
           /            \
         Yes             No
          â†“               â†“
+   Left is sorted    Right is sorted
