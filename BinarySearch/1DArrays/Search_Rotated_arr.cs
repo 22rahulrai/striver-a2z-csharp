@@ -19,3 +19,4 @@
        Is left half sorted?
           /            \
         Yes             No
+         â†“               â†“
