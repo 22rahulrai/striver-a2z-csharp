@@ -174,3 +174,4 @@ public class Search_Rotated_arr
             string status = result == expected ? "PASS" : "FAIL";
 
             Console.WriteLine(
+                $"[{status}] Input: [{string.Join(", ", input)}], Target: {target} => {result} (Expected: {expected})");
