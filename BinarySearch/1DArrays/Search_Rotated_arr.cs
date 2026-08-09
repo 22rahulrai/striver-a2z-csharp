@@ -79,3 +79,4 @@ public class Search_Rotated_arr
     public static int BinarySearch(int[] nums, int s, int e, int target)
     {
         while(s <= e)
+        {
