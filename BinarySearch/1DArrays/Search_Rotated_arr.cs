@@ -113,3 +113,4 @@ public class Search_Rotated_arr
         return s;
     }
 
+    public static int Approach_Three(int []nums, int target)
