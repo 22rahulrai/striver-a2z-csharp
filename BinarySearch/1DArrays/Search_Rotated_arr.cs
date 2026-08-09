@@ -95,3 +95,4 @@ public class Search_Rotated_arr
     public static int FindPivot(int[] nums)
     {
         int s=0;
+        int e = nums.Length - 1;
