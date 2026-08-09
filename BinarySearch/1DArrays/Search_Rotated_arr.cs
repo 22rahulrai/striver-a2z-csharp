@@ -51,3 +51,4 @@ public class Search_Rotated_arr
             if(n == target)
                 return Array.IndexOf(nums, n);
         }
+        return -1;
