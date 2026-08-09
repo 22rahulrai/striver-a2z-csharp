@@ -57,3 +57,4 @@ public class Search_Rotated_arr
 // ============================================================ 
 // 
 // Approach Two: Find Pivot + Binary Search 
+//  Time: O(log n) 
