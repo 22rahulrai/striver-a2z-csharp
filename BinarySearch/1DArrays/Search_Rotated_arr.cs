@@ -62,3 +62,4 @@ public class Search_Rotated_arr
 // ============================================================
     public static int Approach_Two(int[] nums, int target) // Using Pivot and Binary Search
     {
+        int pivot = FindPivot(nums);
