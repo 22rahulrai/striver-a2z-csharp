@@ -48,3 +48,4 @@ public class Search_Rotated_arr
     {
         foreach(int n in nums)
         {
+            if(n == target)
