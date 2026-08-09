@@ -102,3 +102,4 @@ public class Search_Rotated_arr
             int mid = (s+e)/2;
 
             if (nums[mid] < nums[e])
+            {
