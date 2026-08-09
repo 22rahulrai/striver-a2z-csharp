@@ -154,3 +154,4 @@ public class Search_Rotated_arr
     public static void Test()
     {
         (int[] input, int target, int expected)[] cases =
+        [
