@@ -1,24 +1,30 @@
 /*
- * Problem   : 35. Search Insert Position
- * Link      : https://leetcode.com/problems/search-insert-position/
+ * Problem   : 153. Find Minimum in Rotated Sorted Array
+ * Link      : https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
  * Platform  : LeetCode
- * Difficulty: Easy
+ * Difficulty: Medium
  * Topic     : Array, Binary Search
  * Date      : 2026-07-30
  *
- * Approach:
- *   1. Binary Search
- *      - If target exists, return its index.
- *      - Otherwise, return the index where it should be inserted
- *        to keep the array sorted.
+ * Approaches:
  *
- * Complexity:
- *   Time  : O(log n)
- *   Space : O(1)
+ * 1. Linear Search
+ *    - Traverse the array and find the minimum element.
+ *    - Time  : O(n)
+ *    - Space : O(1)
+ *
+ * 2. Binary Search
+ *    - Compare nums[mid] with nums[e].
+ *    - If nums[mid] > nums[e], minimum is on the right.
+ *    - Otherwise, mid can be the minimum, so keep mid.
+ *    - When s == e, nums[s] is the minimum.
+ *    - Time  : O(log n)
+ *    - Space : O(1)
  *
  * Notes:
- *   - Array is sorted in ascending order.
- *   - Use mid = low + (high - low) / 2 to avoid integer overflow.
+ * - Array is sorted in ascending order before rotation.
+ * - All elements are unique.
+ * - Use mid = s + (e - s) / 2 to avoid integer overflow.
  */
 
 public class Minimum_Rotated_arr
