@@ -38,6 +38,28 @@ public class Minimum_Rotated_arr
         return min;
     }
 
+    public static int Approach_Two(int[] nums)
+    {
+        int s = 0;
+        int l = nums.Length - 1;
+
+        while(s < l)
+        {
+            int mid = s + (l - s) / 2;
+
+            if(nums[mid] > nums[l])
+            {
+                s = mid + 1;
+            }
+            else
+            {
+                l = mid;
+            }
+        }
+
+        return nums[s];
+    }
+
     
     public static void Test()
     {
