@@ -69,35 +69,34 @@ public class Minimum_Rotated_arr
     
     public static void Test()
     {
-        (int[] input, int target, int []expected)[] cases =
+        (int[] input, int expected)[] cases =
         [
-            (new int[] {5,7,7,8,8,10}, 8, new int[] {3,4}),
-            (new int[] {5,7,7,8,8,10}, 6, new int[] {-1,-1}),
-            (new int[] {}, 0, new int[] {-1,-1}),
-            (new int[] {1}, 1, new int[] {0,0}),
-            (new int[] {1}, 0, new int[] {-1,-1}),
-            (new int[] {2,2}, 2, new int[] {0,1}),
-            (new int[] {2,2,2,2}, 2, new int[] {0,3}),
-            (new int[] {1,2,3,4,5}, 3, new int[] {2,2}),
-            (new int[] {1,2,3,4,5}, 6, new int[] {-1,-1}),
-            (new int[] {1,1,2,2,2,3,4}, 2, new int[] {2,4})
+            ([3, 4, 5, 1, 2], 1),
+            ([4, 5, 6, 7, 0, 1, 2], 0),
+            ([11, 13, 15, 17], 11),
+            ([1, 2, 3, 4, 5], 1),
+            ([1], 1),
+            ([2, 1], 1),
+            ([1, 2], 1),
+            ([5, 1, 2, 3, 4], 1),
+            ([2, 3, 4, 5, 1], 1),
+            ([6, 7, 8, 9, 1, 2, 3, 4, 5], 1),
+            ([4, 5, 6, 7, 8, 1, 2, 3], 1)
         ];
 
         int pass = 0, fail = 0;
 
-        foreach (var (input, target, expected) in cases)
+        foreach (var (input, expected) in cases)
         {
-            int [] result = Approach_One(input, target);
-            bool success =
-                result[0] == expected[0] &&
-                result[1] == expected[1];
+            int result = Approach_Two(input);
 
-            string status = success ? "PASS" : "FAIL";
+            string status = result == expected ? "PASS" : "FAIL";
 
             Console.WriteLine(
-                $"[{status}] Input: [{string.Join(", ", input)}], Target: {target} => [{string.Join(", ", result)}] (Expected: [{string.Join(", ", expected)}])");
-
-            if (success)
+                $"[{status}] Input: [{string.Join(", ", input)}] " +
+                $"=> {result} (Expected: {expected})"
+            );
+            if (result == expected)
                 pass++;
             else
                 fail++;
