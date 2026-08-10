@@ -1,0 +1,80 @@
+/*
+ * Problem   : 35. Search Insert Position
+ * Link      : https://leetcode.com/problems/search-insert-position/
+ * Platform  : LeetCode
+ * Difficulty: Easy
+ * Topic     : Array, Binary Search
+ * Date      : 2026-07-30
+ *
+ * Approach:
+ *   1. Binary Search
+ *      - If target exists, return its index.
+ *      - Otherwise, return the index where it should be inserted
+ *        to keep the array sorted.
+ *
+ * Complexity:
+ *   Time  : O(log n)
+ *   Space : O(1)
+ *
+ * Notes:
+ *   - Array is sorted in ascending order.
+ *   - Use mid = low + (high - low) / 2 to avoid integer overflow.
+ */
+
+public class Minimum_Rotated_arr
+{
+    public static int Approach_One(int[] nums)
+    {
+        int min = nums[0];
+
+        foreach(var n in nums)
+        {
+            if(n < min)
+            {
+                min = n;
+            }
+        }
+
+        return min;
+    }
+
+    
+    public static void Test()
+    {
+        (int[] input, int target, int []expected)[] cases =
+        [
+            (new int[] {5,7,7,8,8,10}, 8, new int[] {3,4}),
+            (new int[] {5,7,7,8,8,10}, 6, new int[] {-1,-1}),
+            (new int[] {}, 0, new int[] {-1,-1}),
+            (new int[] {1}, 1, new int[] {0,0}),
+            (new int[] {1}, 0, new int[] {-1,-1}),
+            (new int[] {2,2}, 2, new int[] {0,1}),
+            (new int[] {2,2,2,2}, 2, new int[] {0,3}),
+            (new int[] {1,2,3,4,5}, 3, new int[] {2,2}),
+            (new int[] {1,2,3,4,5}, 6, new int[] {-1,-1}),
+            (new int[] {1,1,2,2,2,3,4}, 2, new int[] {2,4})
+        ];
+
+        int pass = 0, fail = 0;
+
+        foreach (var (input, target, expected) in cases)
+        {
+            int [] result = Approach_One(input, target);
+            bool success =
+                result[0] == expected[0] &&
+                result[1] == expected[1];
+
+            string status = success ? "PASS" : "FAIL";
+
+            Console.WriteLine(
+                $"[{status}] Input: [{string.Join(", ", input)}], Target: {target} => [{string.Join(", ", result)}] (Expected: [{string.Join(", ", expected)}])");
+
+            if (success)
+                pass++;
+            else
+                fail++;
+        }
+
+        Console.WriteLine($"\n{pass} passed, {fail} failed.");
+    }
+}
