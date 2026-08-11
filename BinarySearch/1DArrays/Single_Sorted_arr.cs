@@ -162,8 +162,43 @@ public class Single_Sorted_arr
         }
 
         return nums[s];
+    } 
+    public static void Test()
+    {
+        (int[] input, int expected)[] cases =
+        [
+            ([1, 1, 2, 3, 3, 4, 4, 8, 8], 2),
+            ([3, 3, 7, 7, 10, 11, 11], 10),
+            ([1], 1),
+            ([1, 1, 2], 2),
+            ([1, 2, 2], 1),
+            ([1, 1, 2, 2, 3], 3),
+            ([1, 1, 2, 2, 3, 3, 4], 4),
+            ([1, 1, 2, 2, 3, 3, 4, 4, 5], 5),
+            ([1, 1, 2, 2, 3, 4, 4, 5, 5], 3),
+            ([1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 6], 4),
+            ([1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6], 6)
+        ];
+
+        int pass = 0, fail = 0;
+
+        foreach (var (input, expected) in cases)
+        {
+            int result = Approach_Five(input);
+
+            string status = result == expected ? "PASS" : "FAIL";
+
+            Console.WriteLine(
+                $"[{status}] Input: [{string.Join(", ", input)}] " +
+                $"=> {result} (Expected: {expected})"
+            );
+            if (result == expected)
+                pass++;
+            else
+                fail++;
+        }
+
+        Console.WriteLine($"\n{pass} passed, {fail} failed.");
     }
-    
-    
     
 }
