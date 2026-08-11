@@ -38,3 +38,30 @@
  * - The array contains an odd number of elements.
  * - For the optimal solution, binary search is used.
  */
+
+
+public class Single_Sorted_arr
+{
+    public static int Approach_One(int[] nums) //using Dictionary
+    {
+        Dictionary<int, int> map = new Dictionary<int, int>();
+
+        foreach(var n in nums)
+        {
+            if(map.ContainsKey(n))
+                map[n]++;
+            else
+                map[n] = 1;
+        }
+
+        foreach(var pair in map)
+        {
+            if(pair.Value == 1)
+            {
+                return pair.Key;
+            }
+        }
+        return -1;
+    }
+
+}
