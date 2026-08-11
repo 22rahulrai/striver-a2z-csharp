@@ -76,6 +76,20 @@ public class Single_Sorted_arr
         return result; 
     }
 
+    public static int Approach_Three(int[] nums) //using Linear Search
+    {
+        int i = 0;
+        while( i < nums.Length - 1)
+        {
+            if(nums[i] != nums[i + 1])
+            {
+                return nums[i];
+            }
+        }
+
+        return nums[nums.Length - 1];
+    }
+
     
     
 }
