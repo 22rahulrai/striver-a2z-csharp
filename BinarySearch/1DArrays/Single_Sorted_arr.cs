@@ -126,5 +126,44 @@ public class Single_Sorted_arr
         return - 1;
     }
 
+    public static int Approach_Five(int[] nums) //using Binary Search
+    {
+        int n = nums.Length;
+
+        if(n == 1)
+            return nums[0];
+
+        if(nums[0] != nums[1])
+            return nums[0];
+        
+        if(nums[n-1] != nums[n-2])
+            return nums[n-1];
+        
+        int s = 0;
+        int e = nums.Length - 2;
+
+        while(s <= e)
+        {
+            int mid = s + (e-s)/2;
+            // make mid even
+            if (mid % 2 == 1)
+            {
+                mid --;
+            }
+
+            if(nums[mid] == nums[mid+1])
+            {
+                s = mid + 2;
+            }
+            else
+            {
+                e = mid;
+            } 
+        }
+
+        return nums[s];
+    }
+    
+    
     
 }
