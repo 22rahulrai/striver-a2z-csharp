@@ -64,4 +64,18 @@ public class Single_Sorted_arr
         return -1;
     }
 
+    public static int Approach_Two(int[] nums) //using Xor
+    {
+        int result = 0;
+
+        foreach(var n in nums)
+        {
+            result ^= n;
+        }
+
+        return result; 
+    }
+
+    
+    
 }
