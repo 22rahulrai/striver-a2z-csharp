@@ -8,35 +8,48 @@
  *
  * Approaches:
  *
- * 1. HashMap
- *    - Store the frequency of each element.
- *    - Return the element with frequency 1.
- *    - Time  : O(n)
- *    - Space : O(n)
+ * 1. Linear Search
  *
- * 2. XOR
- *    - Every paired element cancels out.
- *    - The remaining value is the single element.
- *    - Time  : O(n)
- *    - Space : O(1)
+ * - A peak element is an element that is strictly greater than its neighbors.
  *
- * 3. Linear Search
- *    - Check adjacent elements to find the unpaired element.
- *    - Time  : O(n)
- *    - Space : O(1)
+ * - For the first element, only the right neighbor needs to be checked.
  *
- * 4. Binary Search
- *    - Before the single element, pairs start at even indices.
- *    - After the single element, this pattern is shifted.
- *    - Use this pattern to eliminate half of the search space.
- *    - Time  : O(log n)
- *    - Space : O(1)
+ * - For the last element, only the left neighbor needs to be checked.
+ *
+ * - Since nums[-1] and nums[n] are considered negative infinity,
+ *   an edge element can also be a peak.
+ *
+ * - Scan the array from left to right and return the first peak found.
+ *
+ * - Time  : O(n)
+ * - Space : O(1)
+ *
+ *
+ * 2. Binary Search
+ *
+ * - Compare nums[mid] with nums[mid + 1].
+ *
+ * - If nums[mid] > nums[mid + 1], we are on a descending slope.
+ *   Therefore, a peak must exist at mid or somewhere to its left.
+ *
+ * - Otherwise, we are on an ascending slope.
+ *   Therefore, a peak must exist somewhere to the right of mid.
+ *
+ * - This allows us to discard half of the search space at every step.
+ *
+ * - When start == end, that index is guaranteed to be a peak.
+ *
+ * - Time  : O(log n)
+ * - Space : O(1)
  *
  * Notes:
- * - Array is sorted.
- * - Every element appears exactly twice except one element.
- * - The array contains an odd number of elements.
+ * - The array is not necessarily sorted.
+ * - Adjacent elements are not equal.
+ * - There can be multiple peak elements.
+ * - We only need to return the index of any peak element.
+ * - nums[-1] and nums[n] are considered negative infinity.
  * - For the optimal solution, binary search is used.
+ *
  */
 
 
