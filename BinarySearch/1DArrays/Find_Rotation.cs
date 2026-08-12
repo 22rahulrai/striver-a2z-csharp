@@ -42,26 +42,14 @@
 
 public class Find_Rotation
 {
-    public static int Approach_One(int[] nums) //using Dictionary
+    public static int Approach_One(int[] nums)
     {
-        Dictionary<int, int> map = new Dictionary<int, int>();
-
-        foreach(var n in nums)
+        for(int i = 0; i < nums.Length-1; i++)
         {
-            if(map.ContainsKey(n))
-                map[n]++;
-            else
-                map[n] = 1;
+            if(nums[i]>nums[i+1])
+                return i + 1;
         }
-
-        foreach(var pair in map)
-        {
-            if(pair.Value == 1)
-            {
-                return pair.Key;
-            }
-        }
-        return -1;
+        return 0;
     }
 
     public static int Approach_Two(int[] nums) //using Xor
