@@ -44,40 +44,21 @@ public class Find_Rotation
 {
     public static int Approach_One(int[] nums)
     {
+        int min = nums[0];
+        int minIndex = 0;
+
         for(int i = 0; i < nums.Length-1; i++)
         {
-            if(nums[i]>nums[i+1])
-                return i + 1;
-        }
-        return 0;
-    }
-
-    public static int Approach_Two(int[] nums) //using Xor
-    {
-        int result = 0;
-
-        foreach(var n in nums)
-        {
-            result ^= n;
-        }
-
-        return result; 
-    }
-
-    public static int Approach_Three(int[] nums) //using Linear Search
-    {
-        int i = 0;
-        while( i < nums.Length - 1)
-        {
-            if(nums[i] != nums[i + 1])
+            if (nums[i] < min)
             {
-                return nums[i];
+                min = nums[i];
+                minIndex = i;
             }
         }
-
-        return nums[nums.Length - 1];
+        return minIndex;
     }
 
+    
     public static int Approach_Four(int[] nums) //using Binary Search
     {
         int n = nums.Length;
