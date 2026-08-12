@@ -42,7 +42,7 @@
 
 public class Peak_Element
 {
-    public static int Approach_One(int[] nums) //using Dictionary
+    public static int Approach_One(int[] nums) // BFS
     {
         int n = nums.Length-1;
 
@@ -57,7 +57,7 @@ public class Peak_Element
         return -1;
     }
 
-    public static int Approach_Two(int[] nums) //using Xor
+    public static int Approach_Two(int[] nums) //using binary search
     {
         int n = nums.Length-1;
         int s = 0;
