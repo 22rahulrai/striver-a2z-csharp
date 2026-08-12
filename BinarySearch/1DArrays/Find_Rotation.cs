@@ -1,42 +1,87 @@
 /*
- * Problem   : 540. Single Element in a Sorted Array
- * Link      : https://leetcode.com/problems/single-element-in-a-sorted-array/
- * Platform  : LeetCode
- * Difficulty: Medium
- * Topic     : Array, Binary Search, Bit Manipulation
- * Date      : 2026-08-10
+ * Problem   : Find Kth Rotation
+ * Link      : https://www.geeksforgeeks.org/problems/rotation4723/1
+ * Platform  : GeeksForGeeks
+ * Difficulty: Easy
+ * Topic     : Array, Binary Search
+ * Date      : 2026-08-12
+ *
+ * Problem:
+ * Given a sorted and rotated array, find the number of times
+ * the array has been rotated.
+ *
+ * The number of rotations is equal to the index of the
+ * minimum element in the array.
+ *
  *
  * Approaches:
  *
- * 1. HashMap
- *    - Store the frequency of each element.
- *    - Return the element with frequency 1.
- *    - Time  : O(n)
- *    - Space : O(n)
+ * 1. Find Minimum Element - Linear Search
  *
- * 2. XOR
- *    - Every paired element cancels out.
- *    - The remaining value is the single element.
- *    - Time  : O(n)
- *    - Space : O(1)
+ * - Traverse the complete array.
+ * - Find the minimum element.
+ * - The index of the minimum element represents the number
+ *   of rotations.
  *
- * 3. Linear Search
- *    - Check adjacent elements to find the unpaired element.
- *    - Time  : O(n)
- *    - Space : O(1)
+ * Example:
  *
- * 4. Binary Search
- *    - Before the single element, pairs start at even indices.
- *    - After the single element, this pattern is shifted.
- *    - Use this pattern to eliminate half of the search space.
- *    - Time  : O(log n)
- *    - Space : O(1)
+ *   [4, 5, 1, 2, 3]
+ *
+ *   Minimum element = 1
+ *   Index = 2
+ *
+ *   Therefore, the array was rotated 2 times.
+ *
+ * Time  : O(n)
+ * Space : O(1)
+ *
+ *
+ * 2. Find Rotation Point - Linear Search
+ *
+ * - In a sorted and rotated array, the rotation point is
+ *   where nums[i] > nums[i + 1].
+ * - The element after this point is the minimum element.
+ * - Therefore, return i + 1.
+ * - If no such point exists, the array is not rotated,
+ *   so return 0.
+ *
+ * Example:
+ *
+ *   [4, 5, 1, 2, 3]
+ *
+ *   5 > 1
+ *
+ *   Rotation point = 1
+ *   Minimum element index = 2
+ *
+ * Time  : O(n)
+ * Space : O(1)
+ *
+ *
+ * 3. Binary Search
+ *
+ * - The array consists of two sorted parts.
+ * - Compare nums[mid] with nums[end].
+ * - If nums[mid] > nums[end], the minimum element must
+ *   be on the right side.
+ * - Otherwise, the minimum element is at mid or on the
+ *   left side.
+ * - Continue until start == end.
+ * - The final index is the index of the minimum element,
+ *   which is the number of rotations.
+ *
+ * Time  : O(log n)
+ * Space : O(1)
+ *
  *
  * Notes:
- * - Array is sorted.
- * - Every element appears exactly twice except one element.
- * - The array contains an odd number of elements.
- * - For the optimal solution, binary search is used.
+ *
+ * - The array is sorted and rotated.
+ * - All elements are distinct.
+ * - The number of rotations is equal to the index of the
+ *   minimum element.
+ * - A completely sorted array has 0 rotations.
+ * - The optimal approach is Binary Search.
  */
 
 
