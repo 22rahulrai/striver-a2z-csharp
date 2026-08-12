@@ -59,7 +59,21 @@ public class Peak_Element
 
     public static int Approach_Two(int[] nums) //using Xor
     {
-        return -1;
+        int n = nums.Length-1;
+        int s = 0;
+        int e = n;
+
+        while(s < e)
+        {
+            int mid = s + (e-s)/2;
+
+            if(nums[mid]>nums[mid+1])
+                e = mid;
+            else
+                s = mid + 1;
+        }
+
+        return s;
     }
 
     
