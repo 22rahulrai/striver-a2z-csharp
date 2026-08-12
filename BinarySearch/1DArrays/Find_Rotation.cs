@@ -58,7 +58,21 @@ public class Find_Rotation
         return minIndex;
     }
 
+    public static int Approach_Two(int[] nums) 
+    {
+        for(int i = 0; i < nums.Length-1; i++)
+        {
+            if(nums[i]>nums[i+1])
+                return i + 1;
+        }
+        return 0;
+
+        
+        
+    }
+
     
+
     public static int Approach_Four(int[] nums) //using Binary Search
     {
         int n = nums.Length;
