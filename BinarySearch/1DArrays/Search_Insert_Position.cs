@@ -4,7 +4,7 @@
  * Platform  : LeetCode
  * Difficulty: Easy
  * Topic     : Array, Binary Search
- * Date      : 2026-07-30
+ * Date      : 2026-08-08
  *
  * Approach:
  *   1. Binary Search
