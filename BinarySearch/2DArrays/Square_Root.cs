@@ -87,20 +87,22 @@
 
 public class Square_Root
 {
-    public static int Approach_One(int[] nums)
+    public static int Approach_One(int target)
     {
-        int min = nums[0];
-        int minIndex = 0;
+        int res = 0;
 
-        for(int i = 0; i < nums.Length-1; i++)
+        for(int i = 0; i < target; i++)
         {
-            if (nums[i] < min)
+            if (i * i <= target)
             {
-                min = nums[i];
-                minIndex = i;
+                res = i;
+            }
+            else
+            {
+                break;
             }
         }
-        return minIndex;
+        return res;
     }
 
     public static int Approach_Two(int[] nums) 
