@@ -118,23 +118,6 @@ public class Square_Root
         
     }
 
-    public static int Approach_Three(int[] nums) 
-    {
-        int s = 0;
-        int e = nums.Length -1;
-
-        while(s < e)
-        {
-            int mid = s + (e-s)/2;
-
-            if(nums[mid] > nums[e])
-                s =  mid + 1;
-            else
-                e = mid;
-        }
-        return s;
-    }
-
     public static void Test()
     {
         (int[] input, int expected)[] cases =
