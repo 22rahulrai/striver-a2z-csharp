@@ -139,7 +139,7 @@ public class Square_Root
     {
         (int[] input, int expected)[] cases =
         [
-            ([1, 2, 3, 4, 5], 0),
+            (4, 2),
             ([5, 1, 2, 3, 4], 1),
             ([4, 5, 1, 2, 3], 2),
             ([3, 4, 5, 1, 2], 3),
