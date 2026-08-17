@@ -137,5 +137,43 @@ public class Square_Root
         return (int)result;
     }
 
-        
+    public static void Test()
+    {
+        (int input, int expected)[] cases =
+        [
+            (0, 0),
+            (1, 1),
+            (4, 2),
+            (8, 2),
+            (9, 3),
+            (15, 3),
+            (16, 4),
+            (25, 5),
+            (100, 10),
+            (2, 1),
+            (3, 1),
+            (7, 2),
+            (10, 3),
+            (2147395600, 46340)
+        ];
+
+        int pass = 0, fail = 0;
+
+        foreach (var (input, expected) in cases)
+        {
+            int result = Approach_One(input);
+
+            string status = result == expected ? "PASS" : "FAIL";
+
+            Console.WriteLine(
+                $"[{status}] Input: {input} => {result} (Expected: {expected})"
+            );
+            if (result == expected)
+                pass++;
+            else
+                fail++;
+        }
+
+        Console.WriteLine($"\n{pass} passed, {fail} failed.");
+    }
 }
