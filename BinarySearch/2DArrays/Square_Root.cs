@@ -86,11 +86,16 @@ public class Square_Root
 {
     public static int Approach_One(int target)
     {
+        if(target == 0)
+            return 0;
+        if(target == 1)
+            return 1;
+
         int res = 0;
 
         for(int i = 0; i < target; i++)
         {
-            if (i * i <= target)
+            if ((long)i * i <= target)
             {
                 res = i;
             }
