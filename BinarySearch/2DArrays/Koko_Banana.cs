@@ -41,15 +41,23 @@
 
 public class Koko_Banana
 {
-    public static int Approach_One(int[] nums, int target) //binary search
+    public static int Approach_One(int[] nums, int h) //binary search
     {
-        int first = FindFirst(nums,target);
-        if(first == -1) 
-            return 0;
+        int n = nums.Max();
 
-        int last = FindLast(nums,target);
+        for(int i = 1; i<=n;i++){
+            int hr = 0;
 
-        return last - first +1;
+            foreach(int num in nums){
+                hr = hr + (num+i-1)/i;
+            }
+
+            if(hr<=h){
+                return i;
+            }
+        }
+
+        return n;
     }
 
     public static int Approach_Two(int[] arr, int target) //binary search
