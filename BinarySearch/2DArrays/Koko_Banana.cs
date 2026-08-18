@@ -41,7 +41,7 @@
 
 public class Koko_Banana
 {
-    public static int Approach_One(int[] nums, int h) //binary search
+    public static int Approach_One(int[] nums, int h)
     {
         int n = nums.Max();
 
