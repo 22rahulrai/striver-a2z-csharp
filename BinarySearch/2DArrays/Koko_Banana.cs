@@ -62,20 +62,7 @@ public class Koko_Banana
 
     public static int Approach_Two(int[] arr, int target) //binary search
     {
-        int c = 0;
         
-        foreach(int n in arr){
-            if(n < target){
-                continue;
-            }
-            if(n == target){
-                c++;
-            }
-            else{
-                break;
-            }
-        }
-        return c;
     }
     public static int FindFirst(int[] nums,int target){
         int s = 0;
