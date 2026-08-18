@@ -1,24 +1,42 @@
 /*
- * Problem   : 35. Search Insert Position
- * Link      : https://leetcode.com/problems/search-insert-position/
+ * Problem   : 875. Koko Eating Bananas
+ * Link      : https://leetcode.com/problems/koko-eating-bananas/
  * Platform  : LeetCode
- * Difficulty: Easy
+ * Difficulty: Medium
  * Topic     : Array, Binary Search
- * Date      : 2026-08-05
+ * Date      : 2026-08-18
  *
- * Approach:
- *   1. Binary Search
- *      - If target exists, return its index.
- *      - Otherwise, return the index where it should be inserted
- *        to keep the array sorted.
+ * Approach 1: Brute Force
+ *   - Try every possible eating speed from 1 to the largest pile.
+ *   - For each speed, calculate the total hours needed to eat all
+ *     the bananas.
+ *   - If Koko can finish within h hours, return that speed.
+ *   - This gives the minimum valid eating speed.
+ *
+ * Approach 2: Binary Search
+ *   - The possible eating speed ranges from 1 to the largest pile.
+ *   - Use binary search to find the minimum speed that allows Koko
+ *     to finish all bananas within h hours.
+ *   - If the current speed works, search for a smaller speed.
+ *   - Otherwise, search for a larger speed.
  *
  * Complexity:
- *   Time  : O(log n)
- *   Space : O(1)
+ *
+ *   Approach 1:
+ *     Time  : O(n * m)
+ *     Space : O(1)
+ *
+ *   Approach 2:
+ *     Time  : O(n log m)
+ *     Space : O(1)
  *
  * Notes:
- *   - Array is sorted in ascending order.
- *   - Use mid = low + (high - low) / 2 to avoid integer overflow.
+ *   - n = number of banana piles.
+ *   - m = maximum number of bananas in a pile.
+ *   - The array does not need to be sorted.
+ *   - Hours for a pile can be calculated using ceiling division:
+ *       (pile + speed - 1) / speed
+ *   - Use long for the total hours to avoid integer overflow.
  */
 
 public class Koko_Banana
