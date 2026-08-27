@@ -45,14 +45,17 @@ public class Koko_Banana
     {
         int n = nums.Max();
 
-        for(int i = 1; i<=n;i++){
+        for (int i = 1; i <= n; i++)
+        {
             long hr = 0;
 
-            foreach(int num in nums){
+            foreach (int num in nums)
+            {
                 hr += ((long)num + i - 1) / i;
             }
 
-            if(hr <= h){
+            if (hr <= h)
+            {
                 return i;
             }
         }
@@ -71,27 +74,28 @@ public class Koko_Banana
         {
             int mid = s + (e - s) / 2;
 
-            long k = Findhr(arr , mid);
+            long k = Findhr(arr, mid);
 
-            if(k <= target){
+            if (k <= target)
+            {
                 ans = mid;
-                e = mid-1;
+                e = mid - 1;
             }
             else
             {
-                s = mid+1;
-            }   
+                s = mid + 1;
+            }
         }
         return ans;
     }
 
-    public static long Findhr(int []arr, int h)
+    public static long Findhr(int[] arr, int h)
     {
         long totalhr = 0;
 
-        foreach(int bananas in arr)
+        foreach (int bananas in arr)
         {
-            totalhr += (bananas + h - 1)/h; 
+            totalhr += (bananas + h - 1) / h;
         }
 
         return totalhr;
@@ -99,32 +103,37 @@ public class Koko_Banana
 
     public static void Test()
     {
-        (int[] input, int hours, int expected)[] cases =
-        [
-            (new int[] {3, 6, 7, 11}, 8, 4),
-            (new int[] {30, 11, 23, 4, 20}, 5, 30),
-            (new int[] {30, 11, 23, 4, 20}, 6, 23),
-            (new int[] {805306368, 805306368, 805306368}, 1000000000, 3)
-        ];
-
-        int pass = 0, fail = 0;
-
-        foreach (var (input, hours, expected) in cases)
+        var testCases = new (int[] input, int h, int expected)[]
         {
-            int bruteForceResult = Approach_One(input, hours);
-            int binarySearchResult = Approach_Two(input, hours);
-            bool passed = bruteForceResult == expected && binarySearchResult == expected;
+            (new int[] { 3, 6, 7, 11 }, 8, 4),
+            (new int[] { 30, 11, 23, 4, 20 }, 5, 30),
+            (new int[] { 30, 11, 23, 4, 20 }, 6, 23),
+            (new int[] { 805306368, 805306368, 805306368 }, 1000000000, 3)
+        };
 
-            string status = passed ? "PASS" : "FAIL";
+        int pass = 0;
+        int fail = 0;
 
-            Console.WriteLine(
-                $"[{status}] Piles: [{string.Join(", ", input)}], Hours: {hours} => " +
-                $"Brute Force: {bruteForceResult}, Binary Search: {binarySearchResult} (Expected: {expected})");
+        foreach (var (input, h, expected) in testCases)
+        {
+            int result = Approach_Two(input, h);
 
-            if (passed)
+            if (result == expected)
+            {
+                Console.WriteLine(
+                    $"[PASS] Piles: [{string.Join(", ", input)}], " +
+                    $"Hours: {h}, Output: {result}, Expected: {expected}"
+                );
                 pass++;
+            }
             else
+            {
+                Console.WriteLine(
+                    $"[FAIL] Piles: [{string.Join(", ", input)}], " +
+                    $"Hours: {h}, Output: {result}, Expected: {expected}"
+                );
                 fail++;
+            }
         }
 
         Console.WriteLine($"\n{pass} passed, {fail} failed.");
