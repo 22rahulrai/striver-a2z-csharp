@@ -46,10 +46,10 @@ public class Koko_Banana
         int n = nums.Max();
 
         for(int i = 1; i<=n;i++){
-            int hr = 0;
+            long hr = 0;
 
             foreach(int num in nums){
-                hr += (num+i-1)/i;
+                hr += ((long)num + i - 1) / i;
             }
 
             if(hr <= h){
@@ -69,7 +69,7 @@ public class Koko_Banana
 
         while (s <= e)
         {
-            int mid = s + (s+e)/2;
+            int mid = s + (e - s) / 2;
 
             long k = Findhr(arr , mid);
 
@@ -99,27 +99,29 @@ public class Koko_Banana
 
     public static void Test()
     {
-        (int[] input, int target, int expected)[] cases =
+        (int[] input, int hours, int expected)[] cases =
         [
-            (new int[] {1, 1, 2, 2, 2, 2, 3}, 2, 4),
-            (new int[] {1, 1, 1, 1, 1, 2, 3}, 1, 5),
-            (new int[] {1, 2, 2, 2, 3, 4}, 2, 3),
-            (new int[] {1, 2, 3, 4, 5, 5, 5}, 5, 3),
-            (new int[] {8, 9, 10, 12, 12, 12}, 12, 3)
+            (new int[] {3, 6, 7, 11}, 8, 4),
+            (new int[] {30, 11, 23, 4, 20}, 5, 30),
+            (new int[] {30, 11, 23, 4, 20}, 6, 23),
+            (new int[] {805306368, 805306368, 805306368}, 1000000000, 3)
         ];
 
         int pass = 0, fail = 0;
 
-        foreach (var (input, target, expected) in cases)
+        foreach (var (input, hours, expected) in cases)
         {
-            int result = Approach_One(input, target);
+            int bruteForceResult = Approach_One(input, hours);
+            int binarySearchResult = Approach_Two(input, hours);
+            bool passed = bruteForceResult == expected && binarySearchResult == expected;
 
-            string status = result == expected  ? "PASS" : "FAIL";
+            string status = passed ? "PASS" : "FAIL";
 
             Console.WriteLine(
-                $"[{status}] Input: [{string.Join(", ", input)}], Target: {target} => [{string.Join(", ", result)}] (Expected: [{string.Join(", ", expected)}])");
+                $"[{status}] Piles: [{string.Join(", ", input)}], Hours: {hours} => " +
+                $"Brute Force: {bruteForceResult}, Binary Search: {binarySearchResult} (Expected: {expected})");
 
-            if (result == expected)
+            if (passed)
                 pass++;
             else
                 fail++;
