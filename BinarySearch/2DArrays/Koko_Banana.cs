@@ -49,10 +49,10 @@ public class Koko_Banana
             int hr = 0;
 
             foreach(int num in nums){
-                hr = hr + (num+i-1)/i;
+                hr += (num+i-1)/i;
             }
 
-            if(hr<=h){
+            if(hr <= h){
                 return i;
             }
         }
@@ -62,7 +62,39 @@ public class Koko_Banana
 
     public static int Approach_Two(int[] arr, int target) //binary search
     {
-        
+        int s = 1;
+        int e = arr.Max();
+
+        int ans = e;
+
+        while (s <= e)
+        {
+            int mid = s + (s+e)/2;
+
+            long k = Findhr(arr , mid);
+
+            if(k <= target){
+                ans = mid;
+                e = mid-1;
+            }
+            else
+            {
+                s = mid+1;
+            }   
+        }
+        return ans;
+    }
+
+    public static long Findhr(int []arr, int h)
+    {
+        long totalhr = 0;
+
+        foreach(int bananas in arr)
+        {
+            totalhr += (bananas + h - 1)/h; 
+        }
+
+        return totalhr;
     }
 
     public static void Test()
