@@ -39,28 +39,30 @@
  *   - Use long for the total hours to avoid integer overflow.
  */
 
-public class Koko_Banana
+public class Find_Divisor
 {
-    public static int Approach_One(int[] nums, int h)
+    public static int Approach_One(int[] nums, int threshold)
     {
-        int n = nums.Max();
-
-        for (int i = 1; i <= n; i++)
+        int max = 0;
+        foreach(int n in nums)
         {
-            long hr = 0;
-
-            foreach (int num in nums)
-            {
-                hr += ((long)num + i - 1) / i;
-            }
-
-            if (hr <= h)
-            {
-                return i;
-            }
+            max = Math.Max(n,max);
         }
 
-        return n;
+        for(int d = 1; d <= max; d++)
+        {
+            int sum =0;
+            foreach(int n in nums)
+            {
+                sum += (n +d -1)/d;
+
+                if(sum>threshold)
+                    break;
+            }
+            if(sum<= threshold)
+                return d;
+        }
+        return -1;
     }
 
     public static int Approach_Two(int[] arr, int target) //binary search
