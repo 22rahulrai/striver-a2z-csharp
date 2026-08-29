@@ -1,42 +1,40 @@
 /*
- * Problem   : 875. Koko Eating Bananas
- * Link      : https://leetcode.com/problems/koko-eating-bananas/
- * Platform  : LeetCode
+ * Problem: 1283. Find the Smallest Divisor Given a Threshold
+ * Link: https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/
+ * Platform: LeetCode
  * Difficulty: Medium
- * Topic     : Array, Binary Search
- * Date      : 2026-08-18
+ * Topic: Array, Binary Search
+ * Date: 2026-08-29
  *
  * Approach 1: Brute Force
- *   - Try every possible eating speed from 1 to the largest pile.
- *   - For each speed, calculate the total hours needed to eat all
- *     the bananas.
- *   - If Koko can finish within h hours, return that speed.
- *   - This gives the minimum valid eating speed.
+ * - Try every possible divisor from 1 to the largest number.
+ * - For each divisor, calculate the sum of:
+ *   ceil(nums[i] / divisor)
+ * - If the sum is less than or equal to the threshold,
+ *   return that divisor.
+ * - Since divisors are checked from smallest to largest,
+ *   the first valid divisor is the answer.
  *
  * Approach 2: Binary Search
- *   - The possible eating speed ranges from 1 to the largest pile.
- *   - Use binary search to find the minimum speed that allows Koko
- *     to finish all bananas within h hours.
- *   - If the current speed works, search for a smaller speed.
- *   - Otherwise, search for a larger speed.
+ * - The possible divisor ranges from 1 to the largest number.
+ * - Use binary search to find the smallest divisor that makes
+ *   the total sum less than or equal to the threshold.
+ * - If the current divisor works:
+ *   sum <= threshold -> try a smaller divisor.
+ * - If the current divisor does not work:
+ *   sum > threshold -> need a larger divisor.
  *
  * Complexity:
- *
- *   Approach 1:
- *     Time  : O(n * m)
- *     Space : O(1)
- *
- *   Approach 2:
- *     Time  : O(n log m)
- *     Space : O(1)
+ * Approach 1: Time: O(n * m), Space: O(1)
+ * Approach 2: Time: O(n log m), Space: O(1)
  *
  * Notes:
- *   - n = number of banana piles.
- *   - m = maximum number of bananas in a pile.
- *   - The array does not need to be sorted.
- *   - Hours for a pile can be calculated using ceiling division:
- *       (pile + speed - 1) / speed
- *   - Use long for the total hours to avoid integer overflow.
+ * - n = number of elements in nums.
+ * - m = maximum value in nums.
+ * - The array does not need to be sorted.
+ * - For each number, we need ceiling division:
+ *   (num + divisor - 1) / divisor
+ * - Use long for the sum to avoid integer overflow.
  */
 
 public class Find_Divisor
@@ -44,22 +42,22 @@ public class Find_Divisor
     public static int Approach_One(int[] nums, int threshold)
     {
         int max = 0;
-        foreach(int n in nums)
+        foreach (int n in nums)
         {
-            max = Math.Max(n,max);
+            max = Math.Max(n, max);
         }
 
-        for(int d = 1; d <= max; d++)
+        for (int d = 1; d <= max; d++)
         {
-            int sum =0;
-            foreach(int n in nums)
+            int sum = 0;
+            foreach (int n in nums)
             {
-                sum += (n +d -1)/d;
+                sum += (n + d - 1) / d;
 
-                if(sum>threshold)
+                if (sum > threshold)
                     break;
             }
-            if(sum<= threshold)
+            if (sum <= threshold)
                 return d;
         }
         return -1;
