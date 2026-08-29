@@ -105,10 +105,11 @@ public class Find_Divisor
     {
         var testCases = new (int[] input, int h, int expected)[]
         {
-            (new int[] { 3, 6, 7, 11 }, 8, 4),
-            (new int[] { 30, 11, 23, 4, 20 }, 5, 30),
-            (new int[] { 30, 11, 23, 4, 20 }, 6, 23),
-            (new int[] { 805306368, 805306368, 805306368 }, 1000000000, 3)
+            (new int[] { 1, 2, 5, 9 }, 6, 5),
+            (new int[] { 2, 3, 5, 7, 11 }, 11, 3),
+            (new int[] { 44, 22, 33, 11, 1 }, 5, 44),
+            (new int[] { 19 }, 5, 4),
+            ( new int[] { 1000000, 1000000 }, 2, 1000000 )
         };
 
         int pass = 0;
