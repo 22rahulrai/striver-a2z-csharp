@@ -91,17 +91,6 @@ public class Find_Divisor
         return s;
     }
 
-    public static long Findhr(int[] arr, int h)
-    {
-        long totalhr = 0;
-
-        foreach (int bananas in arr)
-        {
-            totalhr += (bananas + h - 1) / h;
-        }
-
-        return totalhr;
-    }
 
     public static void Test()
     {
