@@ -49,7 +49,7 @@ public class Find_Divisor
 
         for (int d = 1; d <= max; d++)
         {
-            int sum = 0;
+            long sum = 0;
             foreach (int n in nums)
             {
                 sum += (n + d - 1) / d;
@@ -63,30 +63,32 @@ public class Find_Divisor
         return -1;
     }
 
-    public static int Approach_Two(int[] arr, int target) //binary search
+    public static int Approach_Two(int[] nums, int threshold) //binary search
     {
-        int s = 1;
-        int e = arr.Max();
-
-        int ans = e;
-
-        while (s <= e)
-        {
-            int mid = s + (e - s) / 2;
-
-            long k = Findhr(arr, mid);
-
-            if (k <= target)
-            {
-                ans = mid;
-                e = mid - 1;
-            }
-            else
-            {
-                s = mid + 1;
-            }
+        int max = 0;
+        foreach(int num in nums){
+            max = Math.Max(max,num);
         }
-        return ans;
+
+        int s =1, e=max;
+
+        while(s < e){
+            int mid = s + (e-s)/2;
+            int sum = 0;
+
+            foreach(int num in nums){
+                sum += (num + mid -1)/mid;
+            }
+
+            if(sum<=threshold){
+                e = mid;
+            }
+            else{
+                s = mid + 1;
+            }   
+        }
+
+        return s;
     }
 
     public static long Findhr(int[] arr, int h)
