@@ -1,40 +1,40 @@
-/*
- * Problem: 1283. Find the Smallest Divisor Given a Threshold
- * Link: https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/
+﻿/*
+ * Problem: 1021. Remove Outermost Parentheses
+ * Link: https://leetcode.com/problems/remove-outermost-parentheses/
  * Platform: LeetCode
- * Difficulty: Medium
- * Topic: Array, Binary Search
- * Date: 2026-08-29
+ * Difficulty: Easy
+ * Topic: String, Stack
+ * Date: 2026-09-01
  *
- * Approach 1: Brute Force
- * - Try every possible divisor from 1 to the largest number.
- * - For each divisor, calculate the sum of:
- *   ceil(nums[i] / divisor)
- * - If the sum is less than or equal to the threshold,
- *   return that divisor.
- * - Since divisors are checked from smallest to largest,
- *   the first valid divisor is the answer.
+ * A valid parentheses string splits uniquely into primitive pieces -
+ * a primitive is non-empty and cannot be split further.
+ * Task: drop the outermost '(' and ')' of every primitive.
  *
- * Approach 2: Binary Search
- * - The possible divisor ranges from 1 to the largest number.
- * - Use binary search to find the smallest divisor that makes
- *   the total sum less than or equal to the threshold.
- * - If the current divisor works:
- *   sum <= threshold -> try a smaller divisor.
- * - If the current divisor does not work:
- *   sum > threshold -> need a larger divisor.
+ * Approach 1: Balance Counter + Substring
+ * - Walk the string keeping a balance: +1 on '(', -1 on ')'.
+ * - balance == 0 marks the end of a primitive.
+ * - Append that primitive without its first and last character:
+ *   s.Substring(start + 1, i - start - 1)
+ * - Move start past the primitive and continue.
+ *
+ * Approach 2: Balance Counter, Single Pass
+ * - Same balance, but decide per character instead of per primitive.
+ * - On '(': append only if balance > 0 (before incrementing),
+ *   so the opening paren of a primitive is skipped.
+ * - On ')': decrement first, then append only if balance > 0,
+ *   so the closing paren of a primitive is skipped.
  *
  * Complexity:
- * Approach 1: Time: O(n * m), Space: O(1)
- * Approach 2: Time: O(n log m), Space: O(1)
+ * Approach 1: Time: O(n), Space: O(n)
+ * Approach 2: Time: O(n), Space: O(n)
  *
  * Notes:
- * - n = number of elements in nums.
- * - m = maximum value in nums.
- * - The array does not need to be sorted.
- * - For each number, we need ceiling division:
- *   (num + divisor - 1) / divisor
- * - Use long for the sum to avoid integer overflow.
+ * - n = length of s.
+ * - Input is guaranteed to be a valid parentheses string,
+ *   so balance never goes negative and ends at 0.
+ * - Space is O(n) for the output; extra space beyond it is O(1).
+ * - No stack needed - a single int counter is enough.
+ * - StringBuilder avoids O(n^2) string concatenation.
  */
 
 public class Remove_outer_parentheses
