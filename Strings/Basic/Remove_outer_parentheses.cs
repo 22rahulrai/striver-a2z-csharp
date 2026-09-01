@@ -37,6 +37,8 @@
  * - StringBuilder avoids O(n^2) string concatenation.
  */
 
+using System.Text;
+
 public class Remove_outer_parentheses
 {
     public static string Approach_One(String s)
