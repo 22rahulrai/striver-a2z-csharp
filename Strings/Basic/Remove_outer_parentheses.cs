@@ -61,32 +61,25 @@ public class Remove_outer_parentheses
         return ans.ToString();
     }
 
-    public static int Approach_Two(int[] nums, int threshold) //binary search
-    {
-        int max = 0;
-        foreach(int num in nums){
-            max = Math.Max(max,num);
-        }
+    public static string RemoveOuterParenthes(string s) {
+        StringBuilder ans = new StringBuilder();
+        int  balance =0;
 
-        int s =1, e=max;
-
-        while(s < e){
-            int mid = s + (e-s)/2;
-            long sum = 0;
-
-            foreach(int num in nums){
-                sum += (num + mid -1)/mid;
-            }
-
-            if(sum<=threshold){
-                e = mid;
+        for(int i=0;i<s.Length;i++){
+            if(s[i] == '('){
+                if(balance > 0){
+                    ans.Append(s[i]);
+                }
+                balance++;
             }
             else{
-                s = mid + 1;
-            }   
+                balance--;
+                if(balance >0){
+                    ans.Append(s[i]);
+                }
+            }
         }
-
-        return s;
+        return ans.ToString();
     }
 
 
