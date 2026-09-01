@@ -39,28 +39,26 @@
 
 public class Remove_outer_parentheses
 {
-    public static int Approach_One(int[] nums, int threshold)
+    public static string Approach_One(String s)
     {
-        int max = 0;
-        foreach (int n in nums)
-        {
-            max = Math.Max(n, max);
-        }
+        StringBuilder ans = new StringBuilder();
+        int start =0, balance =0;
 
-        for (int d = 1; d <= max; d++)
-        {
-            long sum = 0;
-            foreach (int n in nums)
-            {
-                sum += (n + d - 1) / d;
-
-                if (sum > threshold)
-                    break;
+        for(int i=0;i<s.Length;i++){
+            if(s[i] == '('){
+                balance++;
             }
-            if (sum <= threshold)
-                return d;
+            else{
+                balance--;
+            }
+
+            if(balance == 0){
+                ans.Append(s.Substring(start+1,i-start-1)); //remove first'(' and last')'
+                start = i + 1;
+            }
         }
-        return -1;
+
+        return ans.ToString();
     }
 
     public static int Approach_Two(int[] nums, int threshold) //binary search
