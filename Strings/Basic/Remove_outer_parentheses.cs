@@ -87,8 +87,8 @@ public class Remove_outer_parentheses
 
     public static void Test()
     {
-        var testCases = new (string s, string expected)[]
-        {
+        (string input, string expected)[] cases =
+        [
             ("(()())(())",         "()()()"),
             ("(()())(())(()(()))", "()()()()(())"),
             ("()()",               ""),
@@ -96,42 +96,28 @@ public class Remove_outer_parentheses
             ("(((())))",           "((()))"),
             ("()(())",             "()"),
             ("((()))(())()",       "(())()")
-        };
+        ];
 
-        int pass = 0;
-        int fail = 0;
+        int pass = 0, fail = 0;
 
-        foreach (var (s, expected) in testCases)
+        foreach (var (input, expected) in cases)
         {
-            Check("Approach_One",          s, Approach_One(s),          expected, ref pass, ref fail);
-            Check("RemoveOuterParenthes",  s, Approach_Two(s),  expected, ref pass, ref fail);
+            string result = Approach_Two(input);
+
+            string status = result == expected ? "PASS" : "FAIL";
+
+            Console.WriteLine(
+                $"[{status}] Input: \"{input}\" " +
+                $"=> \"{result}\" (Expected: \"{expected}\")"
+            );
+
+            if (result == expected)
+                pass++;
+            else
+                fail++;
         }
 
         Console.WriteLine($"\n{pass} passed, {fail} failed.");
     }
 
-    private static void Check(
-        string approach, string input,
-        string result, string expected, ref int pass, ref int fail)
-    {
-        bool ok = result == expected;
-        string tag = ok ? "PASS" : "FAIL";
-
-        Console.WriteLine(
-            $"[{tag}] {approach} | Input: {Preview(input)} | " +
-            $"Output: {Preview(result)}, Expected: {Preview(expected)}"
-        );
-
-        if (ok) pass++;
-        else fail++;
-    }
-
-    // Quote the value so an empty result is visible, and clip long strings.
-    private static string Preview(string s, int take = 40)
-    {
-        if (s.Length <= take)
-            return $"\"{s}\"";
-
-        return $"\"{s[..take]}...\" ({s.Length} chars)";
-    }
 }
