@@ -84,6 +84,27 @@ public class Remove_outer_parentheses
         return ans.ToString();
     }
 
+    public static string Apporach_Three(string s)
+    {
+        StringBuilder ans = new StringBuilder();
+        Stack<int> st = new Stack<int>();
+
+
+
+        for(int i=0;i<s.Length;i++){
+            if(s[i] == '('){
+                
+            }
+            else{
+                balance--;
+                if(balance >0){
+                    ans.Append(s[i]);
+                }
+            }
+        }
+        return ans.ToString();
+    }
+
 
     public static void Test()
     {
