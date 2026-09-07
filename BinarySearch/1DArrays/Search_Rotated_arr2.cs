@@ -1,5 +1,5 @@
 /*
- * Problem   : 33. Search in Rotated Sorted Array 2
+ * Problem   : 81. Search in Rotated Sorted Array 2
  * Link      : https://leetcode.com/problems/search-in-rotated-sorted-array/
  * Platform  : LeetCode
  * Difficulty: Medium
@@ -72,16 +72,17 @@ public class Search_Rotated_arr2
 
     public static bool Approach_Two(int[] nums, int target) // Using Pivot and Binary Search
     {
+        if(nums == null || nums.Length ==0) return false;
         int pivot = FindPivot(nums);
 
-        if (target >= nums[pivot] && target <= nums[nums.Length - 1]) //right half
+        //right half
+        if (target >= nums[pivot] && target <= nums[nums.Length - 1])
         {
             return BinarySearch(nums, pivot, nums.Length - 1, target);
         }
 
+        //left half
         return BinarySearch(nums, 0, pivot - 1, target);
-
-
     }
 
     public static bool BinarySearch(int[] nums, int s, int e, int target)
@@ -105,59 +106,27 @@ public class Search_Rotated_arr2
         int s = 0;
         int e = nums.Length - 1;
 
-        while (s <= e)
+        while (s < e)
         {
-            int mid = (s + e) / 2;
+            int mid = s + (e - s) / 2;
 
             if (nums[mid] > nums[e])
             {
                 s = mid + 1;
             }
+            else if(nums[mid]<nums[e])
+            {
+                e = mid;
+            }
             else
             {
-                e = mid - 1;
+                e--;
             }
         }
         return s;
     }
 
-    public static int Approach_Three(int[] nums, int target)
-    {
-        int s = 0;
-        int e = nums.Length - 1;
-
-        while (s <= e)
-        {
-            int mid = s + (e - s) / 2;
-
-            if (nums[mid] == target)
-                return mid;
-            else if (nums[s] <= nums[mid])
-            {
-                if (target >= nums[s] && target < nums[mid])
-                {
-                    e = mid - 1;
-                }
-                else
-                {
-                    s = mid + 1;
-                }
-            }
-            else
-            {
-                if (target <= nums[e] && target > nums[mid])
-                {
-                    s = mid + 1;
-                }
-                else
-                {
-                    e = mid - 1;
-                }
-            }
-
-        }
-        return -1;
-    }
+    
 
     public static void Test()
     {
@@ -211,7 +180,7 @@ public class Search_Rotated_arr2
 
         foreach (var (input, target, expected) in cases)
         {
-            bool result = Approach_Two(input, target);
+            bool result = Approach_Three(input, target);
             string status = result == expected ? "PASS" : "FAIL";
 
             Console.WriteLine(
