@@ -125,7 +125,54 @@ public class Search_Rotated_arr2
         }
         return s;
     }
+    
+    public static bool Approach_Three(int[] nums, int target)
+    {
+        int s = 0;
+        int e = nums.Length - 1;
 
+        while (s <= e)
+        {
+            int mid = s + (e - s) / 2;
+
+            if (nums[mid] == target)
+                return true;
+                
+            //Handle duplicates to figure out which side is actually sorted
+            if(nums[s] == nums[mid] && nums[mid] == nums[e])
+            {
+                s++;
+                e--;
+                continue;
+            }
+            // Left side is sorted
+            if (nums[s] <= nums[mid])
+            {
+                if (target >= nums[s] && target < nums[mid])
+                {
+                    e = mid - 1;
+                }
+                else
+                {
+                    s = mid + 1;
+                }
+            }
+            // Right side is sorted
+            else
+            {
+                if (target <= nums[e] && target > nums[mid])
+                {
+                    s = mid + 1;
+                }
+                else
+                {
+                    e = mid - 1;
+                }
+            }
+
+        }
+        return false;
+    }
     
 
     public static void Test()
