@@ -114,7 +114,7 @@ public class Search_Rotated_arr2
             {
                 s = mid + 1;
             }
-            else if(nums[mid]<nums[e])
+            else if(nums[mid] < nums[e])
             {
                 e = mid;
             }
@@ -125,7 +125,7 @@ public class Search_Rotated_arr2
         }
         return s;
     }
-    
+
     public static bool Approach_Three(int[] nums, int target)
     {
         int s = 0;
