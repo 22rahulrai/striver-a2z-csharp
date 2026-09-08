@@ -84,26 +84,26 @@ public class Remove_outer_parentheses
         return ans.ToString();
     }
 
-    // public static string Apporach_Three(string s)
-    // {
-    //     StringBuilder ans = new StringBuilder();
-    //     Stack<int> st = new Stack<int>();
+    public static string Approach_Three(string s)
+    {
+        StringBuilder ans = new StringBuilder();
+        Stack<int> st = new Stack<int>();
+        int balance =0;
 
 
-
-    //     for(int i=0;i<s.Length;i++){
-    //         if(s[i] == '('){
-                
-    //         }
-    //         else{
-    //             balance--;
-    //             if(balance >0){
-    //                 ans.Append(s[i]);
-    //             }
-    //         }
-    //     }
-    //     return ans.ToString();
-    // }
+        for(int i=0;i<s.Length;i++){
+            if(s[i] == '('){
+                ans.Append(s[i]);
+            }
+            else{
+                balance--;
+                if(balance > 0){
+                    ans.Append(s[i]);
+                }
+            }
+        }
+        return ans.ToString();
+    }
 
 
     public static void Test()
@@ -123,7 +123,7 @@ public class Remove_outer_parentheses
 
         foreach (var (input, expected) in cases)
         {
-            string result = Approach_Two(input);
+            string result = Approach_Three(input);
 
             string status = result == expected ? "PASS" : "FAIL";
 
