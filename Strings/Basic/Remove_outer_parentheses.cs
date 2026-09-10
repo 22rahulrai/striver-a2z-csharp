@@ -24,16 +24,28 @@
  * - On ')': decrement first, then append only if balance > 0,
  *   so the closing paren of a primitive is skipped.
  *
+ * Approach 3: Stack
+ * - Push every '(' and pop on every ')'.
+ * - On '(': append only if the stack is non-empty before pushing,
+ *   so the opening paren of a primitive is skipped.
+ * - On ')': pop first, then append only if the stack is non-empty,
+ *   so the closing paren of a primitive is skipped.
+ * - Stack becoming empty marks the end of a primitive.
+ *
  * Complexity:
  * Approach 1: Time: O(n), Space: O(n)
  * Approach 2: Time: O(n), Space: O(n)
+ * Approach 3: Time: O(n), Space: O(n)
  *
  * Notes:
  * - n = length of s.
  * - Input is guaranteed to be a valid parentheses string,
  *   so balance never goes negative and ends at 0.
- * - Space is O(n) for the output; extra space beyond it is O(1).
- * - No stack needed - a single int counter is enough.
+ * - Space counts the output string. Extra space beyond it:
+ *   Approach 1 -> temp substring per primitive (up to O(n)),
+ *   Approach 2 -> O(1), Approach 3 -> O(n) for the stack.
+ * - The stack only ever holds '(', so st.Count == balance.
+ *   That is why Approach 2 can replace the stack with one int.
  * - StringBuilder avoids O(n^2) string concatenation.
  */
 
@@ -84,26 +96,7 @@ public class Remove_outer_parentheses
         return ans.ToString();
     }
 
-    public static string Approach_Three(string s)
-    {
-        StringBuilder ans = new StringBuilder();
-        Stack<int> st = new Stack<int>();
-        int balance =0;
-
-
-        for(int i=0;i<s.Length;i++){
-            if(s[i] == '('){
-                ans.Append(s[i]);
-            }
-            else{
-                balance--;
-                if(balance > 0){
-                    ans.Append(s[i]);
-                }
-            }
-        }
-        return ans.ToString();
-    }
+    
 
 
     public static void Test()
