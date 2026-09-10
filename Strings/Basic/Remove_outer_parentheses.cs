@@ -96,7 +96,27 @@ public class Remove_outer_parentheses
         return ans.ToString();
     }
 
-    
+    public static string Approach_Three(string s)
+    {
+        StringBuilder ans = new StringBuilder();
+        Stack<char> st = new Stack<char>();
+
+        for(int i=0;i<s.Length;i++){
+            if(s[i] == '('){
+                if(st.Count > 0){
+                    ans.Append(s[i]);
+                }
+                st.Push(s[i]);
+            }
+            else{
+                st.Pop();
+                if(st.Count > 0){
+                    ans.Append(s[i]);
+                }
+            }
+        }
+        return ans.ToString();
+    }
 
 
     public static void Test()
