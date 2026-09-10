@@ -4,7 +4,7 @@
  * Platform: LeetCode
  * Difficulty: Easy
  * Topic: String, Stack
- * Date: 2026-09-01
+ * Date: 2026-09-10
  *
  * A valid parentheses string splits uniquely into primitive pieces -
  * a primitive is non-empty and cannot be split further.
