@@ -1,10 +1,10 @@
 /*
- * Problem   : 875. Koko Eating Bananas
- * Link      : https://leetcode.com/problems/koko-eating-bananas/
+ * Problem   : 1539. Kth Missing Positive Number
+ * Link      : https://leetcode.com/problems/kth-missing-positive-number/description/
  * Platform  : LeetCode
  * Difficulty: Medium
  * Topic     : Array, Binary Search
- * Date      : 2026-08-18
+ * Date      : 2026-09-17
  *
  * Approach 1: Brute Force
  *   - Try every possible eating speed from 1 to the largest pile.
@@ -52,7 +52,7 @@ public class Kth_Missing_num
             {
                 k--;
 
-                if(k==0)
+                if(k == 0)
                     return num;
             }
             num++;
