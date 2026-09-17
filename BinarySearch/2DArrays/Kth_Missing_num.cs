@@ -101,7 +101,7 @@ public class Kth_Missing_num
     {
         var testCases = new (int[] input, int h, int expected)[]
         {
-            (new int[] { 3, 6, 7, 11 }, 8, 4),
+            (new int[] { 2, 3, 4, 7, 11 }, 5, 9),
             (new int[] { 30, 11, 23, 4, 20 }, 5, 30),
             (new int[] { 30, 11, 23, 4, 20 }, 6, 23),
             (new int[] { 805306368, 805306368, 805306368 }, 1000000000, 3)
