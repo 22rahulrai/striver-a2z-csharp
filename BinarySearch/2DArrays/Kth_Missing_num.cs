@@ -39,28 +39,24 @@
  *   - Use long for the total hours to avoid integer overflow.
  */
 
-public class Koko_Banana
+public class Kth_Missing_num
 {
-    public static int Approach_One(int[] nums, int h)
+    public static int Approach_One(int[] arr, int k)
     {
-        int n = nums.Max();
+        int num =1;
+        HashSet<int> set = new HashSet<int>(arr);
 
-        for (int i = 1; i <= n; i++)
+        while (true)
         {
-            long hr = 0;
-
-            foreach (int num in nums)
+            if (!set.Contains(num))
             {
-                hr += ((long)num + i - 1) / i;
-            }
+                k--;
 
-            if (hr <= h)
-            {
-                return i;
+                if(k==0)
+                    return num;
             }
+            num++;
         }
-
-        return n;
     }
 
     public static int Approach_Two(int[] arr, int target) //binary search
