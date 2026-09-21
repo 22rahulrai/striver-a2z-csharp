@@ -59,9 +59,20 @@ public class Kth_Missing_num
         }
     }
 
-    public static int Approach_Two(int[] arr, int target) //binary search
+    public static int Approach_Two(int[] arr, int k) //Linear search
     {
-        
+        foreach(int n in arr)
+        {
+            if (n <= k)
+            {
+                k++;
+            }
+            else
+            {
+                break;
+            }
+        }
+        return k;
     }
 
 
