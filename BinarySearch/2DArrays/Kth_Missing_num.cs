@@ -6,42 +6,26 @@
  * Topic     : Array, Binary Search
  * Date      : 2026-09-17
  *
- * Approach 1: Brute Force
- *   - Try every possible eating speed from 1 to the largest pile.
- *   - For each speed, calculate the total hours needed to eat all
- *     the bananas.
- *   - If Koko can finish within h hours, return that speed.
- *   - This gives the minimum valid eating speed.
+ * Approach 1: HashSet (Brute Force)
+ *   - Put elements in a HashSet.
+ *   - Check numbers starting from 1 upwards.
+ *   - Decrement k for every missing number.
+ *   - Time: O(n + k), Space: O(n)
  *
- * Approach 2: Binary Search
- *   - The possible eating speed ranges from 1 to the largest pile.
- *   - Use binary search to find the minimum speed that allows Koko
- *     to finish all bananas within h hours.
- *   - If the current speed works, search for a smaller speed.
- *   - Otherwise, search for a larger speed.
+ * Approach 2: Linear Search ("Pushing Target")
+ *   - Iterate through array. If num <= k, push k forward.
+ *   - Break when num > k.
+ *   - Time: O(n), Space: O(1)
  *
- * Complexity:
- *
- *   Approach 1:
- *     Time  : O(n * m)
- *     Space : O(1)
- *
- *   Approach 2:
- *     Time  : O(n log m)
- *     Space : O(1)
- *
- * Notes:
- *   - n = number of banana piles.
- *   - m = maximum number of bananas in a pile.
- *   - The array does not need to be sorted.
- *   - Hours for a pile can be calculated using ceiling division:
- *       (pile + speed - 1) / speed
- *   - Use long for the total hours to avoid integer overflow.
+ * Approach 3: Binary Search (Optimal)
+ *   - Calculate missing numbers before mid: arr[mid] - (mid + 1).
+ *   - Use binary search to find the exact boundary.
+ *   - Time: O(log n), Space: O(1)
  */
 
 public class Kth_Missing_num
 {
-    public static int Approach_One(int[] arr, int k)
+    public static int Approach_One(int[] arr, int k) 
     {
         int num =1;
         HashSet<int> set = new HashSet<int>(arr);
@@ -75,10 +59,10 @@ public class Kth_Missing_num
         return k;
     }
 
-    public static int Approach_Three(int[] arr,int k) //binart search
-    {
+    // public static int Approach_Three(int[] arr,int k) //binart search
+    // {
         
-    }
+    // }
 
 
     public static void Test()
@@ -86,9 +70,9 @@ public class Kth_Missing_num
         var testCases = new (int[] input, int h, int expected)[]
         {
             (new int[] { 2, 3, 4, 7, 11 }, 5, 9),
-            (new int[] { 30, 11, 23, 4, 20 }, 5, 30),
-            (new int[] { 30, 11, 23, 4, 20 }, 6, 23),
-            (new int[] { 805306368, 805306368, 805306368 }, 1000000000, 3)
+            (new int[] { 1, 2, 3, 4 }, 2, 6),
+            (new int[] { 1, 2, 3 }, 5, 8),
+            (new int[] { 5, 6, 7, 8, 9 }, 9, 14)
         };
 
         int pass = 0;
