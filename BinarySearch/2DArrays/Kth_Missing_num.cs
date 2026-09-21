@@ -61,28 +61,7 @@ public class Kth_Missing_num
 
     public static int Approach_Two(int[] arr, int target) //binary search
     {
-        int s = 1;
-        int e = arr.Max();
-
-        int ans = e;
-
-        while (s <= e)
-        {
-            int mid = s + (e - s) / 2;
-
-            long k = Findhr(arr, mid);
-
-            if (k <= target)
-            {
-                ans = mid;
-                e = mid - 1;
-            }
-            else
-            {
-                s = mid + 1;
-            }
-        }
-        return ans;
+        
     }
 
 
