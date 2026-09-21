@@ -85,17 +85,6 @@ public class Kth_Missing_num
         return ans;
     }
 
-    public static long Findhr(int[] arr, int h)
-    {
-        long totalhr = 0;
-
-        foreach (int bananas in arr)
-        {
-            totalhr += (bananas + h - 1) / h;
-        }
-
-        return totalhr;
-    }
 
     public static void Test()
     {
