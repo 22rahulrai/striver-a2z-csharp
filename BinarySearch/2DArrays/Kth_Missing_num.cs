@@ -59,7 +59,7 @@ public class Kth_Missing_num
         return k;
     }
 
-    public static int Approach_Three(int[] arr,int k) //binart search
+    public static int Approach_Three(int[] arr,int k) //binary search
     {
         int s = 0;
         int e = arr.Length -1;
