@@ -67,16 +67,16 @@ public class Kth_Missing_num
         while (s <= e)
         {
             int mid = s + (e-s)/2;
-
+            // The number of missing positive integers before index 'mid'
             int missing = arr[mid] - (mid+1);
 
             if(missing < k)
             {
-                s = mid + 1; 
+                s = mid + 1;// Search right
             }
             else
             {
-                e = mid - 1;
+                e = mid - 1;// Search left
             }
         }
         return s+k;
