@@ -81,17 +81,6 @@ public class Kth_Missing_num
         }
         return s+k;
     }
-    /*
-    1. s=0 e=5 m=2 [4] mis = 4 - (2+1) =1 true  if
-    2. s=3 e=5 m=4 [11] mis = 11 -(4=1) =6 fals else
-    3 s=3 e=3 mid =3 [7] mis = 7 - (3+1) = 3 true if
-    4. s = 4 e = 3 wile flase
-
-    return s+k
-
-    
-    
-    */
 
     public static void Test()
     {
