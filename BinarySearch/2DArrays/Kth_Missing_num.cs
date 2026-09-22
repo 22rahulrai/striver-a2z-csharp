@@ -86,10 +86,37 @@ public class Kth_Missing_num
     {
         var testCases = new (int[] input, int h, int expected)[]
         {
+            // Standard LeetCode Examples
             (new int[] { 2, 3, 4, 7, 11 }, 5, 9),
             (new int[] { 1, 2, 3, 4 }, 2, 6),
+            
+            // Missing numbers are completely after the array
             (new int[] { 1, 2, 3 }, 5, 8),
-            (new int[] { 5, 6, 7, 8, 9 }, 9, 14)
+            (new int[] { 1, 2, 3, 4, 5 }, 10, 15),
+
+            // Missing numbers are completely before the array
+            (new int[] { 5, 6, 7, 8, 9 }, 1, 1),
+            (new int[] { 5, 6, 7, 8, 9 }, 4, 4),
+            (new int[] { 4, 5, 6 }, 3, 3), // Missing: 1, 2, 3. 3rd is 3
+
+            // Missing numbers are both before and after
+            (new int[] { 5, 6, 7, 8, 9 }, 9, 14),
+
+            // Single element arrays
+            (new int[] { 5 }, 1, 1), // target is before
+            (new int[] { 5 }, 4, 4), // target is just before
+            (new int[] { 5 }, 5, 6), // target is after
+            (new int[] { 1 }, 5, 6), // starts at 1, target is after
+
+            // Gaps in between elements
+            (new int[] { 1, 3, 5 }, 1, 2),
+            (new int[] { 1, 3, 5 }, 2, 4),
+            (new int[] { 1, 3, 5 }, 3, 6),
+            (new int[] { 1, 2, 4, 6, 7, 10 }, 3, 8), // Missing: 3, 5, 8, 9. 3rd is 8
+
+            // Extreme / Large K values
+            (new int[] { 1, 2 }, 1000, 1002),
+            (new int[] { 1000 }, 1, 1)
         };
 
         int pass = 0;
