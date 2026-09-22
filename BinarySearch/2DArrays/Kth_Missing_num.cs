@@ -59,11 +59,39 @@ public class Kth_Missing_num
         return k;
     }
 
-    // public static int Approach_Three(int[] arr,int k) //binart search
-    // {
-        
-    // }
+    public static int Approach_Three(int[] arr,int k) //binart search
+    {
+        int s = 0;
+        int e = arr.Length -1;
 
+        while (s <= e)
+        {
+            int mid = s + (e-s)/2;
+
+            int missing = arr[mid] - (mid+1);
+
+            if(missing < k)
+            {
+                s = mid + 1; 
+            }
+            else
+            {
+                e = mid - 1;
+            }
+        }
+        return s+k;
+    }
+    /*
+    1. s=0 e=5 m=2 [4] mis = 4 - (2+1) =1 true  if
+    2. s=3 e=5 m=4 [11] mis = 11 -(4=1) =6 fals else
+    3 s=3 e=3 mid =3 [7] mis = 7 - (3+1) = 3 true if
+    4. s = 4 e = 3 wile flase
+
+    return s+k
+
+    
+    
+    */
 
     public static void Test()
     {
@@ -80,7 +108,7 @@ public class Kth_Missing_num
 
         foreach (var (input, h, expected) in testCases)
         {
-            int result = Approach_Two(input, h);
+            int result = Approach_Three(input, h);
 
             if (result == expected)
             {
