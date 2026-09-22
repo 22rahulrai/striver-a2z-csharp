@@ -129,8 +129,8 @@ public class Kth_Missing_num
             if (result == expected)
             {
                 Console.WriteLine(
-                    $"[PASS] Piles: [{string.Join(", ", input)}], " +
-                    $"Hours: {h}, Output: {result}, Expected: {expected}"
+                    $"[PASS] Array: [{string.Join(", ", input)}], " +
+                    $"k: {h}, Output: {result}, Expected: {expected}"
                 );
                 pass++;
             }
