@@ -71,7 +71,6 @@
  * Time  : O(log x)
  * Space : O(1)
  *
- *
  * Notes:
  *
  * - The answer is always <= x.
